@@ -1,0 +1,13 @@
+{
+  "name": "fakenpm",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "node-test": "npm run linker && node ./esm/script.js && node ./cjs/script.js && npm run unlinker",
+    "linker": "npx link \"$(npm prefix)/../../../../\"",
+    "unlinker": "npm unlink did-webs-from-vlei"
+  },
+  "author": "",
+  "license": "",
+  "description": ""
+}
