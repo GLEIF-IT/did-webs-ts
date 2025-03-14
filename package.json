@@ -46,13 +46,13 @@
     "build": "npm run clean && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc -p ./configs/tsconfig.esm.json && npx echo-cli '{\"type\": \"module\"}' > dist/esm/package.json",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json && npx echo-cli '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
-    "test": "jest",
+    "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest",
     "test:full": "npm run full-checker && npm run build && npm run compatibility-checker && npm run packageCheck",
     "linter": "npx eslint src",
     "formatter": "prettier --check .",
     "formatter:fix": "prettier --write .",
     "dependency-checker": "npx depcheck --ignores='@typescript-eslint/eslint-plugin, @typescript-eslint/parser, @types/jest, @types/node, jest-ci-spec-reporter, ts-jest'",
-    "compatibility-checker": "npm link && ./build/test/package/checkPackage.sh",
+    "compatibility-checker": "./build/test/package/checkPackage.sh",
     "full-checker": "npm install && npm run formatter && npm run linter && npm run dependency-checker && npm test",
     "packageCheck": "npm pack --dry-run",
     "prepublishOnly": "npm run full-checker && npm test && npm run build && npm run compatibility-checker",
@@ -61,7 +61,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@types/jest": "^29.5.8",
+    "@types/jest": "^29.5.14",
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^8.26.0",
     "@typescript-eslint/parser": "^8.26.0",
@@ -70,14 +71,18 @@
     "echo-cli": "^2.0.0",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^9.0.0",
-    "jest": "^29.7.0",
-    "jest-ci-spec-reporter": "^1.0.4",
+    "jest": "29.7",
+    "js-yaml": "^4.1.0",
     "prettier": "^3.3.3",
     "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
     "typescript-eslint": "^8.24.1"
   },
   "overrides": {
     "glob": "^9.0.0"
+  },
+  "dependencies": {
+    "@gleif-it/vlei-verifier-workflows": "^0.0.6-dev.4"
   }
 }

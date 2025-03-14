@@ -5,7 +5,7 @@
   "scripts": {
     "node-test": "npm run linker && node ./esm/script.js && node ./cjs/script.js && npm run unlinker",
     "linker": "npx link \"$(npm prefix)/../../../../\"",
-    "unlinker": "npm unlink did-webs-from-vlei"
+    "unlinker": "npx link -u \"$(npm prefix)/../../../../\""
   },
   "author": "",
   "license": "",
