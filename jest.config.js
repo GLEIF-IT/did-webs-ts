@@ -17,6 +17,7 @@ export default {
       },
     ],
   },
-  // use a fancier test reporter
-  reporters: ['jest-ci-spec-reporter'],
+  extensionsToTreatAsEsm: ['.ts'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  roots: ['<rootDir>/src'],
 };

@@ -1,0 +1,5 @@
+workflow:
+  steps:
+    custom_step:
+      id: 'custom_step'
+      type: 'happy_step'
