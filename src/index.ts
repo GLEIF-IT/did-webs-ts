@@ -1,1 +1,5 @@
-// api not implemented yet
+import { constructDidWebs } from './constructDidWebs.js';
+
+export { constructDidWebs } from './constructDidWebs.js';
+
+export default constructDidWebs;
