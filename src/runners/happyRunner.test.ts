@@ -14,7 +14,11 @@ describe('happyRunner', () => {
     expect(typeof myHappyRunner.run).toBe('function');
   });
   it('should return a successful result', async () => {
-    const result = await myHappyRunner.run({}, 'myStep', {});
+    const result = await myHappyRunner.run(
+      'testStep',
+      { yourName: 'Alice' },
+      {}
+    );
     expect(result.success).toBe(true);
   });
   it('should log the expected message to the console', async () => {
@@ -22,11 +26,11 @@ describe('happyRunner', () => {
     const logMock = jest.spyOn(console, 'log').mockImplementation(jest.fn());
 
     // Run the function
-    await myHappyRunner.run(null, '', {});
+    await myHappyRunner.run('testStep', { yourName: 'Alice' }, {});
 
     // Check if console.log was called with expected message
-    expect(logMock).toHaveBeenCalledTimes(1);
-    expect(logMock).toHaveBeenCalledWith("I'm happy! Are you happy?");
+    expect(logMock).toHaveBeenCalledTimes(2);
+    expect(logMock).toHaveBeenCalledWith("Alice, I'm happy! Are you happy?");
 
     // Restore the original console.log
     logMock.mockRestore();
