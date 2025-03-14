@@ -1,7 +1,8 @@
 workflow:
   steps:
     custom_step:
-      id: 'happy_step'
-      type: 'happy_step'
-      description: 'This is a happy step'
-      yourName: 'John Doe'
+      id: 'did-webs'
+      type: 'did-webs'
+      description: 'Generating DID:Webs'
+      domain: 'futureforg.ing/dids/'
+      aid: 'EGZiuJbg73lpE9WFD7bUBIJviAkdU4pSabMbX8DhlHW2'
