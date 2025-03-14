@@ -1,5 +1,7 @@
 workflow:
   steps:
     custom_step:
-      id: 'custom_step'
+      id: 'happy_step'
       type: 'happy_step'
+      description: 'This is a happy step'
+      yourName: 'John Doe'
