@@ -1,0 +1,7 @@
+{
+  "v": "KERICAAJSONAACd.", // Version string
+  "t": "rct", // Message type: Receipt
+  "d": "DZ-i0d8JZAoTNZH3ULvaU6JR2nmwyYAfSVPzhzS6b5CM", // SAID of the key event being receipted, not the receipt message itself
+  "i": "AaU6JR2nmwyZ-i0d8JZAoTNZH3ULvYAfSVPzhzS6b5CM", // Identifier prefix (AID) of the Controller of the KEL
+  "s": "1", // Sequence number (hex-encoded) of the key event being receipted
+}

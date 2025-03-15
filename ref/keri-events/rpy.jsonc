@@ -1,0 +1,15 @@
+{
+  "v": "KERI10JSON00011c_", // Version string
+  "t": "rpy", // Message type: Reply
+  "d": "EH3ULaU6JR2nmwyvYAfSVPzhzS6b5CMZ-i0d8JZAoTNZ", // SAID of the reply message
+  "i": "EAfSVPzhzS6b5CMZ-i0d8JZAoTNZH3ULaU6JR2nmwyvY", // Identifier prefix (AID) of the sender
+  "dt": "2020-08-22T17:50:12.988921+00:00", // Date-time of reply creation
+  "r": "/logs/processor", // Reply route
+  "a": {
+    // Reply data (response to query)
+    "d": "EaU6JR2nmwyZ-i0d8JZAoTNZH3ULvYAfSVPzhzS6b5CM", // SAID of the data
+    "i": "EAoTNZH3ULvYAfSVPzhzS6baU6JR2nmwyZ-i0d8JZ5CM", // AID related to the response
+    "name": "John Jones", // Example additional response data
+    "role": "Founder", // Role related to the queried entity
+  },
+}
