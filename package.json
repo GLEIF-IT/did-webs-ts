@@ -1,7 +1,7 @@
 {
-  "name": "did-webs-from-vlei",
+  "name": "vlei-to-did-webs",
   "version": "0.0.0-dev.3",
-  "description": "Generates a did:webs from a vLEI",
+  "description": "Generate a DID:Webs from a vLEI",
   "keywords": [
     "GLEIF",
     "vLEI",
@@ -46,7 +46,7 @@
     "dependency-checker": "npx depcheck --ignores='@typescript-eslint/eslint-plugin, @typescript-eslint/parser, @types/jest, @types/node, jest-ci-spec-reporter, ts-jest'",
     "formatter": "prettier --check . && npx sort-package-json --check",
     "formatter:fix": "prettier --write . && npx sort-package-json",
-    "full-checker": "npm install && npm run formatter && npm run linter && npm run dependency-checker && npm test",
+    "full-checker": "npm install && npm run formatter:fix && npm run linter && npm run dependency-checker && npm test",
     "linter": "npx eslint src",
     "packageCheck": "npm pack --dry-run",
     "prepublishOnly": "npm run full-checker && npm test && npm run build && npm run compatibility-checker",
