@@ -1,0 +1,35 @@
+{
+  "v": "KERICAAJSONAACd.", // Version string
+  "t": "drt", // Message type: Delegated Rotation
+  "d": "E0d8JJR2nmwyYAfZAoTNZH3ULvaU6Z-iSVPzhzS6b5CM", // SAID of the event
+  "i": "EZAoTNZH3ULvaU6Z-i0d8JJR2nmwyYAfSVPzhzS6b5CM", // Identifier prefix (AID)
+  "s": "1", // Sequence number
+  "p": "EULvaU6JR2nmwyZ-i0d8JZAoTNZH3YAfSVPzhzS6b5CM", // Prior event SAID
+  "kt": "2", // Keys signing threshold: 2 of 3
+  "k": [
+    // List of new signing keys
+    "DnmwyZ-i0H3ULvad8JZAoTNZaU6JR2YAfSVPzh5CMzS6b",
+    "DZaU6JR2nmwyZ-VPzhzSslkie8c8TNZaU6J6bVPzhzS6b",
+    "Dd8JZAoTNnmwyZ-i0H3U3ZaU6JR2LvYAfSVPzhzS6b5CM",
+  ],
+  "nt": "3", // Next keys signing threshold: 3 of 5
+  "n": [
+    // List of next key digests
+    "ETNZH3ULvYawyZ-i0d8JZU6JR2nmAoAfSVPzhzS6b5CM",
+    "EYAfSVPzhzaU6JR2nmoTNZH3ULvwyZb6b5CMi0d8JZAS",
+    "EnmwyZdi0d8JZAoTNZYAfSVPzhzaU6JR2H3ULvS6b5CM",
+    "ETNZH3ULvS6bYAfSVPzhzaU6JR2nmwyZfi0d8JZ5s8bk",
+    "EJR2nmwyZ2i0dzaU6ULvS6b5CM8JZAoTNZH3YAfSVPzh",
+  ],
+  "bt": "1", // Backer threshold
+  "br": [
+    // List of backers to remove
+    "DH3ULvaU6JR2nmwyYAfSVPzhzS6bZ-i0d8TNZJZAo5CM",
+  ],
+  "ba": [
+    // List of backers to add
+    "DTNZH3ULvaU6JR2nmwyYAfSVPzhzS6bZ-i0d8JZAo5CM",
+  ],
+  "c": [], // Configuration traits
+  "a": [], // List of anchors (seals)
+}

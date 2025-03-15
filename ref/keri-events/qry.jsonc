@@ -1,0 +1,16 @@
+{
+  "v": "KERICAAJSONAACd.", // Version string
+  "t": "qry", // Message type: Query
+  "d": "EH3ULaU6JR2nmwyvYAfSVPzhzS6b5CMZ-i0d8JZAoTNZ", // SAID of the query message
+  "i": "EAfSVPzhzS6b5CMZ-i0d8JZAoTNZH3ULaU6JR2nmwyvY", // Identifier prefix (AID) of the sender
+  "dt": "2020-08-22T17:50:12.988921+00:00", // Date-time of query creation
+  "r": "/logs", // Query route
+  "rr": "/log/processor", // Query sub-route
+  "q": {
+    // Query parameters
+    "d": "EaU6JR2nmwyZ-i0d8JZAoTNZH3ULvYAfSVPzhzS6b5CM", // SAID of requested data
+    "i": "EAoTNZH3ULvYAfSVPzhzS6baU6JR2nmwyZ-i0d8JZ5CM", // AID related to the query
+    "s": "5", // Sequence number
+    "dt": "2020-08-01T12:20:05.123456+00:00", // Date-time of requested data
+  },
+}

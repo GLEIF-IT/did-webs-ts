@@ -1,0 +1,16 @@
+{
+  "v": "KERICAAJSONAACd.", // Version string
+  "t": "exn", // Message type: Exchange
+  "d": "EF3Dd96ATbbMIZgUBBwuFAWx3_8s5XSt_0jeyCRXq_bM", // SAID of the exchange message
+  "i": "EMF3Dd96ATbbMIZgUBBwuFAWx3_8s5XSt_0jeyCRXq_b", // Identifier prefix (AID) of the sender
+  "ri": "ECRXq_bMF3Dd96ATbbMIZgUBBwuFAWx3_8s5XSt_0jey", // Related identifier
+  "x": "EF3Dd96ATbbMIZgUBBwuFAWx3_8s5XSt_0jeyCRXq_bM", // Exchange transaction ID
+  "p": "EDd96ATbbMIZgUBBwuFAWx3_8s5XSt_0jeyCRXq_bMF3", // Prior message SAID
+  "dt": "2021-11-12T19:11:19.342132+00:00", // Date-time of exchange message
+  "r": "/echo/back", // Exchange response route
+  "q": {}, // Query parameters (empty for this example)
+  "a": {
+    // Exchange response payload
+    "msg": "test echo", // Example response message
+  },
+}

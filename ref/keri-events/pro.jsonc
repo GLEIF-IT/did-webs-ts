@@ -1,0 +1,17 @@
+{
+  "v": "KERICAAJSONAACd.", // Version string
+  "t": "pro", // Message type: Prod (request for sealed data)
+  "d": "EH3ULaU6JR2nmwyvYAfSVPzhzS6b5CMZ-i0d8JZAoTNZ", // SAID of the prod message
+  "i": "EAfSVPzhzS6b5CMZ-i0d8JZAoTNZH3ULaU6JR2nmwyvY", // Identifier prefix (AID) of the sender
+  "dt": "2020-08-22T17:50:12.988921+00:00", // Date-time of prod request
+  "r": "/sealed/data", // Prod route (targeted sealed data)
+  "rr": "/process/sealed/data", // Processing route for sealed data
+  "q": {
+    // Query parameters for sealed data
+    "d": "EaU6JR2nmwyZ-i0d8JZAoTNZH3ULvYAfSVPzhzS6b5CM", // SAID of requested sealed data
+    "i": "EAoTNZH3ULvYAfSVPzhzS6baU6JR2nmwyZ-i0d8JZ5CM", // AID related to the request
+    "s": "5", // Sequence number
+    "ri": "EAoTNZH3ULvYAfSVPzhzS6baU6JR2nmwyZ-i0d8JZ5CM", // Related identifier for sealed data
+    "dd": "EaU6JR2nmwyZ-i0d8JZAoTNZH3ULvYAfSVPzhzS6b5CM", // Additional data reference
+  },
+}
