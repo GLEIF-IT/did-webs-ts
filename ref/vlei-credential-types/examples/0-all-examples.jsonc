@@ -1,0 +1,318 @@
+{
+  "QVI vLEI Credential": {
+    "v": "1.0.0", // Version of the credential schema
+    "d": "EQVIvLEICredential1234567890abcdef", // Unique identifier (SAID) for this credential
+    "u": "UniqueNonceQVI0987654321", // One-time use nonce for uniqueness
+    "i": "EGLEIFIssuerAID0987654321abcdef", // AID of GLEIF, the issuer of this QVI credential
+    "ri": "QVI-Registry-001", // Reference to the credential status registry
+    "s": "EQVISchemaSAID1234567890abcdef", // SAID of the schema defining this credential
+
+    "a": {
+      // Attributes block containing details about the QVI
+      "d": "EAttributesBlockQVI1234567890", // SAID of the attributes block
+      "i": "EQVIOrganizationAID1234567890", // AID of the Qualified vLEI Issuer (QVI)
+      "dt": "2025-03-10T10:00:00Z", // Issuance timestamp (ISO 8601 format)
+      "LEI": "5493001KJTIIGC8Y1R12", // Legal Entity Identifier (LEI) of the QVI
+      "qviName": "Example Trust Services", // Name of the QVI organization
+      "qviJurisdiction": "US", // Jurisdiction of the QVI
+      "qviAccreditation": "ISO 27001, ETSI EN 319 411-1", // Compliance certifications
+    },
+
+    "e": {
+      // Edges block linking to related credentials
+      "d": "EEdgesBlockQVI1234567890", // SAID of this edges block
+      "gleif": {
+        // Chain to the GLEIF issuer credential
+        "n": "EGLEIFCredentialSAID9876543210", // SAID of the credential proving GLEIF's authority
+        "s": "EGLEIFSchemaSAID0987654321abcdef", // Schema SAID of the credential it links to
+      },
+    },
+
+    "r": {
+      // Rules block defining disclaimers
+      "d": "ERulesBlockQVI0987654321", // SAID of this rules block
+      "usageDisclaimer": {
+        "l": "Usage of this vLEI Credential does not assert trustworthiness.",
+      },
+      "issuanceDisclaimer": {
+        "l": "All information in this credential is accurate as of the issuance date.",
+      },
+    },
+  },
+  "Legal Entity vLEI Credential": {
+    "v": "1.0.0", // Version of the credential schema
+    "d": "ELegalEntityVLEI_Example_001", // Unique identifier (SAID) for this credential
+    "u": "Nonce_LE_001", // One-time use nonce for uniqueness
+    "i": "EQVIOrganizationAID1234567890", // AID of the QVI issuing this credential
+    "ri": "LEI-Registry-001", // Reference to the credential status registry
+    "s": "ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY", // SAID of the schema defining this credential
+
+    "a": {
+      // Attributes block containing details about the Legal Entity
+      "d": "EAttributesBlock_LE_001", // SAID of the attributes block
+      "i": "ELegalEntityAID112233", // AID of the Legal Entity
+      "dt": "2025-03-12T09:30:00Z", // Issuance timestamp (ISO 8601 format)
+      "LEI": "5493001KJTIIGC8Y1R12", // Legal Entity Identifier (LEI)
+    },
+
+    "e": {
+      // Edges block linking to related credentials
+      "d": "EEdgesBlock_LE_001", // SAID of this edges block
+      "qvi": {
+        // Chain to the QVI credential
+        "n": "EQVIvLEICredential1234567890abcdef", // SAID of the QVI vLEI credential
+        "s": "EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao", // Schema SAID of the QVI credential
+      },
+    },
+
+    "r": {
+      // Rules block defining disclaimers
+      "d": "ERulesBlock_LE_001", // SAID of this rules block
+      "usageDisclaimer": {
+        "l": "Usage of this vLEI Credential does not assert trustworthiness.",
+      },
+      "issuanceDisclaimer": {
+        "l": "All information in this credential is accurate as of the issuance date.",
+      },
+    },
+  },
+  "OOR Authorization vLEI Credential": {
+    "v": "1.0.0", // Version of the credential schema
+    "d": "EOORAuthvLEICredential_001", // Unique identifier (SAID) for this OOR Auth credential
+    "u": "Nonce_OOR_001", // One-time use nonce for uniqueness
+    "i": "ELegalEntityAID112233", // AID of the Legal Entity issuing this credential
+    "ri": "OOR-Registry-001", // Reference to the credential status registry
+    "s": "EOORAuthSchemaSAID1234567890", // Schema SAID defining this OOR credential
+
+    "a": {
+      // Attributes block: contains details about the authorization granted to the QVI
+      "d": "EAttributesBlock_OOR_001", // SAID of the attributes block
+      "i": "EQVIOrganizationAID1234567890", // AID of the QVI receiving the authorization
+      "dt": "2025-03-15T14:00:00Z", // Issuance timestamp (ISO 8601 format)
+      "LEI": "5493001KJTIIGC8Y1R12", // Legal Entity Identifier of the issuing Legal Entity
+      "authorizedRole": "Qualified vLEI Issuer Representative", // Official role being authorized
+      "authorizationScope": "Issuance of Legal Entity vLEI Credentials", // Scope of authorization
+    },
+
+    "e": {
+      // Edges block: links to the Legal Entity vLEI credential for provenance
+      "d": "EEdgesBlock_OOR_001", // SAID of this edges block
+      "le": {
+        // Chain to the Legal Entity vLEI credential (establishing verifiable lineage)
+        "n": "ELegalEntityVLEI_Example_001", // SAID of the Legal Entity vLEI credential
+        "s": "ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY", // Schema SAID of the Legal Entity credential
+      },
+    },
+
+    "r": {
+      // Rules block: defines legal disclaimers and policies governing this credential
+      "d": "ERulesBlock_OOR_001", // SAID of this rules block
+      "usageDisclaimer": {
+        // Disclaimer outlining usage limitations
+        "l": "Usage of a valid, unexpired, and non-revoked OOR Authorization vLEI Credential does not assert that the Qualified vLEI Issuer is trustworthy, honest, or compliant with any laws.",
+      },
+      "issuanceDisclaimer": {
+        // Disclaimer regarding the accuracy of the credential at issuance
+        "l": "All information in a valid, unexpired, and non-revoked OOR Authorization vLEI Credential is accurate as of the date the validation process was complete. The credential has been issued to the Qualified vLEI Issuer named in the credential as the subject; and the Legal Entity exercised reasonable care during the validation process.",
+      },
+      "revocationDisclaimer": {
+        // Disclaimer about revocation responsibility
+        "l": "This credential is subject to revocation at any time by the issuing Legal Entity if the authorization is no longer valid.",
+      },
+    },
+  },
+  "ECR Authorization vLEI Credential": {
+    "v": "1.0.0", // Version of the credential schema
+    "d": "EECRAuthvLEICredential_001", // Unique identifier (SAID) for this ECR Auth credential
+    "u": "Nonce_ECRAuth_001", // One-time use nonce for uniqueness
+    "i": "ELegalEntityAID112233", // AID of the Legal Entity issuing this credential
+    "ri": "ECR-Auth-Registry-001", // Reference to the credential status registry
+    "s": "EECRAuthSchemaSAID1234567890", // Schema SAID defining this ECR Authorization credential
+
+    "a": {
+      // Attributes block: contains details about the authorization granted to the QVI
+      "d": "EAttributesBlock_ECRAuth_001", // SAID of the attributes block
+      "i": "EQVIOrganizationAID1234567890", // AID of the QVI receiving the authorization
+      "dt": "2025-03-15T14:30:00Z", // Issuance timestamp (ISO 8601 format)
+      "LEI": "5493001KJTIIGC8Y1R12", // Legal Entity Identifier of the issuing Legal Entity
+      "authorizedRole": "Qualified vLEI Issuer Representative", // Official role being authorized
+      "authorizationScope": "Issuance of ECR vLEI Credentials", // Scope of authorization
+    },
+
+    "e": {
+      // Edges block: links to the Legal Entity vLEI credential for provenance
+      "d": "EEdgesBlock_ECRAuth_001", // SAID of this edges block
+      "le": {
+        // Chain to the Legal Entity vLEI credential (establishing verifiable lineage)
+        "n": "ELegalEntityVLEI_Example_001", // SAID of the Legal Entity vLEI credential
+        "s": "ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY", // Schema SAID of the Legal Entity credential
+      },
+    },
+
+    "r": {
+      // Rules block: defines legal disclaimers and policies governing this credential
+      "d": "ERulesBlock_ECRAuth_001", // SAID of this rules block
+      "usageDisclaimer": {
+        // Disclaimer outlining usage limitations
+        "l": "Usage of a valid, unexpired, and non-revoked ECR Authorization vLEI Credential does not assert that the Qualified vLEI Issuer is trustworthy, honest, or compliant with any laws.",
+      },
+      "issuanceDisclaimer": {
+        // Disclaimer regarding the accuracy of the credential at issuance
+        "l": "All information in a valid, unexpired, and non-revoked ECR Authorization vLEI Credential is accurate as of the date the validation process was complete. The credential has been issued to the Qualified vLEI Issuer named in the credential as the subject; and the Legal Entity exercised reasonable care during the validation process.",
+      },
+      "revocationDisclaimer": {
+        // Disclaimer about revocation responsibility
+        "l": "This credential is subject to revocation at any time by the issuing Legal Entity if the authorization is no longer valid.",
+      },
+    },
+  },
+  "OOR vLEI Credential": {
+    "v": "1.0.0", // Version of the credential schema
+    "d": "EOORvLEICredential_Example_001", // Unique identifier (SAID) for this OOR credential
+    "u": "Nonce_OORvLEI_001", // One-time use nonce for uniqueness
+    "i": "EQVIOrganizationAID1234567890", // AID of the Qualified vLEI Issuer (QVI) issuing this credential
+    "ri": "OOR-Registry-001", // Reference to the credential status registry
+    "s": "EOORvLEISchemaSAID1234567890", // Schema SAID defining this OOR credential
+
+    "a": {
+      // Attributes block: contains details about the OOR holder and role
+      "d": "EAttributesBlock_OOR_001", // SAID of the attributes block
+      "i": "EIndividualAID556677", // AID of the individual receiving the OOR credential
+      "dt": "2025-03-16T10:00:00Z", // Issuance timestamp (ISO 8601 format)
+      "LEI": "5493001KJTIIGC8Y1R12", // Legal Entity Identifier of the organization this OOR represents
+      "personLegalName": "Jane Doe", // Legal name of the individual
+      "officialRole": "Chief Financial Officer", // Official organizational role within the Legal Entity
+      "authorityScope": "Financial oversight and executive decision-making", // Scope of authority
+    },
+
+    "e": {
+      // Edges block: links to the Legal Entity vLEI credential for provenance
+      "d": "EEdgesBlock_OORvLEI_001", // SAID of this edges block
+      "le": {
+        // Chain to the Legal Entity vLEI credential (establishing verifiable lineage)
+        "n": "ELegalEntityAID112233", // The Legal Entity AID
+        "s": "ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY", // Schema SAID of the Legal Entity credential
+      },
+    },
+
+    "r": {
+      // Rules block: defines legal disclaimers and policies governing this credential
+      "d": "ERulesBlock_OORvLEI_001", // SAID of this rules block
+      "usageDisclaimer": {
+        // Disclaimer outlining usage limitations
+        "l": "Usage of a valid, unexpired, and non-revoked OOR vLEI Credential does not assert that the individual is trustworthy, honest, or compliant with any laws.",
+      },
+      "issuanceDisclaimer": {
+        // Disclaimer regarding the accuracy of the credential at issuance
+        "l": "All information in a valid, unexpired, and non-revoked OOR vLEI Credential is accurate as of the date the validation process was complete. The credential has been issued to the individual named in the credential as the subject; and the Qualified vLEI Issuer exercised reasonable care during the validation process.",
+      },
+      "revocationDisclaimer": {
+        // Disclaimer about revocation responsibility
+        "l": "This credential is subject to revocation at any time by the issuing Qualified vLEI Issuer or the Legal Entity if the authorization is no longer valid.",
+      },
+    },
+  },
+  // ISSUED BY ECR BY THE LEGAL ENTITY
+  "ECR vLEI Credential-1": {
+    "v": "1.0.0", // Version of the credential schema
+    "d": "EECRvLEICredential_Example_001", // Unique identifier (SAID) for this ECR credential
+    "u": "Nonce_ECR_001", // One-time use nonce for uniqueness
+    "i": "ELegalEntityAID112233", // AID of the Legal Entity issuing this credential
+    "ri": "ECR-Registry-001", // Reference to the credential status registry
+    "s": "EH6ekLjSr8V32WyFbGe1zXjTzFs9PkTYmupJ9H65O14g", // Schema SAID defining this ECR credential
+
+    "a": {
+      // Attributes block: contains details about the ECR role and person
+      "d": "EAttributesBlock_ECR_001", // SAID of the attributes block
+      "i": "EIndividualAID556677", // AID of the individual receiving the ECR credential
+      "dt": "2025-03-15T10:30:00Z", // Issuance timestamp (ISO 8601 format)
+      "AID": "E7890123456MnOpQrStUvWxYz", // AID of the intended recipient of the ECR credential
+      "LEI": "5493001KJTIIGC8Y1R12", // Legal Entity Identifier of the issuing Legal Entity (matches the LE vLEI credential)
+      "personLegalName": "Jane Doe", // Legal name of the individual
+      "engagementContextRole": "Chief Compliance Officer", // Specific role in the organization
+    },
+
+    "e": {
+      // Edges block: links to the Legal Entity vLEI credential for provenance
+      "d": "EEdgesBlock_ECR_001", // SAID of this edges block
+      "le": {
+        // Chain to the Legal Entity vLEI credential (maintaining verifiability)
+        "n": "ELegalEntityAID112233", // The Legal Entity AID
+        "s": "ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY", // Schema SAID of the Legal Entity credential
+      },
+    },
+
+    "r": {
+      // Rules block: defines legal disclaimers and policies governing this credential
+      "d": "ERulesBlock_ECR_001", // SAID of this rules block
+      "usageDisclaimer": {
+        // Disclaimer outlining usage limitations
+        "l": "Usage of a valid, unexpired, and non-revoked ECR vLEI Credential does not assert that the individual is trustworthy, honest, or compliant with any laws.",
+      },
+      "issuanceDisclaimer": {
+        // Disclaimer regarding the accuracy of the credential at issuance
+        "l": "All information in a valid, unexpired, and non-revoked ECR vLEI Credential is accurate as of the date the validation process was complete. The credential has been issued to the individual named in the credential as the subject; and the Legal Entity exercised reasonable care during the validation process.",
+      },
+      "privacyDisclaimer": {
+        // Disclaimer about privacy considerations
+        "l": "Privacy Considerations are applicable to ECR vLEI Credentials. It is the sole responsibility of credential holders to present them in a privacy-preserving manner.",
+      },
+    },
+  },
+  // ISSUED TO THE ECR BY THE QVI UNDER THE AUTHORIZATION OF THE LEGAL ENTITY
+  "ECR vLEI Credential-2": {
+    "v": "1.0.0", // Version of the credential schema
+    "d": "EECRvLEICredential_QVI_001", // Unique identifier (SAID) for this ECR credential
+    "u": "Nonce_ECR_002", // One-time use nonce for uniqueness
+    "i": "EQVIOrganizationAID1234567890", // AID of the Qualified vLEI Issuer (QVI) issuing this credential
+    "ri": "ECR-Registry-002", // Reference to the credential status registry
+    "s": "EH6ekLjSr8V32WyFbGe1zXjTzFs9PkTYmupJ9H65O14g", // Schema SAID defining this ECR credential
+
+    "a": {
+      // Attributes block: contains details about the ECR holder and role
+      "d": "EAttributesBlock_ECR_QVI_001", // SAID of the attributes block
+      "i": "EIndividualAID778899", // AID of the individual receiving the ECR credential
+      "dt": "2025-03-16T14:30:00Z", // Issuance timestamp (ISO 8601 format)
+      "LEI": "5493001KJTIIGC8Y1R12", // Legal Entity Identifier of the LE
+      "personLegalName": "John Smith", // Legal name of the individual
+      "engagementContextRole": "Data Protection Officer", // Specific role in the organization
+      "authorizationScope": "Privacy and data compliance operations", // Scope of the engagement context role
+    },
+
+    "e": {
+      // Edges block: links to the Legal Entity vLEI credential and ECR Authorization credential for provenance
+      "d": "EEdgesBlock_ECR_QVI_001", // SAID of this edges block
+      "le": {
+        // Chain to the Legal Entity vLEI credential (maintaining verifiability)
+        "n": "ELegalEntityAID112233", // The Legal Entity AID
+        "s": "ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY", // Schema SAID of the Legal Entity credential
+      },
+      "ecrAuth": {
+        // Chain to the ECR Authorization vLEI Credential
+        "n": "EECRAuthvLEICredential_001", // SAID of the ECR Authorization credential
+        "s": "EECRAuthSchemaSAID1234567890", // Schema SAID of the ECR Authorization credential
+      },
+    },
+
+    "r": {
+      // Rules block: defines legal disclaimers and policies governing this credential
+      "d": "ERulesBlock_ECR_QVI_001", // SAID of this rules block
+      "usageDisclaimer": {
+        // Disclaimer outlining usage limitations
+        "l": "Usage of a valid, unexpired, and non-revoked ECR vLEI Credential does not assert that the individual is trustworthy, honest, or compliant with any laws.",
+      },
+      "issuanceDisclaimer": {
+        // Disclaimer regarding the accuracy of the credential at issuance
+        "l": "All information in a valid, unexpired, and non-revoked ECR vLEI Credential is accurate as of the date the validation process was complete. The credential has been issued to the individual named in the credential as the subject; and the Qualified vLEI Issuer exercised reasonable care during the validation process.",
+      },
+      "authorizationDisclaimer": {
+        // Disclaimer regarding the authorization from the LE
+        "l": "This credential is issued under authorization of the Legal Entity, which retains the right to revoke its authorization at any time.",
+      },
+      "revocationDisclaimer": {
+        // Disclaimer about revocation responsibility
+        "l": "This credential is subject to revocation at any time by the issuing Qualified vLEI Issuer or the Legal Entity if the authorization is no longer valid.",
+      },
+    },
+  },
+}
