@@ -1,0 +1,90 @@
+{
+  "v": "KERI10JSON00012b_", // Version of the KERI message
+  "t": "icp", // Type of the message (icp for identity creation protocol)
+  "d": "ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc", // Identifier of the message
+  "i": "ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc", // Identifier of the entity
+  "s": "0", // Sequence number
+  "kt": "1", // Key threshold
+  "k": ["DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6"], // List of keys
+  "nt": "1", // Next threshold
+  "n": ["EAGQeFxU44hUf7nh2SqMNT28AIpRiuCh6dwRcyYUiyBn"], // Next identifiers
+  "bt": "0", // Number of witnesses
+  "b": [], // List of witnesses
+  "c": [], // List of conditions
+  "a": [] // List of actions
+}-VAn-AABAABHD-l5cMZ5TlCFaOEoaQYE56bRE2g94wWcg3PNF_SItkzKzzGDs-wOpT8cReSOY00hbiP867-C-ZL2eYvDKQwL-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-18T02c55c35d866589p00c00
+
+{
+  "v": "KERI10JSON00012b_", // Version of the KERI message
+  "t": "icp", // Type of the message (icp for identity creation protocol)
+  "d": "EM0v8tEza5NnAxEC2Ohno2vjqoJmdoeTHLFz_j7FlAcY", // Identifier of the message
+  "i": "EM0v8tEza5NnAxEC2Ohno2vjqoJmdoeTHLFz_j7FlAcY", // Identifier of the entity
+  "s": "0", // Sequence number
+  "kt": "1", // Key threshold
+  "k": ["DLFsdZe9DkSc_irGnVvPwCTjiG0UHIMFXQk1By1lR5NC"], // List of keys
+  "nt": "1", // Next threshold
+  "n": ["EBC3wESsVMjte9pDOsxi3qqw2YdFIhP0aDJCdGiy01ua"], // Next identifiers
+  "bt": "0", // Number of witnesses
+  "b": [], // List of witnesses
+  "c": [], // List of conditions
+  "a": [] // List of actions
+}-VAn-AABAAAW1O2bZA5O5yBQHGKBD2yx2B11xpJxzfyindvhSX04UlQrNHtcAXId3sltuefTJBxgO3OZKNE-2ljCoTLtIUYN-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-18T02c55c31d737109p00c00
+
+{
+  "v": "KERI10JSON00013a_", // Version of the KERI message
+  "t": "ixn", // Type of the message (ixn for interaction)
+  "d": "EGYHF4pJVULp2mJp-pLEhTV2Y50AejwIQQzxq7esJ4Al", // Identifier of the message
+  "i": "EM0v8tEza5NnAxEC2Ohno2vjqoJmdoeTHLFz_j7FlAcY", // Identifier of the entity
+  "s": "1", // Sequence number
+  "p": "EM0v8tEza5NnAxEC2Ohno2vjqoJmdoeTHLFz_j7FlAcY", // Parent identifier
+  "a": [ // List of actions
+    {
+      "i": "EAeTw37tF4CZ33Zry1SrGdUEA-dOuGJBnGjeUKBvCINy", // Identifier of the action
+      "s": "0", // Sequence number of the action
+      "d": "EAeTw37tF4CZ33Zry1SrGdUEA-dOuGJBnGjeUKBvCINy" // Identifier of the action
+    }
+  ]
+}-VAn-AABAACZICtFrev9oC7SLeIX2AQJqGuLIsh3r5E0KeBS0wIZZKs7px9EgbVMtuRMKzEHKYCOMWTV4-TjPa-McRs_GJED-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-18T02c55c33d647624p00c00
+
+{
+  "v": "KERI10JSON00015f_", // Version of the KERI message
+  "t": "dip", // Type of the message (dip for delegation)
+  "d": "EAeTw37tF4CZ33Zry1SrGdUEA-dOuGJBnGjeUKBvCINy", // Identifier of the message
+  "i": "EAeTw37tF4CZ33Zry1SrGdUEA-dOuGJBnGjeUKBvCINy", // Identifier of the entity
+  "s": "0", // Sequence number
+  "kt": "1", // Key threshold
+  "k": ["DFl61PVNLsQ6Jo3c1Eu6H6vMDzdrXirdDHSVh86PD5Kp"], // List of keys
+  "nt": "1", // Next threshold
+  "n": ["EL0fKE9YzQ4MH-mH_KyLlkxwYEXUFNP5-Q3CUk6CcBVJ"], // Next identifiers
+  "bt": "0", // Number of witnesses
+  "b": [], // List of witnesses
+  "c": [], // List of conditions
+  "a": [], // List of actions
+  "di": "EM0v8tEza5NnAxEC2Ohno2vjqoJmdoeTHLFz_j7FlAcY" // Delegation identifier
+}-VA5-AABAABr97VaAprnXEBe2VhADpAoacNCxzHyAkTDCohmU01_i8rYVR5AMXFNKKEkwDuGM1AtY7_hR9icS3-daXKs7PoL-GAB0AAAAAAAAAAAAAAAAAAAAAABEGYHF4pJVULp2mJp-pLEhTV2Y50AejwIQQzxq7esJ4Al-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-18T02c55c29d596396p00c00
+
+{
+  "v": "KERI10JSON000106_", // Version of the KERI message
+  "t": "rpy", // Type of the message (rpy for reply)
+  "d": "EGvQTElaKrVtpamSeWm32WOvKkccHpXZJpcpI-39NqmS", // Identifier of the message
+  "dt": "2022-01-20T12:57:59.823350+00:00", // Date and time of the message
+  "r": "/loc/scheme", // Routing information
+  "a": { // List of actions
+    "eid": "EAeTw37tF4CZ33Zry1SrGdUEA-dOuGJBnGjeUKBvCINy", // Entity identifier
+    "scheme": "https", // Scheme used
+    "url": "https://keria-test.rootsid.cloud/" // URL for the scheme
+  }
+}-VA0-FABEAeTw37tF4CZ33Zry1SrGdUEA-dOuGJBnGjeUKBvCINy0AAAAAAAAAAAAAAAAAAAAAAAEAeTw37tF4CZ33Zry1SrGdUEA-dOuGJBnGjeUKBvCINy-AABAACxoJBoN6bPn3prKvtDUxzuyaAMAFJ1Oa4gSsx7DRU1tp6HDJcmyC3FV3vjyZMcwhxk02fzbfx8AQmDr2hD4UoL
+
+{
+  "v": "KERI10JSON000111_", // Version of the KERI message
+  "t": "rpy", // Type of the message (rpy for reply)
+  "d": "EGVVcnbOtBH50MWet4vOydIlVmqYS6De9w64Iy8CmGiO", // Identifier of the message
+  "dt": "2025-03-18T02:55:36.476000+00:00", // Date and time of the message
+  "r": "/end/role/add", // Routing information
+  "a": { // List of actions
+    "cid": "ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc", // Identifier of the entity
+    "role": "agent", // Role assigned
+    "eid": "EAeTw37tF4CZ33Zry1SrGdUEA-dOuGJBnGjeUKBvCINy" // Entity identifier
+  }
+}-VA0-FABECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc0AAAAAAAAAAAAAAAAAAAAAAAECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc-AABAABN10fI6u0pPxtso17mNrQ5P_ueSCjXX9MyKMH4oYLqd64wPYf_hCbgEGttoQT2ioeh9kkAyozTbo1GaQyizUkI
