@@ -1,9 +1,6 @@
-import Ajv from 'ajv';
+import { Validator } from 'jsonschema';
 
 import { didCoreSchema } from './schemas/didCoreSchema.js';
 
-export const isValidDidDocument = (data: object): boolean => {
-  const ajv = new Ajv();
-  const validate = ajv.compile(didCoreSchema);
-  return validate(data);
-};
+export const isValidDidDocument = (data: object): boolean =>
+  new Validator().validate(data, didCoreSchema).valid;
