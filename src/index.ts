@@ -1,5 +1,5 @@
-import { constructDidWebs } from './constructDidWebs.js';
+import { generateDidWebs } from './generateDidWebs.js';
 
-export { constructDidWebs } from './constructDidWebs.js';
+export { generateDidWebs as constructDidWebs } from './generateDidWebs.js';
 
-export default constructDidWebs;
+export default generateDidWebs;
