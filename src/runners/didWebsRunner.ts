@@ -1,6 +1,6 @@
 import { StepRunner } from '@gleif-it/vlei-verifier-workflows';
 
-import { constructDidWebs } from '../constructDidWebs.js';
+import { generateDidWebs } from '../generateDidWebs.js';
 
 export class DidWebsRunner extends StepRunner {
   async run(
@@ -9,7 +9,7 @@ export class DidWebsRunner extends StepRunner {
     _configJson: unknown
   ): Promise<{ success: boolean }> {
     console.log('Running step:', stepName);
-    const didWebs = constructDidWebs(step.domain, step.aid);
+    const didWebs = generateDidWebs(step.domain, step.aid);
     console.log(didWebs);
 
     return { success: true };
