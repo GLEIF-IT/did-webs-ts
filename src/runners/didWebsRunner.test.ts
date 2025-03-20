@@ -17,8 +17,9 @@ describe('makeDidWebs', () => {
     const result = await runner.run(
       'testStep',
       {
-        domain: 'futureforg.ing',
+        host: 'futureforg.ing',
         aid: 'EGZiuJbg73lpE9WFD7bUBIJviAkdU4pSabMbX8DhlHW2',
+        path: '/dids',
       },
       {}
     );
