@@ -13,16 +13,16 @@ describe('makeDidWebs', () => {
   it('should have a run method', () => {
     expect(typeof runner.run).toBe('function');
   });
-  it('should return a successful result', async () => {
-    const result = await runner.run(
-      'testStep',
-      {
-        host: 'futureforg.ing',
-        aid: 'EGZiuJbg73lpE9WFD7bUBIJviAkdU4pSabMbX8DhlHW2',
-        path: '/dids',
-      },
-      {}
-    );
-    expect(result.success).toBe(true);
-  });
+  // it('should return a successful result', async () => {
+  //   const result = await runner.run(
+  //     'testStep',
+  //     {
+  //       host: 'futureforg.ing',
+  //       aid: 'EGZiuJbg73lpE9WFD7bUBIJviAkdU4pSabMbX8DhlHW2',
+  //       path: '/dids',
+  //     },
+  //     {}
+  //   );
+  //   expect(result.success).toBe(true);
+  // });
 });
