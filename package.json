@@ -1,7 +1,7 @@
 {
-  "name": "vlei-to-did-webs",
+  "name": "@futureforg-ing/vlei-to-did-webs",
   "version": "0.0.0-dev.3",
-  "description": "Generate a DID:Webs from a vLEI",
+  "description": "Generate a DID:Webs from a vLEI credential",
   "keywords": [
     "GLEIF",
     "vLEI",
@@ -9,16 +9,16 @@
     "DID",
     "DID:Webs"
   ],
-  "homepage": "https://FILL.IN.YOURS",
+  "homepage": "https://github.com/futureforging/vlei-to-did-webs#readme",
   "bugs": {
-    "url": "https://FILL.IN.YOURS"
+    "url": "https://github.com/futureforging/vlei-to-did-webs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "n/a"
+    "url": "git+https://github.com/futureforging/vlei-to-did-webs.git"
   },
   "license": "UNLICENSED",
-  "author": "n/a",
+  "author": "Jonathan Rayback",
   "type": "module",
   "exports": {
     ".": {
@@ -51,7 +51,6 @@
     "packageCheck": "npm pack --dry-run",
     "prepublishOnly": "npm run full-checker && npm test && npm run build && npm run compatibility-checker",
     "publish:dev": "npm version prerelease --preid=dev && npm publish --access restricted --tag dev && npm dist-tag add $(node -p \"require('./package.json').name + '@' + require('./package.json').version\") latest",
-    "publish:dev-old": "npm version prerelease --preid=dev && npm publish --access public --tag dev",
     "start": "NODE_OPTIONS='--loader ts-node/esm --no-warnings' ts-node ./main.ts",
     "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest",
     "test:full": "npm run full-checker && npm run build && npm run compatibility-checker && npm run packageCheck"
