@@ -1,4 +1,4 @@
-import { isValidDidWebs } from './utils/validators/isValidDidWebs.js';
+import { isValidDidWebs } from '../utils/validators/isValidDidWebs.js';
 
 export const generateDidWebs = (
   host: string,
