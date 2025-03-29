@@ -1,4 +1,4 @@
-export const ecrAuthCred = {
+const ecrAuthCred = {
   v: 'ACDC10JSON0004e4_',
   d: 'EuF1gpodKbbqS0fqmUiOYf-MusuNvi0OmY8Js6SKSdfE',
   i: 'EKXPX7hWw8KK5Y_Mxs2TOuCrGdN45vPIZ78NofRlVBws',
@@ -33,3 +33,5 @@ export const ecrAuthCred = {
     },
   },
 };
+
+export default ecrAuthCred;

@@ -1,6 +1,6 @@
 import { getDidWebs } from './getDidWebs.js';
-import { qviCred } from '../../test/data/creds/qviCred.js';
-import { leCred } from '../../test/data/creds/leCred.js';
+import qviCred from '../../test/data/creds/qviCred.js';
+import leCred from '../../test/data/creds/leCred.js';
 
 describe('getDidWebs', () => {
   it('should return the correct value', () => {

@@ -1,4 +1,4 @@
-export const qviCred = {
+const qviCred = {
   v: 'ACDC10JSON00011c_',
   d: 'EYo4R9I08Et5H5SWKG8ZMS83r8FmRtfahN0V9NbG9zdw',
   i: 'Ei5csblWpTy22uVkbZrZxvSUORxPvIlrfpq2e1hKTtfA',
@@ -20,3 +20,5 @@ export const qviCred = {
     },
   },
 };
+
+export default qviCred;
