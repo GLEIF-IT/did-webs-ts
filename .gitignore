@@ -33,3 +33,6 @@ typings/
 # generated files
 dist
 bundle.*
+
+# image diagram files
+*.webp
