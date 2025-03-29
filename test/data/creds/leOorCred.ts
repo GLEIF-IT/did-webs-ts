@@ -1,8 +1,8 @@
 export const leOorCred = {
   v: 'ACDC10JSON00011c_',
   d: 'E1qH1E2zo7rnW1Pwm3NuYOXZ1SsVH3yeV2Iifj2wtCgA',
-  i: 'did:keri:EZBfSGG5k1CZYk1QH3GXFPtEwLHf0H06zuDUEJRyar1E',
-  ri: 'did:keri:EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
+  i: 'EZBfSGG5k1CZYk1QH3GXFPtEwLHf0H06zuDUEJRyar1E',
+  ri: 'EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
   s: 'EDg-Ji3kmi_G97Jctxeajpmp1-A8gSpeyElm-XCzTxiE',
   a: {
     d: 'ErmVM5JGLewHJrSqIuhwWktoIlfffh7sHIGAQvtcFSU',

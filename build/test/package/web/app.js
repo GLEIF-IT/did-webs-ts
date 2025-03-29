@@ -3,7 +3,7 @@ import { getDidWebs } from '@futureforg-ing/vlei-to-did-webs';
 
 import cred from '../cred.js';
 
-const { d: aid } = cred;
+const { i: aid } = cred;
 const credential = JSON.stringify(cred);
 const didWebs = `did:webs:example.com%3A8080:dids:${aid}`;
 

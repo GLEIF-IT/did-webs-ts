@@ -2,8 +2,8 @@ export const leEcrAuthCred = {
   v: 'ACDC10JSON00011c_',
   d: 'EpcEvrX2gGTpmKbIG25GSA7_LsWwwzVQ6aUilgBubpGI',
   u: 'IY7-g7wTfta1087YAdUXTbuI0Vklqt8pQxTgc3Rtz0o',
-  i: 'did:keri:EmSIYYxvgtKn9jAp8GcK3fXOwTeyBIcAnRnyrLNfKjVI',
-  ri: 'did:keri:EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
+  i: 'EmSIYYxvgtKn9jAp8GcK3fXOwTeyBIcAnRnyrLNfKjVI',
+  ri: 'EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
   s: 'EZdaE1HCu2ZhyIhpXTWfGSLS2kirKexaC-4up3sIUz1I',
   a: {
     d: 'EG7PfBZbyXS0huxbnvMD-jOdTnDCCaT4CO6xId-ATNWg',

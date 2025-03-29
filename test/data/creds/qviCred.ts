@@ -1,8 +1,8 @@
 export const qviCred = {
   v: 'ACDC10JSON00011c_',
   d: 'EYo4R9I08Et5H5SWKG8ZMS83r8FmRtfahN0V9NbG9zdw',
-  i: 'did:keri:Ei5csblWpTy22uVkbZrZxvSUORxPvIlrfpq2e1hKTtfA',
-  ri: 'did:keri:EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
+  i: 'Ei5csblWpTy22uVkbZrZxvSUORxPvIlrfpq2e1hKTtfA',
+  ri: 'EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
   s: 'ECcj1CBn4dpo6ZOmZQNtAjXxT4_MsVXipt5VTPjvSAf0',
   a: {
     d: 'Ea4ny_YZAtAGUwGSyH7iFiKjpM3yFiDHcjrdomqt7Ryk',
