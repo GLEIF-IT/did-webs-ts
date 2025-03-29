@@ -9,16 +9,16 @@ const leEcrAuthCred = {
     d: 'EG7PfBZbyXS0huxbnvMD-jOdTnDCCaT4CO6xId-ATNWg',
     i: 'did:keri:EFs6d-7q-l6tDMn_yYFyFzaT89sSFNLCOaKqYMF-7L_0',
     dt: '2021-06-09T17:35:54.169967+00:00',
+    AID: 'YourRecipientAIDHere', // Added required AID property
     LEI: '254900YH3ZCDPE1E5306',
     personLegalName: 'Anne Jones',
     engagementContextRole: 'Project Manager',
   },
   e: {
     d: 'EBDmgKOAEwnMGsofWg2m0l63J1awfJafqJyCzTnVkdSw',
-    auth: {
+    le: {
       n: 'Et2DOOu4ivLsjpv89vgv6auPntSLx4CvOhGUxMhxPS24',
-      s: 'EH6ekLjSr8V32WyFbGe1zXjTzFs9PkTYmupJ9H65O14g',
-      o: 'I2I',
+      s: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY', // Updated to match const value
     },
   },
   r: {
@@ -30,7 +30,7 @@ const leEcrAuthCred = {
       l: 'All information in a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, is accurate as of the date the validation process was complete. The vLEI Credential has been issued to the legal entity or person named in the vLEI Credential as the subject; and the qualified vLEI Issuer exercised reasonable care to perform the validation process set forth in the vLEI Ecosystem Governance Framework.',
     },
     privacyDisclaimer: {
-      l: 'It is the sole responsibility of Holders as Issuees of an ECR vLEI Credential to present that Credential in a privacy-preserving manner using the mechanisms provided in the Issuance and Presentation Exchange (IPEX) protocol specification and the Authentic Chained Data Container (ACDC) specification. https://github.com/WebOfTrust/IETF-IPEX and https://github.com/trustoverip/tswg-acdc-specification.',
+      l: 'Privacy Considerations are applicable to QVI ECR AUTH vLEI Credentials.  It is the sole responsibility of QVIs as Issuees of QVI ECR AUTH vLEI Credentials to present these Credentials in a privacy-preserving manner using the mechanisms provided in the Issuance and Presentation Exchange (IPEX) protocol specification and the Authentic Chained Data Container (ACDC) specification.  https://github.com/WebOfTrust/IETF-IPEX and https://github.com/trustoverip/tswg-acdc-specification.',
     },
   },
 };
