@@ -1,4 +1,4 @@
-export const leEcrAuthCred = {
+const leEcrAuthCred = {
   v: 'ACDC10JSON00011c_',
   d: 'EpcEvrX2gGTpmKbIG25GSA7_LsWwwzVQ6aUilgBubpGI',
   u: 'IY7-g7wTfta1087YAdUXTbuI0Vklqt8pQxTgc3Rtz0o',
@@ -34,3 +34,5 @@ export const leEcrAuthCred = {
     },
   },
 };
+
+export default leEcrAuthCred;

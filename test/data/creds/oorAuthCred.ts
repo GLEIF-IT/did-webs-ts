@@ -1,4 +1,4 @@
-export const oorAuthCred = {
+const oorAuthCred = {
   v: 'ACDC10JSON0004e4_',
   d: 'EuF1gpodKbbqS0fqmUiOYf-MusuNvi0OmY8Js6SKSdfE',
   i: 'EKXPX7hWw8KK5Y_Mxs2TOuCrGdN45vPIZ78NofRlVBws',
@@ -30,3 +30,5 @@ export const oorAuthCred = {
     },
   },
 };
+
+export default oorAuthCred;

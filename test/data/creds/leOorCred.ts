@@ -1,4 +1,4 @@
-export const leOorCred = {
+const leOorCred = {
   v: 'ACDC10JSON00011c_',
   d: 'E1qH1E2zo7rnW1Pwm3NuYOXZ1SsVH3yeV2Iifj2wtCgA',
   i: 'EZBfSGG5k1CZYk1QH3GXFPtEwLHf0H06zuDUEJRyar1E',
@@ -30,3 +30,5 @@ export const leOorCred = {
     },
   },
 };
+
+export default leOorCred;

@@ -1,4 +1,4 @@
-export const leCred = {
+const leCred = {
   v: 'ACDC10JSON00011c_',
   d: 'EBdXt3gIXOf2BBWNHdSXCJnFJL5OuQPyM5K0neuniccM',
   i: 'EmkPreYpZfFk66jpf3uFv7vklXKhzBrAqjsKAn2EDIPM',
@@ -27,3 +27,5 @@ export const leCred = {
     },
   },
 };
+
+export default leCred;
