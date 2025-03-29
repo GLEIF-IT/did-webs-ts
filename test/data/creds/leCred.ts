@@ -1,8 +1,8 @@
 export const leCred = {
   v: 'ACDC10JSON00011c_',
   d: 'EBdXt3gIXOf2BBWNHdSXCJnFJL5OuQPyM5K0neuniccM',
-  i: 'did:keri:EmkPreYpZfFk66jpf3uFv7vklXKhzBrAqjsKAn2EDIPM',
-  ri: 'did:keri:EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
+  i: 'EmkPreYpZfFk66jpf3uFv7vklXKhzBrAqjsKAn2EDIPM',
+  ri: 'EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
   s: 'E46jrVPTzlSkUPqGGeIZ8a8FWS7a6s4reAXRZOkogZ2A',
   a: {
     d: 'EgveY4-9XgOcLxUderzwLIr9Bf7V_NHwY1lkFrn9y2PY',

@@ -6,6 +6,6 @@ export const getDidWebs = (
   path = '',
   port?: number
 ): string => {
-  const { d: aid } = JSON.parse(cred);
+  const { i: aid } = JSON.parse(cred);
   return composeDidWebs(host, aid, path, port);
 };

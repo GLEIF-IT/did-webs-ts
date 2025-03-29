@@ -7,7 +7,7 @@ console.log('\n\x1b[34m**************');
 console.log('* EcmaScript *');
 console.log('**************\x1b[0m\n\n');
 
-const { d: aid } = cred;
+const { i: aid } = cred;
 const credential = JSON.stringify(cred);
 const didWebs = `did:webs:example.com%3A8080:dids:${aid}`;
 
