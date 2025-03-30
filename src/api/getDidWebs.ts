@@ -1,11 +1,11 @@
+import { Credential } from '../core/credential/Credential.js';
 import { composeDidWebs } from '../core/composeDidWebs.js';
 
 export const getDidWebs = (
   host: string,
-  cred: string,
+  cred: Credential,
   path = '',
   port?: number
 ): string => {
-  const { i: aid } = JSON.parse(cred);
-  return composeDidWebs(host, aid, path, port);
+  return composeDidWebs(host, cred.i, path, port);
 };
