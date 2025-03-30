@@ -1,24 +1,14 @@
-const leOorCred = {
+const qviVleiCredential = {
   v: 'ACDC10JSON00011c_',
-  d: 'E1qH1E2zo7rnW1Pwm3NuYOXZ1SsVH3yeV2Iifj2wtCgA',
-  i: 'EZBfSGG5k1CZYk1QH3GXFPtEwLHf0H06zuDUEJRyar1E',
+  d: 'EYo4R9I08Et5H5SWKG8ZMS83r8FmRtfahN0V9NbG9zdw',
+  i: 'Ei5csblWpTy22uVkbZrZxvSUORxPvIlrfpq2e1hKTtfA',
   ri: 'EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
-  s: 'EDg-Ji3kmi_G97Jctxeajpmp1-A8gSpeyElm-XCzTxiE',
+  s: 'ECcj1CBn4dpo6ZOmZQNtAjXxT4_MsVXipt5VTPjvSAf0',
   a: {
-    d: 'ErmVM5JGLewHJrSqIuhwWktoIlfffh7sHIGAQvtcFSU',
-    i: 'did:keri:E70sYPRHygB9aOzgg_xEbI5RCVyRRCAXWG9uHyRNrqYE',
+    d: 'Ea4ny_YZAtAGUwGSyH7iFiKjpM3yFiDHcjrdomqt7Ryk',
+    i: 'did:keri:EP2ukuiw_0xcp943NWz4IRnNtxwx7rzROwV1D_ZRP0XQ',
     dt: '2021-06-09T17:35:54.169967+00:00',
-    LEI: '254900YH3ZCDPE1E5306',
-    personLegalName: 'John Smith',
-    officialRole: 'Chief Executive Officer',
-  },
-  e: {
-    d: 'EBDmgKOAEwnMGsofWg2m0l63J1awfJafqJyCzTnVkdSw',
-    auth: {
-      n: 'Et2DOOu4ivLsjpv89vgv6auPntSLx4CvOhGUxMhxPS24',
-      s: 'EKA57bKBKxr_kN7iN5i7lMUxpMG-s19dRcmov1iDxz-E',
-      o: 'I2I',
-    },
+    LEI: '5493001KJTIIGC8Y1R12',
   },
   r: {
     d: 'EDIai3Wkd-Z_4cezz9nYEcCK3KNH5saLvZoS_84JL6NU',
@@ -31,4 +21,4 @@ const leOorCred = {
   },
 };
 
-export default leOorCred;
+export default qviVleiCredential;

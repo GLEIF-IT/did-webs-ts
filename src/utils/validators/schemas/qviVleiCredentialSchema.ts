@@ -1,4 +1,4 @@
-export const qviCredSchema = {
+export const qviVleiCredentialSchema = {
   $id: 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao',
   $schema: 'http://json-schema.org/draft-07/schema#',
   title: 'Qualified vLEI Issuer Credential',

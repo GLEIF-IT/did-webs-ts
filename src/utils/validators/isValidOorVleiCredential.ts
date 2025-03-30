@@ -1,5 +1,5 @@
 import { Validator } from 'jsonschema';
 import { leOorCredSchema } from './schemas/leOorCredSchema.js';
 
-export const isValidLeOorCred = (data: object): boolean =>
+export const isValidOorVleiCredential = (data: object): boolean =>
   new Validator().validate(data, leOorCredSchema).valid;
