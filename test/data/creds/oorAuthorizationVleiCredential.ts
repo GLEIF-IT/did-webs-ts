@@ -1,9 +1,9 @@
-const ecrAuthCred = {
+const oorAuthorizationVleiCredential = {
   v: 'ACDC10JSON0004e4_',
   d: 'EuF1gpodKbbqS0fqmUiOYf-MusuNvi0OmY8Js6SKSdfE',
   i: 'EKXPX7hWw8KK5Y_Mxs2TOuCrGdN45vPIZ78NofRlVBws',
   ri: 'EuqwB_iOD86eK0ynAhA6AYwWvPeBhvmbcmOD-9cCmiVU',
-  s: 'ELG17Q0M-uLZcjidzVbF7KBkoUhZa1ie3Az3Q_8aYi8s',
+  s: 'EDpuiVPt4_sa1pShx6vOCnseru1edVPeNvRaQm6HrmMI',
   a: {
     d: 'E9-86Jag34CrJpfNFz_-7E5HA0Dj0FvcYNoFVe7qwkiI',
     dt: '2022-08-25T14:07:30.536257+00:00',
@@ -11,7 +11,7 @@ const ecrAuthCred = {
     AID: 'Esf8b_AngI1d0KbOFjPGIfpVani0HTagWeaYTLs14PlE',
     LEI: '6383001AJTYIGC8Y1X37',
     personLegalName: 'John Smith',
-    engagementContextRole: 'Chief Executive Officer',
+    officialRole: 'Chief Executive Officer',
   },
   e: {
     d: 'EsOf5_YgX_64z4YuHNFWLUnIKcyvsVQOe_vJ_638X6gE',
@@ -28,10 +28,7 @@ const ecrAuthCred = {
     issuanceDisclaimer: {
       l: 'All information in a valid, unexpired, and non-revoked vLEI Credential, as defined in the associated Ecosystem Governance Framework, is accurate as of the date the validation process was complete. The vLEI Credential has been issued to the legal entity or person named in the vLEI Credential as the subject; and the qualified vLEI Issuer exercised reasonable care to perform the validation process set forth in the vLEI Ecosystem Governance Framework.',
     },
-    privacyDisclaimer: {
-      l: 'Privacy Considerations are applicable to QVI ECR AUTH vLEI Credentials.  It is the sole responsibility of QVIs as Issuees of QVI ECR AUTH vLEI Credentials to present these Credentials in a privacy-preserving manner using the mechanisms provided in the Issuance and Presentation Exchange (IPEX) protocol specification and the Authentic Chained Data Container (ACDC) specification.  https://github.com/WebOfTrust/IETF-IPEX and https://github.com/trustoverip/tswg-acdc-specification.',
-    },
   },
 };
 
-export default ecrAuthCred;
+export default oorAuthorizationVleiCredential;

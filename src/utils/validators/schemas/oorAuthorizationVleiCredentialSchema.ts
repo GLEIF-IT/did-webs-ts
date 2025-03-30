@@ -1,11 +1,11 @@
-export const leEcrAuthCredSchema = {
-  $id: 'EH6ekLjSr8V32WyFbGe1zXjTzFs9PkTYmupJ9H65O14g',
+export const oorAuthorizationVleiCredentialSchema = {
+  $id: 'EKA57bKBKxr_kN7iN5i7lMUxpMG-s19dRcmov1iDxz-E',
   $schema: 'http://json-schema.org/draft-07/schema#',
-  title: 'ECR Authorization vLEI Credential',
+  title: 'OOR Authorization vLEI Credential',
   description:
-    'A vLEI Authorization Credential issued by a Legal Entity to a QVI for the authorization of ECR credentials',
+    'A vLEI Authorization Credential issued by a Legal Entity to a QVI for the authorization of OOR credentials',
   type: 'object',
-  credentialType: 'ECRAuthorizationvLEICredential',
+  credentialType: 'OORAuthorizationvLEICredential',
   version: '1.0.0',
   properties: {
     v: {
@@ -39,7 +39,7 @@ export const leEcrAuthCredSchema = {
           type: 'string',
         },
         {
-          $id: 'EBMwtCJt7LUfA9u0jmZ1cAoCavZFIBmZBmlufYeX4gdy',
+          $id: 'EPli-kppZ4gj8g4i3-FUx3ZG1H_UrMhXwzyP1E6uAot6',
           description: 'Attributes block',
           type: 'object',
           properties: {
@@ -53,8 +53,8 @@ export const leEcrAuthCredSchema = {
             },
             dt: {
               description: 'Issuance date time',
-              type: 'string',
               format: 'date-time',
+              type: 'string',
             },
             AID: {
               description:
@@ -71,7 +71,7 @@ export const leEcrAuthCredSchema = {
                 'Requested recipient name as provided during identity assurance',
               type: 'string',
             },
-            engagementContextRole: {
+            officialRole: {
               description:
                 "Requested role description i.e. 'Head of Standards'",
               type: 'string',
@@ -84,7 +84,7 @@ export const leEcrAuthCredSchema = {
             'AID',
             'LEI',
             'personLegalName',
-            'engagementContextRole',
+            'officialRole',
           ],
         },
       ],
@@ -135,7 +135,7 @@ export const leEcrAuthCredSchema = {
           type: 'string',
         },
         {
-          $id: 'ELLuSgEW2h8n5fHKLvZc9uTtxzqXQqlWR7MiwEt7AcmM',
+          $id: 'ECllqarpkZrSIWCb97XlMpEZZH3q4kc--FQ9mbkFMb_5',
           description: 'Rules block',
           type: 'object',
           properties: {
@@ -167,26 +167,9 @@ export const leEcrAuthCredSchema = {
                 },
               },
             },
-            privacyDisclaimer: {
-              description: 'Privacy Disclaimer',
-              type: 'object',
-              properties: {
-                l: {
-                  description: 'Associated legal language',
-                  type: 'string',
-                  const:
-                    'Privacy Considerations are applicable to QVI ECR AUTH vLEI Credentials.  It is the sole responsibility of QVIs as Issuees of QVI ECR AUTH vLEI Credentials to present these Credentials in a privacy-preserving manner using the mechanisms provided in the Issuance and Presentation Exchange (IPEX) protocol specification and the Authentic Chained Data Container (ACDC) specification.  https://github.com/WebOfTrust/IETF-IPEX and https://github.com/trustoverip/tswg-acdc-specification.',
-                },
-              },
-            },
           },
           additionalProperties: false,
-          required: [
-            'd',
-            'usageDisclaimer',
-            'issuanceDisclaimer',
-            'privacyDisclaimer',
-          ],
+          required: ['d', 'usageDisclaimer', 'issuanceDisclaimer'],
         },
       ],
     },

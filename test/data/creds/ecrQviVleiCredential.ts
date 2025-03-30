@@ -1,24 +1,24 @@
-const leEcrAuthCred = {
-  v: 'ACDC10JSON00011c_',
-  d: 'EpcEvrX2gGTpmKbIG25GSA7_LsWwwzVQ6aUilgBubpGI',
-  u: 'IY7-g7wTfta1087YAdUXTbuI0Vklqt8pQxTgc3Rtz0o',
-  i: 'EmSIYYxvgtKn9jAp8GcK3fXOwTeyBIcAnRnyrLNfKjVI',
-  ri: 'EymRy7xMwsxUelUauaXtMxTfPAMPAI6FkekwlOjkggt',
-  s: 'EZdaE1HCu2ZhyIhpXTWfGSLS2kirKexaC-4up3sIUz1I',
+// ECR issued by QVI
+const ecrQviVleiCredential = {
+  v: 'ACDC10JSON0004e4_',
+  d: 'EuF1gpodKbbqS0fqmUiOYf-MusuNvi0OmY8Js6SKSdfE',
+  i: 'EKXPX7hWw8KK5Y_Mxs2TOuCrGdN45vPIZ78NofRlVBws',
+  ri: 'EuqwB_iOD86eK0ynAhA6AYwWvPeBhvmbcmOD-9cCmiVU',
+  s: 'ELG17Q0M-uLZcjidzVbF7KBkoUhZa1ie3Az3Q_8aYi8s',
   a: {
-    d: 'EG7PfBZbyXS0huxbnvMD-jOdTnDCCaT4CO6xId-ATNWg',
-    i: 'did:keri:EFs6d-7q-l6tDMn_yYFyFzaT89sSFNLCOaKqYMF-7L_0',
-    dt: '2021-06-09T17:35:54.169967+00:00',
-    AID: 'YourRecipientAIDHere', // Added required AID property
-    LEI: '254900YH3ZCDPE1E5306',
-    personLegalName: 'Anne Jones',
-    engagementContextRole: 'Project Manager',
+    d: 'E9-86Jag34CrJpfNFz_-7E5HA0Dj0FvcYNoFVe7qwkiI',
+    dt: '2022-08-25T14:07:30.536257+00:00',
+    i: 'EY4ldIBDZP4Tpnm3RX320BO0yz8Uz2nUSN-C409GnCJM',
+    AID: 'Esf8b_AngI1d0KbOFjPGIfpVani0HTagWeaYTLs14PlE',
+    LEI: '6383001AJTYIGC8Y1X37',
+    personLegalName: 'John Smith',
+    engagementContextRole: 'Chief Executive Officer',
   },
   e: {
-    d: 'EBDmgKOAEwnMGsofWg2m0l63J1awfJafqJyCzTnVkdSw',
+    d: 'EsOf5_YgX_64z4YuHNFWLUnIKcyvsVQOe_vJ_638X6gE',
     le: {
-      n: 'Et2DOOu4ivLsjpv89vgv6auPntSLx4CvOhGUxMhxPS24',
-      s: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY', // Updated to match const value
+      n: 'ESyLzoJC4L_1abXOEN4f6uNZCmhqyEHg2geBHFhJ8KDs',
+      s: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY',
     },
   },
   r: {
@@ -35,4 +35,4 @@ const leEcrAuthCred = {
   },
 };
 
-export default leEcrAuthCred;
+export default ecrQviVleiCredential;

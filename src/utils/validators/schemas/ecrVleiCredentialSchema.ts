@@ -1,11 +1,11 @@
-export const leCredSchema = {
-  $id: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY',
+export const ecrVleiCredentialSchema = {
+  $id: 'EEy9PkikFcANV1l7EHukCeXqrzT1hNZjGlUk7wuMO5jw',
   $schema: 'http://json-schema.org/draft-07/schema#',
-  title: 'Legal Entity vLEI Credential',
+  title: 'Legal Entity Engagement Context Role vLEI Credential',
   description:
-    'A vLEI Credential issued by a Qualified vLEI issuer to a Legal Entity',
+    'A vLEI Role Credential issued to representatives of a Legal Entity in other than official roles but in functional or other context of engagement',
   type: 'object',
-  credentialType: 'LegalEntityvLEICredential',
+  credentialType: 'LegalEntityEngagementContextRolevLEICredential',
   version: '1.0.0',
   properties: {
     v: {
@@ -17,11 +17,11 @@ export const leCredSchema = {
       type: 'string',
     },
     u: {
-      description: 'One time use nonce',
+      description: 'A salty nonce',
       type: 'string',
     },
     i: {
-      description: 'QVI Issuer AID',
+      description: 'QVI or LE Issuer AID',
       type: 'string',
     },
     ri: {
@@ -39,7 +39,7 @@ export const leCredSchema = {
           type: 'string',
         },
         {
-          $id: 'EJ6bFDLrv50bHmIDg-MSummpvYWsPa9CFygPUZyHoESj',
+          $id: 'EDv4wiOMHE125CXu-EuOd0YRXz-AgpLilJfjoODFqtHD',
           description: 'Attributes block',
           type: 'object',
           properties: {
@@ -47,23 +47,42 @@ export const leCredSchema = {
               description: 'Attributes block SAID',
               type: 'string',
             },
+            u: {
+              description: 'A salty nonce',
+              type: 'string',
+            },
             i: {
-              description: 'LE Issuer AID',
+              description: 'Person Issuee AID',
               type: 'string',
             },
             dt: {
-              description: 'issuance date time',
+              description: 'Issuance date time',
               type: 'string',
               format: 'date-time',
             },
             LEI: {
-              description: 'LE Issuer AID',
+              description: 'LEI of the Legal Entity',
               type: 'string',
               format: 'ISO 17442',
             },
+            personLegalName: {
+              description:
+                'Recipient name as provided during identity assurance',
+              type: 'string',
+            },
+            engagementContextRole: {
+              description: "Role description i.e. 'Head of Standards'",
+              type: 'string',
+            },
           },
           additionalProperties: false,
-          required: ['i', 'dt', 'LEI'],
+          required: [
+            'i',
+            'dt',
+            'LEI',
+            'personLegalName',
+            'engagementContextRole',
+          ],
         },
       ],
     },
@@ -74,7 +93,7 @@ export const leCredSchema = {
           type: 'string',
         },
         {
-          $id: 'EDh9sp5cPk0-yo5sFMo6WJS1HMBYIOYCwJrnPvNaH1vI',
+          $id: 'EEM9OvWMEmAfAY0BV2kXatSc8WM13QW1B5y33E8z4f33',
           description: 'Edges block',
           type: 'object',
           properties: {
@@ -82,19 +101,55 @@ export const leCredSchema = {
               description: 'Edges block SAID',
               type: 'string',
             },
-            qvi: {
-              description: 'QVI node',
+            auth: {
+              description: 'Chain to Auth vLEI credential from legal entity',
               type: 'object',
               properties: {
                 n: {
-                  description: 'Issuer credential SAID',
+                  description: 'SAID of the ACDC to which the edge connects',
                   type: 'string',
                 },
                 s: {
                   description:
                     'SAID of required schema of the credential pointed to by this node',
                   type: 'string',
-                  const: 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao',
+                  const: 'EH6ekLjSr8V32WyFbGe1zXjTzFs9PkTYmupJ9H65O14g',
+                },
+                o: {
+                  description: 'Operator indicating this node is the issuer',
+                  type: 'string',
+                  const: 'I2I',
+                },
+              },
+              additionalProperties: false,
+              required: ['n', 's', 'o'],
+            },
+          },
+          additionalProperties: false,
+          required: ['d', 'auth'],
+        },
+        {
+          $id: 'EHeZGaLBhCc_-sAcyAEgFFeCkxgnqCubPOBuEvoh9jHX',
+          description: 'Edges block for issuance from Legal Entity',
+          type: 'object',
+          properties: {
+            d: {
+              description: 'SAID of edges block',
+              type: 'string',
+            },
+            le: {
+              description: 'Chain to legal entity vLEI credential',
+              type: 'object',
+              properties: {
+                n: {
+                  description: 'SAID of the ACDC to which the edge connects',
+                  type: 'string',
+                },
+                s: {
+                  description:
+                    'SAID of required schema of the credential pointed to by this node',
+                  type: 'string',
+                  const: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY',
                 },
               },
               additionalProperties: false,
@@ -102,7 +157,7 @@ export const leCredSchema = {
             },
           },
           additionalProperties: false,
-          required: ['d', 'qvi'],
+          required: ['d', 'le'],
         },
       ],
     },
@@ -113,7 +168,7 @@ export const leCredSchema = {
           type: 'string',
         },
         {
-          $id: 'ECllqarpkZrSIWCb97XlMpEZZH3q4kc--FQ9mbkFMb_5',
+          $id: 'EEBm6OIpem19B8BzxWXOAuzKTtYeutGpXMLW9o3pAuRe',
           description: 'Rules block',
           type: 'object',
           properties: {
@@ -145,13 +200,30 @@ export const leCredSchema = {
                 },
               },
             },
+            privacyDisclaimer: {
+              description: 'Privacy Disclaimer',
+              type: 'object',
+              properties: {
+                l: {
+                  description: 'Associated legal language',
+                  type: 'string',
+                  const:
+                    'It is the sole responsibility of Holders as Issuees of an ECR vLEI Credential to present that Credential in a privacy-preserving manner using the mechanisms provided in the Issuance and Presentation Exchange (IPEX) protocol specification and the Authentic Chained Data Container (ACDC) specification. https://github.com/WebOfTrust/IETF-IPEX and https://github.com/trustoverip/tswg-acdc-specification.',
+                },
+              },
+            },
           },
           additionalProperties: false,
-          required: ['d', 'usageDisclaimer', 'issuanceDisclaimer'],
+          required: [
+            'd',
+            'usageDisclaimer',
+            'issuanceDisclaimer',
+            'privacyDisclaimer',
+          ],
         },
       ],
     },
   },
   additionalProperties: false,
-  required: ['i', 'ri', 's', 'd', 'e', 'r'],
+  required: ['v', 'u', 'i', 'ri', 's', 'd', 'r', 'a', 'e'],
 };
