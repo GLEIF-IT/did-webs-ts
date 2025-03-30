@@ -1,0 +1,29 @@
+// from microburst w. simulated delegation
+{
+  "id": "did:webs:example.com:dids:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M",
+  "verificationMethod": [
+    {
+      "id": "#DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:webs:example.com:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M",
+      "publicKeyMultibase": "zH3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV",
+    },
+  ],
+  "authentication": ["#DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE"],
+  "assertionMethod": ["#DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE"],
+  // verification relationship
+  "capabilityDelegation": [
+    "#DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP", // delagator key id
+    {
+      "id": "DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP", // delagoator cesr encoded key (external)
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:keri:ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc", // delegator did (external), keri did - since host info may not be known(?)
+      "publicKeyMultibase": "z6MkiM9xB5h6QgW5v8Qb1T9Z1a2FsT6Pvu8VkJnZC75La", // delegator key (from external key state)
+    },
+  ],
+  "service": [],
+  "alsoKnownAs": [
+    "did:web:example.com:dids:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M",
+    "did:keri:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M",
+  ],
+}
