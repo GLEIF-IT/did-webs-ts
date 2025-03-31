@@ -1,0 +1,2003 @@
+PASS test/run-workflow.test.ts (33.182 s)
+  ● Console
+
+    console.log
+      RUNNING WORKFLOW singlesig-single-user-light.yaml!!!!
+
+      at Object.<anonymous> (test/run-workflow.test.ts:34:13)
+
+    console.log
+      Executing: Creating client for gleif-agent-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating client for secret: D_PbQb01zuzQgK-kDWjq5
+
+      at src/vlei-issuance.ts:60:13
+
+    console.log
+      client {
+        agent: 'EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2',
+        controller: 'ELFOd79gv3moe4EaOUBsRgdfAQntd8XvfRvTkx0i3BdX'
+      }
+
+      at src/utils/test-util.ts:211:11
+
+    console.log
+      secrets="D_PbQb01zuzQgK-kDWjq5"
+
+      at src/utils/test-util.ts:239:11
+
+    console.log
+      Executing: Creating client for qvi-agent-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating client for secret: BTaqgh1eeOjXO5iQJp6m5
+
+      at src/vlei-issuance.ts:60:13
+
+    console.log
+      client {
+        agent: 'EPrwbVwqSpcXor9UpJW_m3TmRvhRWE5wbV710t8zvCnw',
+        controller: 'EPyfHezgaP18vUNgmUUOR8nDnxknQuAtVyPhSex8J5TV'
+      }
+
+      at src/utils/test-util.ts:211:11
+
+    console.log
+      secrets="BTaqgh1eeOjXO5iQJp6m5"
+
+      at src/utils/test-util.ts:239:11
+
+    console.log
+      Executing: Creating client for le-agent-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating client for secret: Akv4TFoiYeHNqzj3N8gE5
+
+      at src/vlei-issuance.ts:60:13
+
+    console.log
+      client {
+        agent: 'ENCvFtf7M24R7eNAT2HmAZjYgT-tTFql6FadHKNPCf3z',
+        controller: 'EGZiuJbg73lpE9WFD7bUBIJviAkdU4pSabMbX8DhlHW2'
+      }
+
+      at src/utils/test-util.ts:211:11
+
+    console.log
+      secrets="Akv4TFoiYeHNqzj3N8gE5"
+
+      at src/utils/test-util.ts:239:11
+
+    console.log
+      Executing: Creating client for ecr-agent-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating client for secret: nf98hUHUy8Vt5tvdyaYV5
+
+      at src/vlei-issuance.ts:60:13
+
+    console.log
+      client {
+        agent: 'EImZfWHHUSs0ShKtRdteiIDAuNsg6wNBcIVbnQl1vX6m',
+        controller: 'EIV7In3Glh3BRWcyLJQT6D9JLnwPJGLTk9zhlxdzllZE'
+      }
+
+      at src/utils/test-util.ts:211:11
+
+    console.log
+      secrets="nf98hUHUy8Vt5tvdyaYV5"
+
+      at src/utils/test-util.ts:239:11
+
+    console.log
+      Executing: Creating AID: gleif-aid-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating AID
+
+      at src/vlei-issuance.ts:69:13
+
+    console.log
+      Creating AID gleif-aid-1 :  {
+        toad: 3,
+        wits: [
+          'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+          'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+          'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+        ]
+      }
+
+      at src/utils/test-util.ts:164:13
+          at Generator.throw (<anonymous>)
+
+    console.log
+      gleif-aid-1 AID: EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo
+
+      at src/utils/test-util.ts:176:13
+
+    console.log
+      Creating Contacts
+
+      at src/vlei-issuance.ts:126:13
+
+    console.log
+      Resolving OOBIs for client
+
+      at Object.resolveOobi (src/vlei-issuance.ts:189:15)
+
+    console.log
+      Executing: Creating AID: qvi-aid-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating AID
+
+      at src/vlei-issuance.ts:69:13
+
+    console.log
+      Creating delegated AID for: qvi-aid-1
+
+      at src/vlei-issuance.ts:239:17
+          at Generator.throw (<anonymous>)
+
+    console.log
+      Delegate's prefix: EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA
+
+      at src/vlei-issuance.ts:262:15
+
+    console.log
+      Delegator approve delegation submitted
+
+      at src/vlei-issuance.ts:276:17
+
+    console.log
+      Delegation approved for aid: EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA
+
+      at src/vlei-issuance.ts:291:15
+
+    console.log
+      Creating Contacts
+
+      at src/vlei-issuance.ts:126:13
+
+    console.log
+      Resolving OOBIs for client
+
+      at Object.resolveOobi (src/vlei-issuance.ts:189:15)
+
+    console.log
+      Executing: Creating AID: le-aid-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating AID
+
+      at src/vlei-issuance.ts:69:13
+
+    console.log
+      Creating AID le-aid-1 :  {
+        toad: 3,
+        wits: [
+          'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+          'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+          'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+        ]
+      }
+
+      at src/utils/test-util.ts:164:13
+          at Generator.throw (<anonymous>)
+
+    console.log
+      le-aid-1 AID: EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu
+
+      at src/utils/test-util.ts:176:13
+
+    console.log
+      Creating Contacts
+
+      at src/vlei-issuance.ts:126:13
+
+    console.log
+      Resolving OOBIs for client
+
+      at Object.resolveOobi (src/vlei-issuance.ts:189:15)
+
+    console.log
+      Executing: Creating AID: ecr-aid-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating AID
+
+      at src/vlei-issuance.ts:69:13
+
+    console.log
+      Creating AID ecr-aid-1 :  {
+        toad: 3,
+        wits: [
+          'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+          'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+          'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+        ]
+      }
+
+      at src/utils/test-util.ts:164:13
+          at Generator.throw (<anonymous>)
+
+    console.log
+      ecr-aid-1 AID: EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg
+
+      at src/utils/test-util.ts:176:13
+
+    console.log
+      Creating Contacts
+
+      at src/vlei-issuance.ts:126:13
+
+    console.log
+      Resolving OOBIs for client
+
+      at Object.resolveOobi (src/vlei-issuance.ts:189:15)
+
+    console.log
+      Executing: Creating registry for gleif-aid-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating Registries
+
+      at src/vlei-issuance.ts:202:13
+
+    console.log
+      [
+        {
+          name: 'gleif-aid-1Registry',
+          regk: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+          pre: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          state: {
+            vn: [Array],
+            i: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            s: '0',
+            d: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            ii: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            dt: '2025-03-20T13:42:30.955784+00:00',
+            et: 'vcp',
+            bt: '0',
+            b: [],
+            c: [Array]
+          }
+        }
+      ]
+
+      at src/utils/test-util.ts:585:11
+
+    console.log
+      Executing: Creating registry for qvi-aid-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating Registries
+
+      at src/vlei-issuance.ts:202:13
+
+    console.log
+      [
+        {
+          name: 'qvi-aid-1Registry',
+          regk: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+          pre: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          state: {
+            vn: [Array],
+            i: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+            s: '0',
+            d: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+            ii: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+            dt: '2025-03-20T13:42:31.492391+00:00',
+            et: 'vcp',
+            bt: '0',
+            b: [],
+            c: [Array]
+          }
+        }
+      ]
+
+      at src/utils/test-util.ts:585:11
+
+    console.log
+      Executing: Creating registry for le-aid-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating Registries
+
+      at src/vlei-issuance.ts:202:13
+
+    console.log
+      [
+        {
+          name: 'le-aid-1Registry',
+          regk: 'EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov',
+          pre: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+          state: {
+            vn: [Array],
+            i: 'EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov',
+            s: '0',
+            d: 'EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov',
+            ii: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+            dt: '2025-03-20T13:42:32.491514+00:00',
+            et: 'vcp',
+            bt: '0',
+            b: [],
+            c: [Array]
+          }
+        }
+      ]
+
+      at src/utils/test-util.ts:585:11
+
+    console.log
+      Executing: Creating registry for ecr-aid-1
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Creating Registries
+
+      at src/vlei-issuance.ts:202:13
+
+    console.log
+      [
+        {
+          name: 'ecr-aid-1Registry',
+          regk: 'ELLbWKqiBVooXaeTVn3AE5G5RYWdX72oOnEfPiK_v2mE',
+          pre: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+          state: {
+            vn: [Array],
+            i: 'ELLbWKqiBVooXaeTVn3AE5G5RYWdX72oOnEfPiK_v2mE',
+            s: '0',
+            d: 'ELLbWKqiBVooXaeTVn3AE5G5RYWdX72oOnEfPiK_v2mE',
+            ii: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+            dt: '2025-03-20T13:42:33.486979+00:00',
+            et: 'vcp',
+            bt: '0',
+            b: [],
+            c: [Array]
+          }
+        }
+      ]
+
+      at src/utils/test-util.ts:585:11
+
+    console.log
+      Executing: GLEIF issues QVI vLEI credential
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Retrying in 50ms
+
+      at src/utils/retry.ts:42:15
+          at Generator.throw (<anonymous>)
+
+    console.log
+      Executing: After qvi_cred in singlesig-single-user-light
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Running did_webs_one step
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:268:13)
+
+    console.log
+      Workflow State:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:269:13)
+
+    console.log
+      Aids:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:270:13)
+
+    console.log
+      gleif-aid-1 {
+        name: 'gleif-aid-1',
+        prefix: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+        salty: {
+          sxlt: '1AAHwThaYHlW-S2RIqTs0Nv_-Y_5HYf8ZCpKgSA0p6BAdGayXkq-kEj4xZknbGte4mzvyR93z-VadcpS31Udo_32b5qiPCLhZl2T',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          s: '0',
+          p: '',
+          d: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          f: '0',
+          dt: '2025-03-20T13:42:19.644463+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl' ],
+          nt: '1',
+          n: [ 'EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 {
+        name: 'qvi-aid-1',
+        prefix: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+        salty: {
+          sxlt: '1AAHUJ8BJ2_QEVg6ZLvExPFkzasWAsKrXt8Xqd8idLPACyiK8GfvvPPu1Z23TKseZE1FjeS43x4mr9PN1zkIiBh6DstXEDNrlDYi',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          s: '0',
+          p: '',
+          d: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          f: '0',
+          dt: '2025-03-20T13:42:21.149348+00:00',
+          et: 'dip',
+          kt: '1',
+          k: [ 'DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK' ],
+          nt: '1',
+          n: [ 'EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213' ],
+          bt: '0',
+          b: [],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+            br: [],
+            ba: []
+          },
+          di: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo'
+        },
+        windexes: []
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 {
+        name: 'le-aid-1',
+        prefix: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+        salty: {
+          sxlt: '1AAHtuy4my8uSZ-pd3ruf3Id5nw-gGsCYxk7t0Np5Lkt9ikWdJBersRGkWPZgYWsAUJlj3i-p8w0gVDa7bITi2Prdsis3MPPDtiQ',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+          s: '0',
+          p: '',
+          d: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+          f: '0',
+          dt: '2025-03-20T13:42:24.866128+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DCpT2RDJgYgSFkiWjrKaEk2qNsaL4nJxkC9V6LqqDH3G' ],
+          nt: '1',
+          n: [ 'EDT4ucy2R_D7xXYHye2O3C12XKruQ-_s0LYEyBJOaK0y' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 {
+        name: 'ecr-aid-1',
+        prefix: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+        salty: {
+          sxlt: '1AAHO3dD4AtHyAezMH8BoT7et_ToX7fyxsFA-3XQz8cp2A8YEI8z5Vs1ac6NRxn54BrLRewmIyY1Ubpltwn_tFTVfFk8wa3wQkvV',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+          s: '0',
+          p: '',
+          d: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+          f: '0',
+          dt: '2025-03-20T13:42:27.211226+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DFBQjIjAusRmEgfMnDM2BX7opQDlfM_tJ_3Je0cPp787' ],
+          nt: '1',
+          n: [ 'EMHT6oDF0RKvQzoVT9DyarmodixlZbc1O4z5EajDXqtg' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Oobis:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:274:13)
+
+    console.log
+      gleif-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo/agent/EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA/agent/EPrwbVwqSpcXor9UpJW_m3TmRvhRWE5wbV710t8zvCnw'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu/agent/ENCvFtf7M24R7eNAT2HmAZjYgT-tTFql6FadHKNPCf3z'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg/agent/EImZfWHHUSs0ShKtRdteiIDAuNsg6wNBcIVbnQl1vX6m'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Credentials Info:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:278:13)
+
+    console.log
+      gleif_to_qvi_vlei_cred {
+        type: 'direct',
+        schema: 'QVI_SCHEMA_SAID',
+        rules: undefined,
+        privacy: false,
+        attributes: {},
+        credSource: undefined
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi_to_le_vlei_cred {
+        type: 'direct',
+        schema: 'LE_SCHEMA_SAID',
+        rules: 'LE_RULES',
+        privacy: false,
+        attributes: {},
+        credSource: { type: 'qvi' }
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le_to_ecr_vlei_cred {
+        type: 'direct',
+        schema: 'ECR_SCHEMA_SAID',
+        rules: 'ECR_RULES',
+        privacy: true,
+        attributes: { engagementContextRole: 'EBA Data Submitter' },
+        credSource: { type: 'le' }
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Credentials:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:282:13)
+
+    console.log
+      qvi_cred {
+        cred: {
+          sad: {
+            v: 'ACDC10JSON000197_',
+            d: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            s: 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao',
+            a: [Object]
+          },
+          atc: '-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+          iss: {
+            v: 'KERI10JSON0000ed_',
+            t: 'iss',
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q',
+            i: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            s: '0',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            dt: '2025-03-20T13:42:33.715000+00:00'
+          },
+          issatc: '-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ',
+          pre: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          schema: {
+            '$id': 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao',
+            '$schema': 'http://json-schema.org/draft-07/schema#',
+            title: 'Qualified vLEI Issuer Credential',
+            description: 'A vLEI Credential issued by GLEIF to Qualified vLEI Issuers which allows the Qualified vLEI Issuers to issue, verify and revoke Legal Entity vLEI Credentials and Legal Entity Official Organizational Role vLEI Credentials',
+            type: 'object',
+            credentialType: 'QualifiedvLEIIssuervLEICredential',
+            version: '1.0.0',
+            properties: [Object],
+            additionalProperties: false,
+            required: [Array]
+          },
+          chains: [],
+          status: {
+            vn: [Array],
+            i: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            s: '0',
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            ra: {},
+            a: [Object],
+            dt: '2025-03-20T13:42:33.715000+00:00',
+            et: 'iss'
+          },
+          anchor: {
+            pre: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            sn: 0,
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q'
+          },
+          anc: {
+            v: 'KERI10JSON00013a_',
+            t: 'ixn',
+            d: 'EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ',
+            i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            s: '3',
+            p: 'ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9',
+            a: [Array]
+          },
+          ancatc: [
+            '-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c33d806203p00c00'
+          ]
+        },
+        credCesr: '{"v":"KERI10JSON0001b7_","t":"icp","d":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","kt":"1","k":["DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl"],"nt":"1","n":["EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAABnViwb25DlpcAmiybdmPOVa2i8wH131Aan5gfGod6KUwmRMVRJGxT5mC5uSRjPP-Y0lOQaXTUuXUw_AnBABM0F-BADAADVgjKec588uleMljAlorBPqdjID_hNeR7AxvHyLmgfCHvunMU_ynaBNUK1dHtLukImHkfujKI9p-M2XIRx7B4BABCb8HtKAlhPFoKKSpa4AHUC6cgovfEmYVcyabMsDevxjJkTtFphNsQYABTPG7wZyO4qK5DX_PmixfDxGaVrwCQEACDbp17J7GDTftUxr6lxsA7qj_8TKZmvihgyiDzHXYL9EJXdPkyTKFukQwlXcUGzH52Ji4-zmPSRnkXOJ3w-amwK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c20d737463p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"1","p":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","a":[{"i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA"}]}-VBq-AABAABeHt5LPW-1WS94MPv0MJiHrdSsst6DPPD4WjpFV85V4lxiDDuvvLwWlwcFlOgvkORExJrlxn8A2YKXDQzkGIAC-BADAAB6KRHHKtH_QkYE7mt2Cjs_vLoyEZo5MwGFb62iWGiTNUfDGGzVlz_1C5J5cJePjnAntwCIoz9PkHXtDNcJMfcHABCaJJbkDNSURN-ymt378wOXRUaVhq2Sho0_0aKeA29TTFht49jiUMVfq4tU4VCAKj5qxrjmnh2L_X1Mhe51tCYNACD1tGzSkaLa2MNhA02jY6KW5kGNmp9kXTYDOxJYXzrrEdi8woPGJuBYrylzh0oK-r5akUs2xSLq7QKoi40ynF8G-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c22d892560p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"2","p":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","a":[{"i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"0","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj"}]}-VBq-AABAAA9eSY3RNk0lcZr_jDua6j2D5fv6r_I1pXzcfO3W1hgEYsdVBSVjX6SnwKKDThAlxY5aFuib0WOCwVsF5ZuyREN-BADAAAdb0rR3ZNGEsu2VLQEjz9Rb6teke_608PqRC4p4ss8ZNr_dj7kyPi9vARustHTmnxXxayUW-JHg-v3yhluAAQAABD1LnjzAf437TfAI6TEkEMHS_EZSKgq7tYn0CmJco8m8azi-SWHqRkQ_W3TlwlcyoTghdnPYOC9HBTevE2alw4BACCv1CBwL6K_aCxSMReiV1v88CWbGdRSb5gJ9zoOUOsEcWYVPCr7Q9HIbIigROSQfF7Mw4VCR8_jhCC4xEJ4qJgJ-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c36d708500p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"3","p":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","a":[{"i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q"}]}-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAD1AAG2025-03-20T13c42c36d737638p00c00{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c21d149348p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c31d411580p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","ii":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","c":["NB"],"bt":"0","b":[],"n":"AA8CVYCE-3VFyHlKSmBZmeaKs_PDtpskz5ilvnWXUd-M"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9{"v":"KERI10JSON0000ed_","t":"iss","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q","i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","dt":"2025-03-20T13:42:33.715000+00:00"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ{"v":"ACDC10JSON000197_","d":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao","a":{"d":"EL7NpXSChz-1oQpbp0uqBI9-vz7Ynw_3L3EXEQJdBKRd","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","LEI":"254900OPPU84GM83MG36","dt":"2025-03-20T13:42:33.715000+00:00"}}-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q'
+      }
+
+      at src/utils/workflow-step-runners.ts:284:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Aids Info:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:286:13)
+
+    console.log
+      gleif-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'gleif-agent-1', secret: 'D_PbQb01zuzQgK-kDWjq5' },
+        name: 'gleif-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 {
+        type: 'singlesig',
+        delegator: 'gleif-aid-1',
+        agent: { name: 'qvi-agent-1', secret: 'BTaqgh1eeOjXO5iQJp6m5' },
+        name: 'qvi-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'le-agent-1', secret: 'Akv4TFoiYeHNqzj3N8gE5' },
+        name: 'le-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'ecr-agent-1', secret: 'nf98hUHUy8Vt5tvdyaYV5' },
+        name: 'ecr-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Executing: QVI issues LE vLEI credential
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Retrying in 50ms
+
+      at src/utils/retry.ts:42:15
+          at Generator.throw (<anonymous>)
+
+    console.log
+      Retrying in 2000ms
+
+      at src/utils/retry.ts:42:15
+          at Generator.throw (<anonymous>)
+
+    console.log
+      Executing: After le_cred in singlesig-single-user-light
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Running did_webs_two step
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:268:13)
+
+    console.log
+      Workflow State:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:269:13)
+
+    console.log
+      Aids:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:270:13)
+
+    console.log
+      gleif-aid-1 {
+        name: 'gleif-aid-1',
+        prefix: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+        salty: {
+          sxlt: '1AAHwThaYHlW-S2RIqTs0Nv_-Y_5HYf8ZCpKgSA0p6BAdGayXkq-kEj4xZknbGte4mzvyR93z-VadcpS31Udo_32b5qiPCLhZl2T',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          s: '0',
+          p: '',
+          d: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          f: '0',
+          dt: '2025-03-20T13:42:19.644463+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl' ],
+          nt: '1',
+          n: [ 'EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 {
+        name: 'qvi-aid-1',
+        prefix: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+        salty: {
+          sxlt: '1AAHUJ8BJ2_QEVg6ZLvExPFkzasWAsKrXt8Xqd8idLPACyiK8GfvvPPu1Z23TKseZE1FjeS43x4mr9PN1zkIiBh6DstXEDNrlDYi',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          s: '0',
+          p: '',
+          d: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          f: '0',
+          dt: '2025-03-20T13:42:21.149348+00:00',
+          et: 'dip',
+          kt: '1',
+          k: [ 'DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK' ],
+          nt: '1',
+          n: [ 'EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213' ],
+          bt: '0',
+          b: [],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+            br: [],
+            ba: []
+          },
+          di: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo'
+        },
+        windexes: []
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 {
+        name: 'le-aid-1',
+        prefix: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+        salty: {
+          sxlt: '1AAHtuy4my8uSZ-pd3ruf3Id5nw-gGsCYxk7t0Np5Lkt9ikWdJBersRGkWPZgYWsAUJlj3i-p8w0gVDa7bITi2Prdsis3MPPDtiQ',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+          s: '0',
+          p: '',
+          d: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+          f: '0',
+          dt: '2025-03-20T13:42:24.866128+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DCpT2RDJgYgSFkiWjrKaEk2qNsaL4nJxkC9V6LqqDH3G' ],
+          nt: '1',
+          n: [ 'EDT4ucy2R_D7xXYHye2O3C12XKruQ-_s0LYEyBJOaK0y' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 {
+        name: 'ecr-aid-1',
+        prefix: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+        salty: {
+          sxlt: '1AAHO3dD4AtHyAezMH8BoT7et_ToX7fyxsFA-3XQz8cp2A8YEI8z5Vs1ac6NRxn54BrLRewmIyY1Ubpltwn_tFTVfFk8wa3wQkvV',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+          s: '0',
+          p: '',
+          d: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+          f: '0',
+          dt: '2025-03-20T13:42:27.211226+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DFBQjIjAusRmEgfMnDM2BX7opQDlfM_tJ_3Je0cPp787' ],
+          nt: '1',
+          n: [ 'EMHT6oDF0RKvQzoVT9DyarmodixlZbc1O4z5EajDXqtg' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Oobis:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:274:13)
+
+    console.log
+      gleif-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo/agent/EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA/agent/EPrwbVwqSpcXor9UpJW_m3TmRvhRWE5wbV710t8zvCnw'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu/agent/ENCvFtf7M24R7eNAT2HmAZjYgT-tTFql6FadHKNPCf3z'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg/agent/EImZfWHHUSs0ShKtRdteiIDAuNsg6wNBcIVbnQl1vX6m'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Credentials Info:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:278:13)
+
+    console.log
+      gleif_to_qvi_vlei_cred {
+        type: 'direct',
+        schema: 'QVI_SCHEMA_SAID',
+        rules: undefined,
+        privacy: false,
+        attributes: {},
+        credSource: undefined
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi_to_le_vlei_cred {
+        type: 'direct',
+        schema: 'LE_SCHEMA_SAID',
+        rules: 'LE_RULES',
+        privacy: false,
+        attributes: {},
+        credSource: { type: 'qvi' }
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le_to_ecr_vlei_cred {
+        type: 'direct',
+        schema: 'ECR_SCHEMA_SAID',
+        rules: 'ECR_RULES',
+        privacy: true,
+        attributes: { engagementContextRole: 'EBA Data Submitter' },
+        credSource: { type: 'le' }
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Credentials:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:282:13)
+
+    console.log
+      qvi_cred {
+        cred: {
+          sad: {
+            v: 'ACDC10JSON000197_',
+            d: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            s: 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao',
+            a: [Object]
+          },
+          atc: '-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+          iss: {
+            v: 'KERI10JSON0000ed_',
+            t: 'iss',
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q',
+            i: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            s: '0',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            dt: '2025-03-20T13:42:33.715000+00:00'
+          },
+          issatc: '-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ',
+          pre: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          schema: {
+            '$id': 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao',
+            '$schema': 'http://json-schema.org/draft-07/schema#',
+            title: 'Qualified vLEI Issuer Credential',
+            description: 'A vLEI Credential issued by GLEIF to Qualified vLEI Issuers which allows the Qualified vLEI Issuers to issue, verify and revoke Legal Entity vLEI Credentials and Legal Entity Official Organizational Role vLEI Credentials',
+            type: 'object',
+            credentialType: 'QualifiedvLEIIssuervLEICredential',
+            version: '1.0.0',
+            properties: [Object],
+            additionalProperties: false,
+            required: [Array]
+          },
+          chains: [],
+          status: {
+            vn: [Array],
+            i: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            s: '0',
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            ra: {},
+            a: [Object],
+            dt: '2025-03-20T13:42:33.715000+00:00',
+            et: 'iss'
+          },
+          anchor: {
+            pre: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            sn: 0,
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q'
+          },
+          anc: {
+            v: 'KERI10JSON00013a_',
+            t: 'ixn',
+            d: 'EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ',
+            i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            s: '3',
+            p: 'ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9',
+            a: [Array]
+          },
+          ancatc: [
+            '-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c33d806203p00c00'
+          ]
+        },
+        credCesr: '{"v":"KERI10JSON0001b7_","t":"icp","d":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","kt":"1","k":["DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl"],"nt":"1","n":["EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAABnViwb25DlpcAmiybdmPOVa2i8wH131Aan5gfGod6KUwmRMVRJGxT5mC5uSRjPP-Y0lOQaXTUuXUw_AnBABM0F-BADAADVgjKec588uleMljAlorBPqdjID_hNeR7AxvHyLmgfCHvunMU_ynaBNUK1dHtLukImHkfujKI9p-M2XIRx7B4BABCb8HtKAlhPFoKKSpa4AHUC6cgovfEmYVcyabMsDevxjJkTtFphNsQYABTPG7wZyO4qK5DX_PmixfDxGaVrwCQEACDbp17J7GDTftUxr6lxsA7qj_8TKZmvihgyiDzHXYL9EJXdPkyTKFukQwlXcUGzH52Ji4-zmPSRnkXOJ3w-amwK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c20d737463p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"1","p":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","a":[{"i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA"}]}-VBq-AABAABeHt5LPW-1WS94MPv0MJiHrdSsst6DPPD4WjpFV85V4lxiDDuvvLwWlwcFlOgvkORExJrlxn8A2YKXDQzkGIAC-BADAAB6KRHHKtH_QkYE7mt2Cjs_vLoyEZo5MwGFb62iWGiTNUfDGGzVlz_1C5J5cJePjnAntwCIoz9PkHXtDNcJMfcHABCaJJbkDNSURN-ymt378wOXRUaVhq2Sho0_0aKeA29TTFht49jiUMVfq4tU4VCAKj5qxrjmnh2L_X1Mhe51tCYNACD1tGzSkaLa2MNhA02jY6KW5kGNmp9kXTYDOxJYXzrrEdi8woPGJuBYrylzh0oK-r5akUs2xSLq7QKoi40ynF8G-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c22d892560p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"2","p":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","a":[{"i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"0","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj"}]}-VBq-AABAAA9eSY3RNk0lcZr_jDua6j2D5fv6r_I1pXzcfO3W1hgEYsdVBSVjX6SnwKKDThAlxY5aFuib0WOCwVsF5ZuyREN-BADAAAdb0rR3ZNGEsu2VLQEjz9Rb6teke_608PqRC4p4ss8ZNr_dj7kyPi9vARustHTmnxXxayUW-JHg-v3yhluAAQAABD1LnjzAf437TfAI6TEkEMHS_EZSKgq7tYn0CmJco8m8azi-SWHqRkQ_W3TlwlcyoTghdnPYOC9HBTevE2alw4BACCv1CBwL6K_aCxSMReiV1v88CWbGdRSb5gJ9zoOUOsEcWYVPCr7Q9HIbIigROSQfF7Mw4VCR8_jhCC4xEJ4qJgJ-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c36d708500p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"3","p":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","a":[{"i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q"}]}-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAD1AAG2025-03-20T13c42c36d737638p00c00{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c21d149348p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c31d411580p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","ii":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","c":["NB"],"bt":"0","b":[],"n":"AA8CVYCE-3VFyHlKSmBZmeaKs_PDtpskz5ilvnWXUd-M"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9{"v":"KERI10JSON0000ed_","t":"iss","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q","i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","dt":"2025-03-20T13:42:33.715000+00:00"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ{"v":"ACDC10JSON000197_","d":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao","a":{"d":"EL7NpXSChz-1oQpbp0uqBI9-vz7Ynw_3L3EXEQJdBKRd","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","LEI":"254900OPPU84GM83MG36","dt":"2025-03-20T13:42:33.715000+00:00"}}-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q'
+      }
+
+      at src/utils/workflow-step-runners.ts:284:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le_cred {
+        cred: {
+          sad: {
+            v: 'ACDC10JSON0005c8_',
+            d: 'EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+            i: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+            ri: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+            s: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY',
+            a: [Object],
+            e: [Object],
+            r: [Object]
+          },
+          atc: '-IABEMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y0AAAAAAAAAAAAAAAAAAAAAAAEMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+          iss: {
+            v: 'KERI10JSON0000ed_',
+            t: 'iss',
+            d: 'ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4',
+            i: 'EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+            s: '0',
+            ri: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+            dt: '2025-03-20T13:42:37.244000+00:00'
+          },
+          issatc: '-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe',
+          pre: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          schema: {
+            '$id': 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY',
+            '$schema': 'http://json-schema.org/draft-07/schema#',
+            title: 'Legal Entity vLEI Credential',
+            description: 'A vLEI Credential issued by a Qualified vLEI issuer to a Legal Entity',
+            type: 'object',
+            credentialType: 'LegalEntityvLEICredential',
+            version: '1.0.0',
+            properties: [Object],
+            additionalProperties: false,
+            required: [Array]
+          },
+          chains: [ [Object] ],
+          status: {
+            vn: [Array],
+            i: 'EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+            s: '0',
+            d: 'ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4',
+            ri: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+            ra: {},
+            a: [Object],
+            dt: '2025-03-20T13:42:37.244000+00:00',
+            et: 'iss'
+          },
+          anchor: {
+            pre: 'EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+            sn: 0,
+            d: 'ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4'
+          },
+          anc: {
+            v: 'KERI10JSON00013a_',
+            t: 'ixn',
+            d: 'EBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe',
+            i: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+            s: '2',
+            p: 'EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4',
+            a: [Array]
+          },
+          ancatc: [
+            '-VAn-AABAABuMTqP1m0FZv8RYB6IgDnvxTDCFRFGRMBAkEq767TMcZ9IwSQUpb3BtlcTAhWwdYgBRbH0fFg-2R84lqBFr6MM-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c37d337248p00c00'
+          ]
+        },
+        credCesr: '{"v":"KERI10JSON0001b7_","t":"icp","d":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","kt":"1","k":["DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl"],"nt":"1","n":["EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAABnViwb25DlpcAmiybdmPOVa2i8wH131Aan5gfGod6KUwmRMVRJGxT5mC5uSRjPP-Y0lOQaXTUuXUw_AnBABM0F-BADAADVgjKec588uleMljAlorBPqdjID_hNeR7AxvHyLmgfCHvunMU_ynaBNUK1dHtLukImHkfujKI9p-M2XIRx7B4BABCb8HtKAlhPFoKKSpa4AHUC6cgovfEmYVcyabMsDevxjJkTtFphNsQYABTPG7wZyO4qK5DX_PmixfDxGaVrwCQEACDbp17J7GDTftUxr6lxsA7qj_8TKZmvihgyiDzHXYL9EJXdPkyTKFukQwlXcUGzH52Ji4-zmPSRnkXOJ3w-amwK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c25d899420p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"1","p":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","a":[{"i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA"}]}-VBq-AABAABeHt5LPW-1WS94MPv0MJiHrdSsst6DPPD4WjpFV85V4lxiDDuvvLwWlwcFlOgvkORExJrlxn8A2YKXDQzkGIAC-BADAAB6KRHHKtH_QkYE7mt2Cjs_vLoyEZo5MwGFb62iWGiTNUfDGGzVlz_1C5J5cJePjnAntwCIoz9PkHXtDNcJMfcHABCaJJbkDNSURN-ymt378wOXRUaVhq2Sho0_0aKeA29TTFht49jiUMVfq4tU4VCAKj5qxrjmnh2L_X1Mhe51tCYNACD1tGzSkaLa2MNhA02jY6KW5kGNmp9kXTYDOxJYXzrrEdi8woPGJuBYrylzh0oK-r5akUs2xSLq7QKoi40ynF8G-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c25d906889p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"2","p":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","a":[{"i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"0","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj"}]}-VBq-AABAAA9eSY3RNk0lcZr_jDua6j2D5fv6r_I1pXzcfO3W1hgEYsdVBSVjX6SnwKKDThAlxY5aFuib0WOCwVsF5ZuyREN-BADAAAdb0rR3ZNGEsu2VLQEjz9Rb6teke_608PqRC4p4ss8ZNr_dj7kyPi9vARustHTmnxXxayUW-JHg-v3yhluAAQAABD1LnjzAf437TfAI6TEkEMHS_EZSKgq7tYn0CmJco8m8azi-SWHqRkQ_W3TlwlcyoTghdnPYOC9HBTevE2alw4BACCv1CBwL6K_aCxSMReiV1v88CWbGdRSb5gJ9zoOUOsEcWYVPCr7Q9HIbIigROSQfF7Mw4VCR8_jhCC4xEJ4qJgJ-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c38d175953p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"3","p":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","a":[{"i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q"}]}-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAD1AAG2025-03-20T13c42c38d209356p00c00{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c26d471088p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c38d273756p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"2","p":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","a":[{"i":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","s":"0","d":"ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4"}]}-VAn-AABAABuMTqP1m0FZv8RYB6IgDnvxTDCFRFGRMBAkEq767TMcZ9IwSQUpb3BtlcTAhWwdYgBRbH0fFg-2R84lqBFr6MM-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c38d299025p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","ii":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","c":["NB"],"bt":"0","b":[],"n":"AA8CVYCE-3VFyHlKSmBZmeaKs_PDtpskz5ilvnWXUd-M"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9{"v":"KERI10JSON0000ed_","t":"iss","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q","i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","dt":"2025-03-20T13:42:33.715000+00:00"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ{"v":"ACDC10JSON000197_","d":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao","a":{"d":"EL7NpXSChz-1oQpbp0uqBI9-vz7Ynw_3L3EXEQJdBKRd","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","LEI":"254900OPPU84GM83MG36","dt":"2025-03-20T13:42:33.715000+00:00"}}-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c26d471088p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c38d273756p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"2","p":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","a":[{"i":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","s":"0","d":"ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4"}]}-VAn-AABAABuMTqP1m0FZv8RYB6IgDnvxTDCFRFGRMBAkEq767TMcZ9IwSQUpb3BtlcTAhWwdYgBRbH0fFg-2R84lqBFr6MM-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c38d299025p00c00{"v":"KERI10JSON0001b7_","t":"icp","d":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","s":"0","kt":"1","k":["DCpT2RDJgYgSFkiWjrKaEk2qNsaL4nJxkC9V6LqqDH3G"],"nt":"1","n":["EDT4ucy2R_D7xXYHye2O3C12XKruQ-_s0LYEyBJOaK0y"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAAD5JEXpYmokvHQH1kamhjmm1QX7gNU98ptd_9YLlqimyD5kQvtZA-gSQYL6D4pFUYOtJhopmzZGELZsnpXfiqEI-BADAACq2YN1o3YhHeagXK5IFBxtWjhEVQqi1ZDkq09FafpB_PHaAYCJ3KEeAvSA6ghiFUk9OzvhyQENj_q5Po8239sGABA12a6A2UBPjGedG6ZY84EUT6TTuJqrR83SoX_yI--Hiw6PTQltykYgVuyOpwQIrZ3xTowW1lIEeJenV6twqH8LACCDZDKpyLkqCHcDbfm5aEKqiR7J3vjmZBa2U-VKjPS_0rQzOR-ELuH7PSVR1kkQNMG9av1DEqFuKx7DOF288GgP-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c24d866128p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EIOz67wim52ejc39qaU0h98IRz2CVgzP_k1yg0jE2LXr","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","s":"1","p":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","a":[{"i":"EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov","s":"0","d":"EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov"}]}-VBq-AABAABPlUu6Ik3leVKP5RWQ8MKpv_hgc9eXH4HVs1yoNCtcJF4LrvBtkNTQtXK6vhE87nlZ5G5FGR91T--m8PsraT8B-BADAAAF7wtYGOwqWjy5SBmoiMV5RzjzzhkkppwfRKs045znRzqwCwoZpqZMWMXG0VJwCFZW4RzQ4dgroOAOxd-3BhMGABDcacTAPOnarRfKj6Vm4fmPdvSverLcPYsDPD2e55yVKDCykgvrodwVal-38Tahv-lCbCcCL9MN7nxy1gKbXUEJACAtIRN40ilUDjFmWPmLZlyA-iy8LEacqZS8CVzQHWg4WaGAMFqQjBXnXkxfjLt4-2mPav8UAZHFr8SvQcJkbCkG-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c31d926566p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","ii":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","c":["NB"],"bt":"0","b":[],"n":"AIdgrRNVDlv-WpIRtiM4VmuSh8H28kG307h5xAzRpNXy"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAABEAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4{"v":"KERI10JSON0000ed_","t":"iss","d":"ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4","i":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","s":"0","ri":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","dt":"2025-03-20T13:42:37.244000+00:00"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe{"v":"ACDC10JSON0005c8_","d":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","ri":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY","a":{"d":"EERwocxGuP6U145HPMTUcQ4XZGhYrcqpiFDchz2FhLOQ","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","LEI":"875500ELOZEL05BVXV37","dt":"2025-03-20T13'... 1211 more characters
+      }
+
+      at src/utils/workflow-step-runners.ts:284:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Aids Info:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:286:13)
+
+    console.log
+      gleif-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'gleif-agent-1', secret: 'D_PbQb01zuzQgK-kDWjq5' },
+        name: 'gleif-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 {
+        type: 'singlesig',
+        delegator: 'gleif-aid-1',
+        agent: { name: 'qvi-agent-1', secret: 'BTaqgh1eeOjXO5iQJp6m5' },
+        name: 'qvi-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'le-agent-1', secret: 'Akv4TFoiYeHNqzj3N8gE5' },
+        name: 'le-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'ecr-agent-1', secret: 'nf98hUHUy8Vt5tvdyaYV5' },
+        name: 'ecr-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Executing: LE issues ECR vLEI credential
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Retrying in 50ms
+
+      at src/utils/retry.ts:42:15
+          at Generator.throw (<anonymous>)
+
+    console.log
+      Retrying in 2000ms
+
+      at src/utils/retry.ts:42:15
+          at Generator.throw (<anonymous>)
+
+    console.log
+      Executing: After ecr_cred in singlesig-single-user-light
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Running did_webs_three step
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:268:13)
+
+    console.log
+      Workflow State:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:269:13)
+
+    console.log
+      Aids:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:270:13)
+
+    console.log
+      gleif-aid-1 {
+        name: 'gleif-aid-1',
+        prefix: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+        salty: {
+          sxlt: '1AAHwThaYHlW-S2RIqTs0Nv_-Y_5HYf8ZCpKgSA0p6BAdGayXkq-kEj4xZknbGte4mzvyR93z-VadcpS31Udo_32b5qiPCLhZl2T',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          s: '0',
+          p: '',
+          d: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          f: '0',
+          dt: '2025-03-20T13:42:19.644463+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl' ],
+          nt: '1',
+          n: [ 'EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 {
+        name: 'qvi-aid-1',
+        prefix: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+        salty: {
+          sxlt: '1AAHUJ8BJ2_QEVg6ZLvExPFkzasWAsKrXt8Xqd8idLPACyiK8GfvvPPu1Z23TKseZE1FjeS43x4mr9PN1zkIiBh6DstXEDNrlDYi',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          s: '0',
+          p: '',
+          d: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          f: '0',
+          dt: '2025-03-20T13:42:21.149348+00:00',
+          et: 'dip',
+          kt: '1',
+          k: [ 'DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK' ],
+          nt: '1',
+          n: [ 'EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213' ],
+          bt: '0',
+          b: [],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+            br: [],
+            ba: []
+          },
+          di: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo'
+        },
+        windexes: []
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 {
+        name: 'le-aid-1',
+        prefix: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+        salty: {
+          sxlt: '1AAHtuy4my8uSZ-pd3ruf3Id5nw-gGsCYxk7t0Np5Lkt9ikWdJBersRGkWPZgYWsAUJlj3i-p8w0gVDa7bITi2Prdsis3MPPDtiQ',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+          s: '0',
+          p: '',
+          d: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+          f: '0',
+          dt: '2025-03-20T13:42:24.866128+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DCpT2RDJgYgSFkiWjrKaEk2qNsaL4nJxkC9V6LqqDH3G' ],
+          nt: '1',
+          n: [ 'EDT4ucy2R_D7xXYHye2O3C12XKruQ-_s0LYEyBJOaK0y' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 {
+        name: 'ecr-aid-1',
+        prefix: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+        salty: {
+          sxlt: '1AAHO3dD4AtHyAezMH8BoT7et_ToX7fyxsFA-3XQz8cp2A8YEI8z5Vs1ac6NRxn54BrLRewmIyY1Ubpltwn_tFTVfFk8wa3wQkvV',
+          pidx: 0,
+          kidx: 0,
+          stem: 'signify:aid',
+          tier: 'low',
+          dcode: 'E',
+          icodes: [ 'A' ],
+          ncodes: [ 'A' ],
+          transferable: true
+        },
+        transferable: true,
+        state: {
+          vn: [ 1, 0 ],
+          i: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+          s: '0',
+          p: '',
+          d: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+          f: '0',
+          dt: '2025-03-20T13:42:27.211226+00:00',
+          et: 'icp',
+          kt: '1',
+          k: [ 'DFBQjIjAusRmEgfMnDM2BX7opQDlfM_tJ_3Je0cPp787' ],
+          nt: '1',
+          n: [ 'EMHT6oDF0RKvQzoVT9DyarmodixlZbc1O4z5EajDXqtg' ],
+          bt: '3',
+          b: [
+            'BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha',
+            'BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM',
+            'BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX'
+          ],
+          c: [],
+          ee: {
+            s: '0',
+            d: 'EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg',
+            br: [],
+            ba: []
+          },
+          di: ''
+        },
+        windexes: [ 0, 1, 2 ]
+      }
+
+      at src/utils/workflow-step-runners.ts:272:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Oobis:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:274:13)
+
+    console.log
+      gleif-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo/agent/EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA/agent/EPrwbVwqSpcXor9UpJW_m3TmRvhRWE5wbV710t8zvCnw'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu/agent/ENCvFtf7M24R7eNAT2HmAZjYgT-tTFql6FadHKNPCf3z'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 [
+        {
+          role: 'agent',
+          oobis: [
+            'http://keria:3902/oobi/EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg/agent/EImZfWHHUSs0ShKtRdteiIDAuNsg6wNBcIVbnQl1vX6m'
+          ]
+        }
+      ]
+
+      at src/utils/workflow-step-runners.ts:276:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Credentials Info:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:278:13)
+
+    console.log
+      gleif_to_qvi_vlei_cred {
+        type: 'direct',
+        schema: 'QVI_SCHEMA_SAID',
+        rules: undefined,
+        privacy: false,
+        attributes: {},
+        credSource: undefined
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi_to_le_vlei_cred {
+        type: 'direct',
+        schema: 'LE_SCHEMA_SAID',
+        rules: 'LE_RULES',
+        privacy: false,
+        attributes: {},
+        credSource: { type: 'qvi' }
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le_to_ecr_vlei_cred {
+        type: 'direct',
+        schema: 'ECR_SCHEMA_SAID',
+        rules: 'ECR_RULES',
+        privacy: true,
+        attributes: { engagementContextRole: 'EBA Data Submitter' },
+        credSource: { type: 'le' }
+      }
+
+      at src/utils/workflow-step-runners.ts:280:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Credentials:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:282:13)
+
+    console.log
+      qvi_cred {
+        cred: {
+          sad: {
+            v: 'ACDC10JSON000197_',
+            d: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            s: 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao',
+            a: [Object]
+          },
+          atc: '-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+          iss: {
+            v: 'KERI10JSON0000ed_',
+            t: 'iss',
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q',
+            i: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            s: '0',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            dt: '2025-03-20T13:42:33.715000+00:00'
+          },
+          issatc: '-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ',
+          pre: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+          schema: {
+            '$id': 'EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao',
+            '$schema': 'http://json-schema.org/draft-07/schema#',
+            title: 'Qualified vLEI Issuer Credential',
+            description: 'A vLEI Credential issued by GLEIF to Qualified vLEI Issuers which allows the Qualified vLEI Issuers to issue, verify and revoke Legal Entity vLEI Credentials and Legal Entity Official Organizational Role vLEI Credentials',
+            type: 'object',
+            credentialType: 'QualifiedvLEIIssuervLEICredential',
+            version: '1.0.0',
+            properties: [Object],
+            additionalProperties: false,
+            required: [Array]
+          },
+          chains: [],
+          status: {
+            vn: [Array],
+            i: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            s: '0',
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q',
+            ri: 'EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj',
+            ra: {},
+            a: [Object],
+            dt: '2025-03-20T13:42:33.715000+00:00',
+            et: 'iss'
+          },
+          anchor: {
+            pre: 'EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD',
+            sn: 0,
+            d: 'ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q'
+          },
+          anc: {
+            v: 'KERI10JSON00013a_',
+            t: 'ixn',
+            d: 'EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ',
+            i: 'EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo',
+            s: '3',
+            p: 'ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9',
+            a: [Array]
+          },
+          ancatc: [
+            '-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c33d806203p00c00'
+          ]
+        },
+        credCesr: '{"v":"KERI10JSON0001b7_","t":"icp","d":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","kt":"1","k":["DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl"],"nt":"1","n":["EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAABnViwb25DlpcAmiybdmPOVa2i8wH131Aan5gfGod6KUwmRMVRJGxT5mC5uSRjPP-Y0lOQaXTUuXUw_AnBABM0F-BADAADVgjKec588uleMljAlorBPqdjID_hNeR7AxvHyLmgfCHvunMU_ynaBNUK1dHtLukImHkfujKI9p-M2XIRx7B4BABCb8HtKAlhPFoKKSpa4AHUC6cgovfEmYVcyabMsDevxjJkTtFphNsQYABTPG7wZyO4qK5DX_PmixfDxGaVrwCQEACDbp17J7GDTftUxr6lxsA7qj_8TKZmvihgyiDzHXYL9EJXdPkyTKFukQwlXcUGzH52Ji4-zmPSRnkXOJ3w-amwK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c20d737463p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"1","p":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","a":[{"i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA"}]}-VBq-AABAABeHt5LPW-1WS94MPv0MJiHrdSsst6DPPD4WjpFV85V4lxiDDuvvLwWlwcFlOgvkORExJrlxn8A2YKXDQzkGIAC-BADAAB6KRHHKtH_QkYE7mt2Cjs_vLoyEZo5MwGFb62iWGiTNUfDGGzVlz_1C5J5cJePjnAntwCIoz9PkHXtDNcJMfcHABCaJJbkDNSURN-ymt378wOXRUaVhq2Sho0_0aKeA29TTFht49jiUMVfq4tU4VCAKj5qxrjmnh2L_X1Mhe51tCYNACD1tGzSkaLa2MNhA02jY6KW5kGNmp9kXTYDOxJYXzrrEdi8woPGJuBYrylzh0oK-r5akUs2xSLq7QKoi40ynF8G-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c22d892560p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"2","p":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","a":[{"i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"0","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj"}]}-VBq-AABAAA9eSY3RNk0lcZr_jDua6j2D5fv6r_I1pXzcfO3W1hgEYsdVBSVjX6SnwKKDThAlxY5aFuib0WOCwVsF5ZuyREN-BADAAAdb0rR3ZNGEsu2VLQEjz9Rb6teke_608PqRC4p4ss8ZNr_dj7kyPi9vARustHTmnxXxayUW-JHg-v3yhluAAQAABD1LnjzAf437TfAI6TEkEMHS_EZSKgq7tYn0CmJco8m8azi-SWHqRkQ_W3TlwlcyoTghdnPYOC9HBTevE2alw4BACCv1CBwL6K_aCxSMReiV1v88CWbGdRSb5gJ9zoOUOsEcWYVPCr7Q9HIbIigROSQfF7Mw4VCR8_jhCC4xEJ4qJgJ-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c36d708500p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"3","p":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","a":[{"i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q"}]}-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAD1AAG2025-03-20T13c42c36d737638p00c00{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c21d149348p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c31d411580p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","ii":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","c":["NB"],"bt":"0","b":[],"n":"AA8CVYCE-3VFyHlKSmBZmeaKs_PDtpskz5ilvnWXUd-M"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9{"v":"KERI10JSON0000ed_","t":"iss","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q","i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","dt":"2025-03-20T13:42:33.715000+00:00"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ{"v":"ACDC10JSON000197_","d":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao","a":{"d":"EL7NpXSChz-1oQpbp0uqBI9-vz7Ynw_3L3EXEQJdBKRd","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","LEI":"254900OPPU84GM83MG36","dt":"2025-03-20T13:42:33.715000+00:00"}}-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q'
+      }
+
+      at src/utils/workflow-step-runners.ts:284:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le_cred {
+        cred: {
+          sad: {
+            v: 'ACDC10JSON0005c8_',
+            d: 'EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+            i: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+            ri: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+            s: 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY',
+            a: [Object],
+            e: [Object],
+            r: [Object]
+          },
+          atc: '-IABEMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y0AAAAAAAAAAAAAAAAAAAAAAAEMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+          iss: {
+            v: 'KERI10JSON0000ed_',
+            t: 'iss',
+            d: 'ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4',
+            i: 'EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+            s: '0',
+            ri: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+            dt: '2025-03-20T13:42:37.244000+00:00'
+          },
+          issatc: '-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe',
+          pre: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+          schema: {
+            '$id': 'ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY',
+            '$schema': 'http://json-schema.org/draft-07/schema#',
+            title: 'Legal Entity vLEI Credential',
+            description: 'A vLEI Credential issued by a Qualified vLEI issuer to a Legal Entity',
+            type: 'object',
+            credentialType: 'LegalEntityvLEICredential',
+            version: '1.0.0',
+            properties: [Object],
+            additionalProperties: false,
+            required: [Array]
+          },
+          chains: [ [Object] ],
+          status: {
+            vn: [Array],
+            i: 'EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+            s: '0',
+            d: 'ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4',
+            ri: 'EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe',
+            ra: {},
+            a: [Object],
+            dt: '2025-03-20T13:42:37.244000+00:00',
+            et: 'iss'
+          },
+          anchor: {
+            pre: 'EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y',
+            sn: 0,
+            d: 'ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4'
+          },
+          anc: {
+            v: 'KERI10JSON00013a_',
+            t: 'ixn',
+            d: 'EBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe',
+            i: 'EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA',
+            s: '2',
+            p: 'EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4',
+            a: [Array]
+          },
+          ancatc: [
+            '-VAn-AABAABuMTqP1m0FZv8RYB6IgDnvxTDCFRFGRMBAkEq767TMcZ9IwSQUpb3BtlcTAhWwdYgBRbH0fFg-2R84lqBFr6MM-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c37d337248p00c00'
+          ]
+        },
+        credCesr: '{"v":"KERI10JSON0001b7_","t":"icp","d":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","kt":"1","k":["DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl"],"nt":"1","n":["EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAABnViwb25DlpcAmiybdmPOVa2i8wH131Aan5gfGod6KUwmRMVRJGxT5mC5uSRjPP-Y0lOQaXTUuXUw_AnBABM0F-BADAADVgjKec588uleMljAlorBPqdjID_hNeR7AxvHyLmgfCHvunMU_ynaBNUK1dHtLukImHkfujKI9p-M2XIRx7B4BABCb8HtKAlhPFoKKSpa4AHUC6cgovfEmYVcyabMsDevxjJkTtFphNsQYABTPG7wZyO4qK5DX_PmixfDxGaVrwCQEACDbp17J7GDTftUxr6lxsA7qj_8TKZmvihgyiDzHXYL9EJXdPkyTKFukQwlXcUGzH52Ji4-zmPSRnkXOJ3w-amwK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c25d899420p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"1","p":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","a":[{"i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA"}]}-VBq-AABAABeHt5LPW-1WS94MPv0MJiHrdSsst6DPPD4WjpFV85V4lxiDDuvvLwWlwcFlOgvkORExJrlxn8A2YKXDQzkGIAC-BADAAB6KRHHKtH_QkYE7mt2Cjs_vLoyEZo5MwGFb62iWGiTNUfDGGzVlz_1C5J5cJePjnAntwCIoz9PkHXtDNcJMfcHABCaJJbkDNSURN-ymt378wOXRUaVhq2Sho0_0aKeA29TTFht49jiUMVfq4tU4VCAKj5qxrjmnh2L_X1Mhe51tCYNACD1tGzSkaLa2MNhA02jY6KW5kGNmp9kXTYDOxJYXzrrEdi8woPGJuBYrylzh0oK-r5akUs2xSLq7QKoi40ynF8G-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c25d906889p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"2","p":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","a":[{"i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"0","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj"}]}-VBq-AABAAA9eSY3RNk0lcZr_jDua6j2D5fv6r_I1pXzcfO3W1hgEYsdVBSVjX6SnwKKDThAlxY5aFuib0WOCwVsF5ZuyREN-BADAAAdb0rR3ZNGEsu2VLQEjz9Rb6teke_608PqRC4p4ss8ZNr_dj7kyPi9vARustHTmnxXxayUW-JHg-v3yhluAAQAABD1LnjzAf437TfAI6TEkEMHS_EZSKgq7tYn0CmJco8m8azi-SWHqRkQ_W3TlwlcyoTghdnPYOC9HBTevE2alw4BACCv1CBwL6K_aCxSMReiV1v88CWbGdRSb5gJ9zoOUOsEcWYVPCr7Q9HIbIigROSQfF7Mw4VCR8_jhCC4xEJ4qJgJ-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c38d175953p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"3","p":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","a":[{"i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q"}]}-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAD1AAG2025-03-20T13c42c38d209356p00c00{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c26d471088p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c38d273756p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"2","p":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","a":[{"i":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","s":"0","d":"ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4"}]}-VAn-AABAABuMTqP1m0FZv8RYB6IgDnvxTDCFRFGRMBAkEq767TMcZ9IwSQUpb3BtlcTAhWwdYgBRbH0fFg-2R84lqBFr6MM-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c38d299025p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","ii":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","c":["NB"],"bt":"0","b":[],"n":"AA8CVYCE-3VFyHlKSmBZmeaKs_PDtpskz5ilvnWXUd-M"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9{"v":"KERI10JSON0000ed_","t":"iss","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q","i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","dt":"2025-03-20T13:42:33.715000+00:00"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ{"v":"ACDC10JSON000197_","d":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao","a":{"d":"EL7NpXSChz-1oQpbp0uqBI9-vz7Ynw_3L3EXEQJdBKRd","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","LEI":"254900OPPU84GM83MG36","dt":"2025-03-20T13:42:33.715000+00:00"}}-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c26d471088p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c38d273756p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"2","p":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","a":[{"i":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","s":"0","d":"ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4"}]}-VAn-AABAABuMTqP1m0FZv8RYB6IgDnvxTDCFRFGRMBAkEq767TMcZ9IwSQUpb3BtlcTAhWwdYgBRbH0fFg-2R84lqBFr6MM-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c38d299025p00c00{"v":"KERI10JSON0001b7_","t":"icp","d":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","s":"0","kt":"1","k":["DCpT2RDJgYgSFkiWjrKaEk2qNsaL4nJxkC9V6LqqDH3G"],"nt":"1","n":["EDT4ucy2R_D7xXYHye2O3C12XKruQ-_s0LYEyBJOaK0y"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAAD5JEXpYmokvHQH1kamhjmm1QX7gNU98ptd_9YLlqimyD5kQvtZA-gSQYL6D4pFUYOtJhopmzZGELZsnpXfiqEI-BADAACq2YN1o3YhHeagXK5IFBxtWjhEVQqi1ZDkq09FafpB_PHaAYCJ3KEeAvSA6ghiFUk9OzvhyQENj_q5Po8239sGABA12a6A2UBPjGedG6ZY84EUT6TTuJqrR83SoX_yI--Hiw6PTQltykYgVuyOpwQIrZ3xTowW1lIEeJenV6twqH8LACCDZDKpyLkqCHcDbfm5aEKqiR7J3vjmZBa2U-VKjPS_0rQzOR-ELuH7PSVR1kkQNMG9av1DEqFuKx7DOF288GgP-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c24d866128p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EIOz67wim52ejc39qaU0h98IRz2CVgzP_k1yg0jE2LXr","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","s":"1","p":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","a":[{"i":"EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov","s":"0","d":"EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov"}]}-VBq-AABAABPlUu6Ik3leVKP5RWQ8MKpv_hgc9eXH4HVs1yoNCtcJF4LrvBtkNTQtXK6vhE87nlZ5G5FGR91T--m8PsraT8B-BADAAAF7wtYGOwqWjy5SBmoiMV5RzjzzhkkppwfRKs045znRzqwCwoZpqZMWMXG0VJwCFZW4RzQ4dgroOAOxd-3BhMGABDcacTAPOnarRfKj6Vm4fmPdvSverLcPYsDPD2e55yVKDCykgvrodwVal-38Tahv-lCbCcCL9MN7nxy1gKbXUEJACAtIRN40ilUDjFmWPmLZlyA-iy8LEacqZS8CVzQHWg4WaGAMFqQjBXnXkxfjLt4-2mPav8UAZHFr8SvQcJkbCkG-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c31d926566p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","ii":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","c":["NB"],"bt":"0","b":[],"n":"AIdgrRNVDlv-WpIRtiM4VmuSh8H28kG307h5xAzRpNXy"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAABEAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4{"v":"KERI10JSON0000ed_","t":"iss","d":"ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4","i":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","s":"0","ri":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","dt":"2025-03-20T13:42:37.244000+00:00"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe{"v":"ACDC10JSON0005c8_","d":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","ri":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"ENPXp1vQzRF6JwIuS-mp2U8Uf1MoADoP_GqQ62VsDZWY","a":{"d":"EERwocxGuP6U145HPMTUcQ4XZGhYrcqpiFDchz2FhLOQ","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","LEI":"875500ELOZEL05BVXV37","dt":"2025-03-20T13'... 1211 more characters
+      }
+
+      at src/utils/workflow-step-runners.ts:284:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr_cred {
+        cred: {
+          sad: {
+            v: 'ACDC10JSON0007fc_',
+            d: 'ECf67ATxbytWP8OzqebdEpYbEH0XA8qQZtW73m1agE5l',
+            u: '0AAfngBtrXeKUAWelN-m_Nqp',
+            i: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+            ri: 'EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov',
+            s: 'EEy9PkikFcANV1l7EHukCeXqrzT1hNZjGlUk7wuMO5jw',
+            a: [Object],
+            e: [Object],
+            r: [Object]
+          },
+          atc: '-IABECf67ATxbytWP8OzqebdEpYbEH0XA8qQZtW73m1agE5l0AAAAAAAAAAAAAAAAAAAAAAAECf67ATxbytWP8OzqebdEpYbEH0XA8qQZtW73m1agE5l',
+          iss: {
+            v: 'KERI10JSON0000ed_',
+            t: 'iss',
+            d: 'EA8sLX_p_NhBh-FNUqcCfXixW04mFlXcmzAXD4ln5VUJ',
+            i: 'ECf67ATxbytWP8OzqebdEpYbEH0XA8qQZtW73m1agE5l',
+            s: '0',
+            ri: 'EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov',
+            dt: '2025-03-20T13:42:40.766000+00:00'
+          },
+          issatc: '-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACEBqyDzFOQMVpFGLNBbTKeC68DK2Ltv_0FZGZTRJhoM1l',
+          pre: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+          schema: {
+            '$id': 'EEy9PkikFcANV1l7EHukCeXqrzT1hNZjGlUk7wuMO5jw',
+            '$schema': 'http://json-schema.org/draft-07/schema#',
+            title: 'Legal Entity Engagement Context Role vLEI Credential',
+            description: 'A vLEI Role Credential issued to representatives of a Legal Entity in other than official roles but in functional or other context of engagement',
+            type: 'object',
+            credentialType: 'LegalEntityEngagementContextRolevLEICredential',
+            version: '1.0.0',
+            properties: [Object],
+            additionalProperties: false,
+            required: [Array]
+          },
+          chains: [ [Object] ],
+          status: {
+            vn: [Array],
+            i: 'ECf67ATxbytWP8OzqebdEpYbEH0XA8qQZtW73m1agE5l',
+            s: '0',
+            d: 'EA8sLX_p_NhBh-FNUqcCfXixW04mFlXcmzAXD4ln5VUJ',
+            ri: 'EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov',
+            ra: {},
+            a: [Object],
+            dt: '2025-03-20T13:42:40.766000+00:00',
+            et: 'iss'
+          },
+          anchor: {
+            pre: 'ECf67ATxbytWP8OzqebdEpYbEH0XA8qQZtW73m1agE5l',
+            sn: 0,
+            d: 'EA8sLX_p_NhBh-FNUqcCfXixW04mFlXcmzAXD4ln5VUJ'
+          },
+          anc: {
+            v: 'KERI10JSON00013a_',
+            t: 'ixn',
+            d: 'EBqyDzFOQMVpFGLNBbTKeC68DK2Ltv_0FZGZTRJhoM1l',
+            i: 'EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu',
+            s: '2',
+            p: 'EIOz67wim52ejc39qaU0h98IRz2CVgzP_k1yg0jE2LXr',
+            a: [Array]
+          },
+          ancatc: [
+            '-VBq-AABAAC6DeaybYwv-_x9R8s8HZnQM6Ut4DtcQrADHMJzLpKbjBZiTYOwKoZoP1xeOl-jbMUP5-e58ZDLiSzKCDM_oWoP-BADAABRSUxFbxZxRxwOAUXMapX7agHPFQG2e9gJsdIJbgJD-MiEMYT-AbBfYSUJl86MbXYrwCdGiO4-cGo4o645A2QAABBmT48PAnDFkbRCReqX3pfeQ-zmt74Q0ZoGj3vWvztDxqOFKCEU-ZnJ5bxt2FeqJuIJWWa3Qtt65eC6rqg-Hd8MACCo9P5QYJd8y5oPqZCp55PIVnA6qMQYBgdeyi-LVfcpLAkHk22qWqW8EFbQKnPnLpD1cF4T3MEHVUDkEzLy9L4L-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c40d839270p00c00'
+          ]
+        },
+        credCesr: '{"v":"KERI10JSON0001b7_","t":"icp","d":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","kt":"1","k":["DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl"],"nt":"1","n":["EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAABnViwb25DlpcAmiybdmPOVa2i8wH131Aan5gfGod6KUwmRMVRJGxT5mC5uSRjPP-Y0lOQaXTUuXUw_AnBABM0F-BADAADVgjKec588uleMljAlorBPqdjID_hNeR7AxvHyLmgfCHvunMU_ynaBNUK1dHtLukImHkfujKI9p-M2XIRx7B4BABCb8HtKAlhPFoKKSpa4AHUC6cgovfEmYVcyabMsDevxjJkTtFphNsQYABTPG7wZyO4qK5DX_PmixfDxGaVrwCQEACDbp17J7GDTftUxr6lxsA7qj_8TKZmvihgyiDzHXYL9EJXdPkyTKFukQwlXcUGzH52Ji4-zmPSRnkXOJ3w-amwK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c28d239700p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"1","p":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","a":[{"i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA"}]}-VBq-AABAABeHt5LPW-1WS94MPv0MJiHrdSsst6DPPD4WjpFV85V4lxiDDuvvLwWlwcFlOgvkORExJrlxn8A2YKXDQzkGIAC-BADAAB6KRHHKtH_QkYE7mt2Cjs_vLoyEZo5MwGFb62iWGiTNUfDGGzVlz_1C5J5cJePjnAntwCIoz9PkHXtDNcJMfcHABCaJJbkDNSURN-ymt378wOXRUaVhq2Sho0_0aKeA29TTFht49jiUMVfq4tU4VCAKj5qxrjmnh2L_X1Mhe51tCYNACD1tGzSkaLa2MNhA02jY6KW5kGNmp9kXTYDOxJYXzrrEdi8woPGJuBYrylzh0oK-r5akUs2xSLq7QKoi40ynF8G-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c28d245903p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"2","p":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","a":[{"i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"0","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj"}]}-VBq-AABAAA9eSY3RNk0lcZr_jDua6j2D5fv6r_I1pXzcfO3W1hgEYsdVBSVjX6SnwKKDThAlxY5aFuib0WOCwVsF5ZuyREN-BADAAAdb0rR3ZNGEsu2VLQEjz9Rb6teke_608PqRC4p4ss8ZNr_dj7kyPi9vARustHTmnxXxayUW-JHg-v3yhluAAQAABD1LnjzAf437TfAI6TEkEMHS_EZSKgq7tYn0CmJco8m8azi-SWHqRkQ_W3TlwlcyoTghdnPYOC9HBTevE2alw4BACCv1CBwL6K_aCxSMReiV1v88CWbGdRSb5gJ9zoOUOsEcWYVPCr7Q9HIbIigROSQfF7Mw4VCR8_jhCC4xEJ4qJgJ-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c43d676748p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"3","p":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","a":[{"i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q"}]}-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAD1AAG2025-03-20T13c42c43d710003p00c00{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c28d870822p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c43d780934p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"2","p":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","a":[{"i":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","s":"0","d":"ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4"}]}-VAn-AABAABuMTqP1m0FZv8RYB6IgDnvxTDCFRFGRMBAkEq767TMcZ9IwSQUpb3BtlcTAhWwdYgBRbH0fFg-2R84lqBFr6MM-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c43d821844p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","ii":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","c":["NB"],"bt":"0","b":[],"n":"AA8CVYCE-3VFyHlKSmBZmeaKs_PDtpskz5ilvnWXUd-M"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAACELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9{"v":"KERI10JSON0000ed_","t":"iss","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q","i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","dt":"2025-03-20T13:42:33.715000+00:00"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAADEA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ{"v":"ACDC10JSON000197_","d":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","ri":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"EBfdlu8R27Fbx-ehrqwImnK-8Cm79sqbAQ4MmvEAYqao","a":{"d":"EL7NpXSChz-1oQpbp0uqBI9-vz7Ynw_3L3EXEQJdBKRd","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","LEI":"254900OPPU84GM83MG36","dt":"2025-03-20T13:42:33.715000+00:00"}}-IABEGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD0AAAAAAAAAAAAAAAAAAAAAAAELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q{"v":"KERI10JSON00015f_","t":"dip","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","kt":"1","k":["DMTSi5QexzJZyWwrgebcJpJQMETFhNmjebrlzZXdiRHK"],"nt":"1","n":["EG0FvJurLdceD8K49ndULOfT6DYZPQNt2lnZ1tyfW213"],"bt":"0","b":[],"c":[],"a":[],"di":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo"}-VA5-AABAADMQv6pC8YgTTKYLoctIEsl8p-C-nCeM_8mdC08gsPvJ2b-hM1QmszgW7MK8CERkJ-KXwimaeYd6IkP8q7zgMUD-GAB0AAAAAAAAAAAAAAAAAAAAAABEFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c28d870822p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"1","p":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","a":[{"i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","s":"0","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe"}]}-VAn-AABAABTss0Sx_kgC4dMXwnQz0saxntQpWwvJWCgahyaCUnKDJJlXZPTTeSjnjR2LpEbvlktmFlSw1VaRrSla-GFKeAM-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c43d780934p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EBZFxI0bYA7s73mv6R2m1eUCUucKcZnVM7AlPQR0HzUe","i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"2","p":"EAPm1sfD3AfnWr8MOe7OttwLLsEkRZBVl8UBdN09h3h4","a":[{"i":"EMpMt7vDNBK9ANQI_13ifwcVkb3K2FOO7xen3Bk92r9Y","s":"0","d":"ENMORBqxBm_lh-qKAIINXqMHZ5JGiakmSJ69U5IXSMl4"}]}-VAn-AABAABuMTqP1m0FZv8RYB6IgDnvxTDCFRFGRMBAkEq767TMcZ9IwSQUpb3BtlcTAhWwdYgBRbH0fFg-2R84lqBFr6MM-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c43d821844p00c00{"v":"KERI10JSON0001b7_","t":"icp","d":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","s":"0","kt":"1","k":["DCpT2RDJgYgSFkiWjrKaEk2qNsaL4nJxkC9V6LqqDH3G"],"nt":"1","n":["EDT4ucy2R_D7xXYHye2O3C12XKruQ-_s0LYEyBJOaK0y"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAAD5JEXpYmokvHQH1kamhjmm1QX7gNU98ptd_9YLlqimyD5kQvtZA-gSQYL6D4pFUYOtJhopmzZGELZsnpXfiqEI-BADAACq2YN1o3YhHeagXK5IFBxtWjhEVQqi1ZDkq09FafpB_PHaAYCJ3KEeAvSA6ghiFUk9OzvhyQENj_q5Po8239sGABA12a6A2UBPjGedG6ZY84EUT6TTuJqrR83SoX_yI--Hiw6PTQltykYgVuyOpwQIrZ3xTowW1lIEeJenV6twqH8LACCDZDKpyLkqCHcDbfm5aEKqiR7J3vjmZBa2U-VKjPS_0rQzOR-ELuH7PSVR1kkQNMG9av1DEqFuKx7DOF288GgP-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c29d523090p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EIOz67wim52ejc39qaU0h98IRz2CVgzP_k1yg0jE2LXr","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","s":"1","p":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","a":[{"i":"EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov","s":"0","d":"EBXstEsvtujA5afwiKKMs6iJmb_TM1K-rW9__9S9JBov"}]}-VBq-AABAABPlUu6Ik3leVKP5RWQ8MKpv_hgc9eXH4HVs1yoNCtcJF4LrvBtkNTQtXK6vhE87nlZ5G5FGR91T--m8PsraT8B-BADAAAF7wtYGOwqWjy5SBmoiMV5RzjzzhkkppwfRKs045znRzqwCwoZpqZMWMXG0VJwCFZW4RzQ4dgroOAOxd-3BhMGABDcacTAPOnarRfKj6Vm4fmPdvSverLcPYsDPD2e55yVKDCykgvrodwVal-38Tahv-lCbCcCL9MN7nxy1gKbXUEJACAtIRN40ilUDjFmWPmLZlyA-iy8LEacqZS8CVzQHWg4WaGAMFqQjBXnXkxfjLt4-2mPav8UAZHFr8SvQcJkbCkG-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c43d487482p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EBqyDzFOQMVpFGLNBbTKeC68DK2Ltv_0FZGZTRJhoM1l","i":"EHLrIb9J8HPkAdJ4a2-N6CQm9Dz43iSdidjI2upkAtqu","s":"2","p":"EIOz67wim52ejc39qaU0h98IRz2CVgzP_k1yg0jE2LXr","a":[{"i":"ECf67ATxbytWP8OzqebdEpYbEH0XA8qQZtW73m1agE5l","s":"0","d":"EA8sLX_p_NhBh-FNUqcCfXixW04mFlXcmzAXD4ln5VUJ"}]}-VBq-AABAAC6DeaybYwv-_x9R8s8HZnQM6Ut4DtcQrADHMJzLpKbjBZiTYOwKoZoP1xeOl-jbMUP5-e58ZDLiSzKCDM_oWoP-BADAABRSUxFbxZxRxwOAUXMapX7agHPFQG2e9gJsdIJbgJD-MiEMYT-AbBfYSUJl86MbXYrwCdGiO4-cGo4o645A2QAABBmT48PAnDFkbRCReqX3pfeQ-zmt74Q0ZoGj3vWvztDxqOFKCEU-ZnJ5bxt2FeqJuIJWWa3Qtt65eC6rqg-Hd8MACCo9P5QYJd8y5oPqZCp55PIVnA6qMQYBgdeyi-LVfcpLAkHk22qWqW8EFbQKnPnLpD1cF4T3MEHVUDkEzLy9L4L-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c43d519991p00c00{"v":"KERI10JSON000113_","t":"vcp","d":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","i":"EEbDUcVuge2PBvZmrgcCc4CxFgQwTL3qtA86RpbJ5BIe","ii":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","c":["NB"],"bt":"0","b":[],"n":"AIdgrRNVDlv-WpIRtiM4VmuSh8H28kG307h5xAzRpNXy"}-VAS-GAB0AAAAAAAAAAAAAAAAAAAAAAB'... 8737 more characters
+      }
+
+      at src/utils/workflow-step-runners.ts:284:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Aids Info:
+
+      at DidWebsStepRunner.<anonymous> (src/utils/workflow-step-runners.ts:286:13)
+
+    console.log
+      gleif-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'gleif-agent-1', secret: 'D_PbQb01zuzQgK-kDWjq5' },
+        name: 'gleif-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      qvi-aid-1 {
+        type: 'singlesig',
+        delegator: 'gleif-aid-1',
+        agent: { name: 'qvi-agent-1', secret: 'BTaqgh1eeOjXO5iQJp6m5' },
+        name: 'qvi-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      le-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'le-agent-1', secret: 'Akv4TFoiYeHNqzj3N8gE5' },
+        name: 'le-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      ecr-aid-1 {
+        type: 'singlesig',
+        agent: { name: 'ecr-agent-1', secret: 'nf98hUHUy8Vt5tvdyaYV5' },
+        name: 'ecr-aid-1'
+      }
+
+      at src/utils/workflow-step-runners.ts:288:15
+          at Map.forEach (<anonymous>)
+
+    console.log
+      Executing: Adding Root of Trust
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      Root of trust OOBI: http://keria:3902/oobi/EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo/agent/EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2
+
+      at src/utils/test-util.ts:670:11
+
+    console.log
+      [INFO] Add root of trust request sent with: aid = EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo, vlei = {"v":"KERI10JSON0001b7_","t":"icp","d":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"0","kt":"1","k":["DEqOaDWuybaLXygV5CbTBXXvsYzPHrAR6ocfdS4oQ0Dl"],"nt":"1","n":["EMAXifA26nxmofyBKrKCn0i_uPWtAJtF8n9vSB1y97IK"],"bt":"3","b":["BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha","BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM","BIKKuvBwpmDVA4Ds-EpL5bt9OqPzWPja2LigFYZN2YfX"],"c":[],"a":[]}-VBq-AABAABnViwb25DlpcAmiybdmPOVa2i8wH131Aan5gfGod6KUwmRMVRJGxT5mC5uSRjPP-Y0lOQaXTUuXUw_AnBABM0F-BADAADVgjKec588uleMljAlorBPqdjID_hNeR7AxvHyLmgfCHvunMU_ynaBNUK1dHtLukImHkfujKI9p-M2XIRx7B4BABCb8HtKAlhPFoKKSpa4AHUC6cgovfEmYVcyabMsDevxjJkTtFphNsQYABTPG7wZyO4qK5DX_PmixfDxGaVrwCQEACDbp17J7GDTftUxr6lxsA7qj_8TKZmvihgyiDzHXYL9EJXdPkyTKFukQwlXcUGzH52Ji4-zmPSRnkXOJ3w-amwK-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c19d644463p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"1","p":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","a":[{"i":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA","s":"0","d":"EAKuP6g0apMNgL8qF31ttrw5NK8taitdZ5kFIzjeiGCA"}]}-VBq-AABAABeHt5LPW-1WS94MPv0MJiHrdSsst6DPPD4WjpFV85V4lxiDDuvvLwWlwcFlOgvkORExJrlxn8A2YKXDQzkGIAC-BADAAB6KRHHKtH_QkYE7mt2Cjs_vLoyEZo5MwGFb62iWGiTNUfDGGzVlz_1C5J5cJePjnAntwCIoz9PkHXtDNcJMfcHABCaJJbkDNSURN-ymt378wOXRUaVhq2Sho0_0aKeA29TTFht49jiUMVfq4tU4VCAKj5qxrjmnh2L_X1Mhe51tCYNACD1tGzSkaLa2MNhA02jY6KW5kGNmp9kXTYDOxJYXzrrEdi8woPGJuBYrylzh0oK-r5akUs2xSLq7QKoi40ynF8G-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c21d401697p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"2","p":"EFDGKz0Wn6mOisdYJDHcfSKc5Uw0DpK7JZC_ASE_2Uvc","a":[{"i":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj","s":"0","d":"EEXgzOfJCdsHpcTfkzuvT9wZStOAH72KwZVNyMyXAgMj"}]}-VBq-AABAAA9eSY3RNk0lcZr_jDua6j2D5fv6r_I1pXzcfO3W1hgEYsdVBSVjX6SnwKKDThAlxY5aFuib0WOCwVsF5ZuyREN-BADAAAdb0rR3ZNGEsu2VLQEjz9Rb6teke_608PqRC4p4ss8ZNr_dj7kyPi9vARustHTmnxXxayUW-JHg-v3yhluAAQAABD1LnjzAf437TfAI6TEkEMHS_EZSKgq7tYn0CmJco8m8azi-SWHqRkQ_W3TlwlcyoTghdnPYOC9HBTevE2alw4BACCv1CBwL6K_aCxSMReiV1v88CWbGdRSb5gJ9zoOUOsEcWYVPCr7Q9HIbIigROSQfF7Mw4VCR8_jhCC4xEJ4qJgJ-EAB0AAAAAAAAAAAAAAAAAAAAAAC1AAG2025-03-20T13c42c30d409715p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EA5L6WkcDq69LKWqZNP3b2DF8uU-wKnFOm-Atbs88nZQ","i":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","s":"3","p":"ELsHPPSdLVCqvQ6G4izUdjPlXMycP7gVSoQ_p53Od2E9","a":[{"i":"EGzSw02-7TdWJtL4YqYQQ7VO7GN6GG-CLY-aZ-rUJQkD","s":"0","d":"ELfheovcS_OOXcnHe1jubZB8KkeaG2rq62c3X4RMVe3q"}]}-VBq-AABAAA0wcQQ2MsAmaB1SCdd1CYN-jnAIHC37F08-8F5oOFTSdZh7orouAeTLvqM1Bvqai9xwYJQeMEk3PmbRQHF28QE-BADAADg4TExUgXnkHT-cEZ_o3RP2AWVwwGM_d85JJ9ECkn-TDqoNpOcoweuOlf_vK9oMgZxa0QcHeCL5VxuhYnxPy8KABAQUZwbwVQ6C1TLEhGl2YEm4mGLcHa-BDpxAgEzWGVYsEHOL6jSYqurPr6Dw-fJjAQV3nABp7sCIjAxnzxIN5cOACAcS031rRE78krIaxLHFoP2rsRHKGqxLWWJm9NnSRDtXiyhhA5zHFZIau5GgRvgNpojIt5qkMI6pUpy6i_SeEQL-EAB0AAAAAAAAAAAAAAAAAAAAAAD1AAG2025-03-20T13c42c33d806203p00c00{"v":"KERI10JSON00012b_","t":"icp","d":"ELFOd79gv3moe4EaOUBsRgdfAQntd8XvfRvTkx0i3BdX","i":"ELFOd79gv3moe4EaOUBsRgdfAQntd8XvfRvTkx0i3BdX","s":"0","kt":"1","k":["DLqFO5TevDfEmqeh_G0_vOY9UdXTe5MIJb4Mkvek1Eke"],"nt":"1","n":["EJY6kyG0pt-e-Mp1ccJBgTBfKpfq0dt4Truk1qiZTd3U"],"bt":"0","b":[],"c":[],"a":[]}-VAn-AABAAC2v532OVz3hTdk88VHSJze8sC5HjCVoSUnksiGwdJff6my5DBE_AUBz5L0027aXFUCNCG_FGc7MucINPI4lXsH-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c15d599613p00c00{"v":"KERI10JSON00013a_","t":"ixn","d":"EK_LRGmPVwCYmfBbEOuIeC2ewuLcLFq2Jh-2UTvpT6zs","i":"ELFOd79gv3moe4EaOUBsRgdfAQntd8XvfRvTkx0i3BdX","s":"1","p":"ELFOd79gv3moe4EaOUBsRgdfAQntd8XvfRvTkx0i3BdX","a":[{"i":"EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2","s":"0","d":"EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2"}]}-VAn-AABAAA5wfF1SDowc1k7d5sZbyz7Dw4ipS7K8zuV7AjsYOFvMRRTvIRgDfT_y8PUSjjh3aAUTuiLWa3STN8_UmOcjIQL-EAB0AAAAAAAAAAAAAAAAAAAAAAB1AAG2025-03-20T13c42c16d225308p00c00{"v":"KERI10JSON00015f_","t":"dip","d":"EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2","i":"EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2","s":"0","kt":"1","k":["DOWJMzZIcCyozduBCRei96dew9pLRFr9Xfa5W9yHkYp4"],"nt":"1","n":["EEcwY10URjyRJHfRLgII_JGqTMH8bSqxv2JARt7Q5Is_"],"bt":"0","b":[],"c":[],"a":[],"di":"ELFOd79gv3moe4EaOUBsRgdfAQntd8XvfRvTkx0i3BdX"}-VA5-AABAAAMX4DaPgLenVLQAC_fSLUMZf9fweI4wTHzO2DqkwbSAgG4X10hPnMSps_FJOZR4NXA389fCZBhJ6jzipUJzvwJ-GAB0AAAAAAAAAAAAAAAAAAAAAABEK_LRGmPVwCYmfBbEOuIeC2ewuLcLFq2Jh-2UTvpT6zs-EAB0AAAAAAAAAAAAAAAAAAAAAAA1AAG2025-03-20T13c42c15d558114p00c00{"v":"KERI10JSON0000f6_","t":"rpy","d":"EH3dyJGqsLJigAKKFffvQFI9VXTmrODIfOdtk1F4nIOH","dt":"2023-12-01T10:05:25.062609+00:00","r":"/loc/scheme","a":{"eid":"EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2","scheme":"http","url":"http://keria:3902/"}}-VA0-FABEFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ20AAAAAAAAAAAAAAAAAAAAAAAEFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2-AABAACECu-aJ94IKVbFNZptu64p9X885sXFUgU1DkpeK1Iyi3wwKWCAJbb31xZ4U9hFaPKlobxMvie6eJI8Kv5IPy0P{"v":"KERI10JSON000111_","t":"rpy","d":"EBMeMRcxsZG1JMBlTSMCUm3j4_OMcbvukaAxb_vTBluV","dt":"2025-03-20T13:42:20.179000+00:00","r":"/end/role/add","a":{"cid":"EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo","role":"agent","eid":"EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2"}}-VA0-FABEFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo0AAAAAAAAAAAAAAAAAAAAAAAEFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo-AABAACjUepMMZu5KQlK4TDnX3jAd0FcyREEn-JVxPh7Wq09sphmo-n9Htmue77xBAKSkXvnbgjkHrGdBWIcnmzAT3AB, oobi = http://localhost:3902/oobi/EFGDbi1kexM1ccTA_YSvTo9yW2eGx9BD6lmNNP5O-1Uo/agent/EFVbwm1Zx6qLFLNnzmK2xHnbbn4FuPrffoNbHyolokZ2
+
+      at Object.info (node_modules/vlei-verifier-client/dist/vlei-verifier-client.js:5:32)
+
+    console.log
+      Executing: Running Vlei Verification
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:52:15)
+
+    console.log
+      [INFO] Credential presentation request sent with: said = ECf67ATxbytWP8OzqebdEpYbEH0XA8qQZtW73m1agE5l
+
+      at Object.info (node_modules/vlei-verifier-client/dist/vlei-verifier-client.js:5:32)
+
+    console.log
+      [INFO] Check login request sent with: aid = EJLkV6ED-2Hpz1E8sKULq2JlcSEPyHA9JuGpcQOB2aYg
+
+      at Object.info (node_modules/vlei-verifier-client/dist/vlei-verifier-client.js:5:32)
+
+    console.log
+      Workflow steps execution finished successfully
+
+      at WorkflowRunner.<anonymous> (src/utils/run-workflow.ts:61:13)

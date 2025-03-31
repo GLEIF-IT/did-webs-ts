@@ -1,0 +1,17 @@
+{
+  "name": "fake-web-app",
+  "version": "0.0.0-development",
+  "main": "app.js",
+  "scripts": {
+    "bundler": "npx esbuild app.js --bundle --sourcemap --target=chrome63,firefox57,safari11,edge79 --outfile=bundle.js",
+    "linker": "npx link \"$(npm prefix)/../../../../\"",
+    "unlinker": "npx link -u \"$(npm prefix)/../../../../\"",
+    "web-test": "npm run linker  && npm run bundler && npm run unlinker"
+  },
+  "author": "",
+  "license": "",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "name": "@futureforg-ing/vlei-to-did-webs",
+  "version": "0.0.0-dev.6",
+  "description": "Generate a DID:Webs from a vLEI credential",
+  "keywords": [
+    "GLEIF",
+    "vLEI",
+    "LEI",
+    "DID",
+    "DID:Webs"
+  ],
+  "homepage": "https://github.com/futureforging/vlei-to-did-webs#readme",
+  "bugs": {
+    "url": "https://github.com/futureforging/vlei-to-did-webs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/futureforging/vlei-to-did-webs.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Jonathan Rayback",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/types/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/types/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/cjs/types/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json && npx echo-cli '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json && npx echo-cli '{\"type\": \"module\"}' > dist/esm/package.json",
+    "clean": "del-cli ./dist",
+    "compatibility-checker": "./build/test/package/checkPackage.sh",
+    "dependency-checker": "npx depcheck --ignores='@typescript-eslint/eslint-plugin, @typescript-eslint/parser, @types/jest, @types/node, jest-ci-spec-reporter, ts-jest'",
+    "formatter": "prettier --check . && npx sort-package-json --check",
+    "formatter:fix": "prettier --write . && npx sort-package-json",
+    "full-checker": "npm install && npm run formatter:fix && npm run linter && npm run dependency-checker && npm test",
+    "linter": "npx eslint src",
+    "packageCheck": "npm pack --dry-run",
+    "prepublishOnly": "npm run full-checker && npm test && npm run build && npm run compatibility-checker",
+    "publish:dev": "npm version prerelease --preid=dev && npm publish --access restricted --tag dev && npm dist-tag add $(node -p \"require('./package.json').name + '@' + require('./package.json').version\") latest",
+    "start": "NODE_OPTIONS='--loader ts-node/esm --no-warnings' ts-node ./main.ts",
+    "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest",
+    "test:full": "npm run full-checker && npm run build && npm run compatibility-checker && npm run packageCheck"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "@types/jsonschema": "^0.0.5",
+    "@types/node": "^22.13.10",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "del-cli": "^6.0.0",
+    "depcheck": "^1.4.7",
+    "echo-cli": "^2.0.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.1.1",
+    "jest": "29.7",
+    "jsonschema": "^1.5.0",
+    "prettier": "^3.3.3",
+    "sort-package-json": "^3.0.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.24.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "access": "public",
+  "overrides": {
+    "glob": "^9.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES6", "DOM"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "../dist/cjs",
+    "declarationDir": "../dist/cjs/types",
+    "paths": {
+      // Need to explicitly tell typescript to grab the cjs types instead of esm - Don't ask...
+      "@gleif-it/vlei-verifier-workflows": [
+        "../node_modules/@gleif-it/vlei-verifier-workflows/dist/cjs/types"
+      ]
+    }
+  },
+  "exclude": ["../**/*.test.ts"]
+}

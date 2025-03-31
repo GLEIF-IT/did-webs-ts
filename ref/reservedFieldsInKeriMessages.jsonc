@@ -1,0 +1,52 @@
+{
+  // Version String: enables regex parsing of field map in CESR stream
+  "v": "",
+
+  // Message Type: three character string
+  "t": "",
+
+  // Digest SAID: fully qualified digest of block in which it appears
+  "d": "",
+
+  // Identifier Prefix (AID): fully qualified primitive, Controller AID
+  "i": "",
+
+  // Sequence Number: strictly monotonically increasing integer encoded in hex
+  "s": "",
+
+  // Prior SAID: fully qualified digest, prior message SAID
+  "p": "",
+
+  // Keys Signing Threshold: hex encoded integer or fractional weight list
+  "kt": "",
+
+  // List of Signing Keys (ordered key set): list of fully qualified primitives
+  "k": [],
+
+  // Next Keys Signing Threshold: hex encoded integer or fractional weight list
+  "nt": "",
+
+  // List of Next Key Digests (ordered key digest set): list of fully qualified primitives digests
+  "n": [],
+
+  // Backer Threshold: hex encoded integer
+  "bt": "",
+
+  // List of Backers (ordered backer set of AIDs): list of fully qualified primitives
+  "b": [],
+
+  // List of Backers to Remove (ordered backer set of AIDs): list of fully qualified primitives
+  "br": [],
+
+  // List of Backers to Add (ordered backer set of AIDs): list of fully qualified primitives
+  "ba": [],
+
+  // List of Configuration Traits/Modes: list of strings
+  "c": [],
+
+  // List of Anchors (seals): list of field maps
+  "a": [],
+
+  // Delegator Identifier Prefix (AID): fully qualified primitive, Delegator AID
+  "di": "",
+}

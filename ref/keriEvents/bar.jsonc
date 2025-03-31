@@ -1,0 +1,16 @@
+{
+  "v": "KERICAAJSONAACd.", // Version string
+  "t": "bar", // Message type: Bare (response with sealed data)
+  "d": "EH3ULaU6JR2nmwyvYAfSVPzhzS6b5CMZ-i0d8JZAoTNZ", // SAID of the bare message
+  "i": "EAfSVPzhzS6b5CMZ-i0d8JZAoTNZH3ULaU6JR2nmwyvY", // Identifier prefix (AID) of the sender
+  "dt": "2020-08-22T17:50:12.988921+00:00", // Date-time of response
+  "r": "/process/sealed/data", // Route for processing sealed data
+  "a": {
+    // Sealed response data
+    "d": "EaU6JR2nmwyZ-i0d8JZAoTNZH3ULvYAfSVPzhzS6b5CM", // SAID of sealed data
+    "i": "EAoTNZH3ULvYAfSVPzhzS6baU6JR2nmwyZ-i0d8JZ5CM", // AID related to sealed data
+    "dt": "2020-08-22T17:50:12.988921+00:00", // Date-time of sealed data
+    "name": "John Jones", // Example additional metadata
+    "role": "Founder", // Role of the entity in the sealed data
+  },
+}

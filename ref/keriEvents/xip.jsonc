@@ -1,0 +1,14 @@
+{
+  "v": "KERICAAJSONAACd.", // Version string
+  "t": "xip", // Message type: Exchange Transaction Inception
+  "d": "EF3Dd96ATbbMIZgUBBwuFAWx3_8s5XSt_0jeyCRXq_bM", // SAID of the exchange inception message
+  "i": "EBBwuFAWx3_8s5XSt_0jeyCRXq_bMF3Dd96ATbbMIZgU", // Identifier prefix (AID) of the sender
+  "ri": "ECRXq_bMF3Dd96ATbbMIZgUBBwuFAWx3_8s5XSt_0jey", // Related identifier
+  "dt": "2021-11-12T19:11:19.342132+00:00", // Date-time of inception message
+  "r": "/echo/out", // Exchange route
+  "q": {}, // Query parameters (empty for this example)
+  "a": {
+    // Exchange payload
+    "msg": "test echo", // Example message content
+  },
+}
