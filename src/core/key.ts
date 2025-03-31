@@ -1,11 +1,14 @@
-// Key can't be any old string, it must come from the 'ctor' function
-export type Key = string & { readonly __brand: unique symbol };
+import { isValidEd25519Cesr } from '../utils/validators/isValidEd25519Cesr.js';
+import { isValidSecp256k1Cesr } from '../utils/validators/isValidSecp256k1Cesr.js';
+
+// // Key can't be any old string, it must come from the 'ctor' function
+export type Ed25519Key = string & { readonly __brand: unique symbol };
+export type Secp256k1Key = string & { readonly __brand: unique symbol };
+export type Key = Ed25519Key | Secp256k1Key;
 
 // Runtime validator
-export const createKey = (key: string): Key => {
-  const regex = /^D[a-zA-Z0-9_-]{43}$/;
-  if (!regex.test(key)) {
-    throw new Error('Invalid key format');
-  }
-  return key as Key;
+export const createKey = (key: string): string => {
+  if (isValidEd25519Cesr(key)) return key as Ed25519Key;
+  else if (isValidSecp256k1Cesr(key)) return key as Secp256k1Key;
+  else throw new Error('Invalid key format');
 };
