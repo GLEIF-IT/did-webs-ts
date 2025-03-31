@@ -1,0 +1,12 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.useEditorConfig": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "eslint.useFlatConfig": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.run": "onType",
+  "jest.jestCommandLine": ""
+}
