@@ -9,8 +9,5 @@
   },
   "author": "",
   "license": "",
-  "description": "",
-  "dependencies": {
-    "@futureforg-ing/vlei-to-did-webs": "file:$(npm prefix)/../../../../"
-  }
+  "description": ""
 }
