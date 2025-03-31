@@ -1,7 +1,7 @@
 {
   "name": "@gleif-it/did-webs-ts",
   "version": "0.0.0-dev.1",
-  "description": "Generate a DID:Webs identifier, DID document and KERI Event Stream",
+  "description": "did-webs typescript library",
   "keywords": [
     "GLEIF",
     "vLEI",
