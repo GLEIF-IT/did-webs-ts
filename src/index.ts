@@ -1,5 +1,7 @@
-import { generateDidWebs } from './generateDidWebs.js';
+import { getDidWebs } from './api/getDidWebs.js';
 
-export { generateDidWebs } from './generateDidWebs.js';
+export { getDidWebs } from './api/getDidWebs.js';
 
-export default generateDidWebs;
+export default {
+  getDidWebs,
+};
