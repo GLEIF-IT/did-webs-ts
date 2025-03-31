@@ -1,7 +1,7 @@
-import { getDidWebs } from './api/getDidWebs.js';
+import { composeDidWebs } from './api/composeDidWebs.js';
 
-export { getDidWebs } from './api/getDidWebs.js';
+export { composeDidWebs } from './api/composeDidWebs.js';
 
 export default {
-  getDidWebs,
+  composeDidWebs,
 };
