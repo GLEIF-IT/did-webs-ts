@@ -1,4 +1,4 @@
-import decodeKey from './decodeKey.js';
+import { decodeKey } from './decodeKey.js';
 
 describe('decodeKey', () => {
   it('should correctly decode the key', () => {

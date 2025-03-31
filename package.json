@@ -83,8 +83,5 @@
   "access": "public",
   "overrides": {
     "glob": "^9.0.0"
-  },
-  "dependencies": {
-    "buffer": "^6.0.3"
   }
 }
