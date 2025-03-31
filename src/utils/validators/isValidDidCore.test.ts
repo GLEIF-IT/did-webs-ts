@@ -1,4 +1,4 @@
-import { isValidDidDocument } from './isValidDidDocument.js';
+import { isValidDidCore } from './isValidDidCore.js';
 
 describe('isValidDidDocument', () => {
   it('should validate a DID Document', () => {
@@ -26,6 +26,6 @@ describe('isValidDidDocument', () => {
         'did:keri:EDAj_Cfqhc3vPZbTnn-3_JCN1xeWVYtiD_GKnC2FFys9',
       ],
     };
-    expect(isValidDidDocument(didDocument)).toBe(true);
+    expect(isValidDidCore(didDocument)).toBe(true);
   });
 });
