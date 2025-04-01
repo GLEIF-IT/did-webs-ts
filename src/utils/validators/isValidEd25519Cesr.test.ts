@@ -2,7 +2,7 @@ import { isValidEd25519Cesr } from './isValidEd25519Cesr.js';
 
 describe('isValidEd25519Cesr', () => {
   it('should return true for a valid Ed25519 Cesr key', () => {
-    const key = 'Dabcdefghijklmnoqrstuvwxyz123456789012345678';
+    const key = 'D9_VhQj6a1p-K0zB2uY3wRs4xTe8gF5C7dNqLrZvSjDx';
     expect(isValidEd25519Cesr(key)).toBe(true);
   });
 
@@ -16,14 +16,14 @@ describe('isValidEd25519Cesr', () => {
   });
   it('should return false for a key that is wrong length', () => {
     // too short
-    const key = 'Dabcdefghijklmnoqrstuvwxyz1234567890123456789';
+    const key = 'D9_VhQj6a1p-K0zB2uY3wRs4xTe8gF5C7dNqLrZvSjD';
     expect(isValidEd25519Cesr(key)).toBe(false);
     // too long
-    const key2 = 'Dabcdefghijklmnoqrstuvwxyz1234567890123456789012345678901234567890';
+    const key2 = 'D9_VhQj6a1p-K0zB2uY3wRs4xTe8gF5C7dNqLrZvSjDxD';
     expect(isValidEd25519Cesr(key2)).toBe(false);
   });
   it('should return false for a value with the wrong prefix', () => {
-    const key = 'abcdefghijklmnoqrstuvwxyz1234567890123456789';
+    const key = 'X9_VhQj6a1p-K0zB2uY3wRs4xTe8gF5C7dNqLrZvSjDx';
     expect(isValidEd25519Cesr(key)).toBe(false);
   }
   );
