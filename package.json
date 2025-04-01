@@ -83,5 +83,8 @@
   "access": "public",
   "overrides": {
     "glob": "^9.0.0"
+  },
+  "dependencies": {
+    "json-stable-stringify": "^1.2.1"
   }
 }
