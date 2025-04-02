@@ -1,17 +1,9 @@
-import { isValidDidWebs } from '../utils/validators/isValidDidWebs.js';
+import { Did } from '../core/Did.js';
+import { generateDid } from '../core/generators/generateDid.js';
 
 export const composeDidWebs = (
   host: string,
   aid: string,
   path = '',
   port?: number
-): string => {
-  if (!host || !aid) {
-    throw new Error('Host and AID are required');
-  }
-  const result = `did:webs:${host}${port ? `%3A${port}` : ''}${path.replace(/\//g, ':')}:${aid}`;
-  if (isValidDidWebs(result)) {
-    return result;
-  }
-  throw new Error('Invalid input');
-};
+): Did => generateDid(host, aid, path, port);
