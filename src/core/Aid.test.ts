@@ -6,6 +6,6 @@ describe('createAid', () => {
     expect(aid).toBe('EdefghijklmnopqrstuvwxyzABCDE1234567890_-abc' as Aid);
   });
   it('should throw an error for invalid Aid', () => {
-    expect(() => createAid('invalid_key')).toThrow('Invalid key format');
+    expect(() => createAid('invalid_aid')).toThrow('Invalid AID format');
   });
 });
