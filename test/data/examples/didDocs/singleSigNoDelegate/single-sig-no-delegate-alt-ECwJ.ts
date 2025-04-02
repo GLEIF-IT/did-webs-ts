@@ -1,4 +1,5 @@
-const singleSignerNoDelegation = {
+// identical except different field order
+export default {
   id: 'did:webs:localhost%3A8080:identity:artist:ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
   verificationMethod: [
     {
@@ -14,13 +15,11 @@ const singleSignerNoDelegation = {
       },
     },
   ],
-  authentication: ['#DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6'],
-  assertionMethod: ['#DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6'],
-  service: [],
   alsoKnownAs: [
     'did:web:localhost%3A8080:identity:artist:ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
     'did:keri:ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
   ],
+  authentication: ['#DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6'],
+  assertionMethod: ['#DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6'],
+  service: [],
 };
-
-export default singleSignerNoDelegation;

@@ -1,26 +1,17 @@
 import { didDocsAreEqual } from './didDocsAreEqual.js';
-import singleSignerNoDelegationImposter from '../../test/data/examples/didDocs/singleSignerNoDelegation/singleSignerNoDelegationImposter.js';
-import singleSignerNoDelegationAlt from '../../test/data/examples/didDocs/singleSignerNoDelegation/singleSignerNoDelegationAlt.js';
-import singleSignerNoDelegationCopy from '../../test/data/examples/didDocs/singleSignerNoDelegation/singleSignerNoDelegationCopy.js';
-import singleSignerNoDelegation from '../../test/data/examples/didDocs/singleSignerNoDelegation/singleSignerNoDelegation.js';
+import imposterDoc from '../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-fake-ECwJ.js';
+import docInAltFormat from '../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-alt-ECwJ.js';
+import copyOfDoc from '../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-copy-ECwJ.js';
+import doc from '../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-ECwJ.js';
 
 describe('didDocsAreEqual', () => {
   it('should return true for identical DID documents', () => {
-    expect(
-      didDocsAreEqual(singleSignerNoDelegation, singleSignerNoDelegationCopy)
-    ).toBe(true);
+    expect(didDocsAreEqual(doc, copyOfDoc)).toBe(true);
   });
   it('should return true for different field order', () => {
-    expect(
-      didDocsAreEqual(singleSignerNoDelegation, singleSignerNoDelegationAlt)
-    ).toBe(true);
+    expect(didDocsAreEqual(doc, docInAltFormat)).toBe(true);
   });
   it('should return false for different DID documents', () => {
-    expect(
-      didDocsAreEqual(
-        singleSignerNoDelegation,
-        singleSignerNoDelegationImposter
-      )
-    ).toBe(false);
+    expect(didDocsAreEqual(doc, imposterDoc)).toBe(false);
   });
 });
