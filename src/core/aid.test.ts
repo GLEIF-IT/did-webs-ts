@@ -1,4 +1,4 @@
-import { Aid, createAid } from './aid.js';
+import { Aid, createAid } from './Aid.js';
 
 describe('createAid', () => {
   it('should validate a string as an Aid', () => {

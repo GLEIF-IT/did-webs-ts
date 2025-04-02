@@ -1,13 +1,12 @@
-// import { publishDidWebs } from './publishDidWebs.js';
+import { IdentifierAndKeys } from '../core/IdentifierAndKeys.js';
+import { publishDidWebs } from './publishDidWebs.js';
 
 describe('publishDidWebs', () => {
   it('should publish a single-sig, non-delegation DID document', () => {
-    expect(true).toBe(true);
+    const controller = {
+      identifier: 'EdefghijklmnopqrstuvwxyzABCDE1234567890_-abc',
+      keys: ['DdefghijklmnopqrstuvwxyzABCDE1234567890_-abc'],
+    } as IdentifierAndKeys;
+    expect(publishDidWebs(controller)).toBe(true);
   });
-  // it('should publish a multi-sig, non-delegation DID document', () => {
-  //   expect(true).toBe(false);
-  // });
-  // it('should publish a single-sig, delegation DID document', () => {
-  //   expect(true).toBe(false);
-  // });
 });
