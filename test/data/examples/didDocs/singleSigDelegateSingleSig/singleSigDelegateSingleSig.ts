@@ -1,11 +1,11 @@
 export default {
-  id: 'did:webs:example.com%3A8080:path:to:dids:EabclFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9123',
+  id: 'did:webs:example.com%3A8080:path:to:dids:EBBalFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
   verificationMethod: [
     {
       id: '#DabcbHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQb123',
       type: 'JsonWebKey2020',
       controller:
-        'did:webs:example.com%3A8080:path:to:dids:EabclFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9123',
+        'did:webs:example.com%3A8080:path:to:dids:EBBalFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
       publicKeyJwk: {
         kid: 'DabcbHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQb123',
         kty: 'OKP',
@@ -37,7 +37,7 @@ export default {
   ],
   service: [],
   alsoKnownAs: [
-    'did:web:example.com%3A8080:path:to:dids:EabclFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9123',
-    'did:keri:EabclFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9123',
+    'did:web:example.com%3A8080:path:to:dids:EBBalFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
+    'did:keri:EBBalFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
   ],
 };

@@ -12,9 +12,12 @@ import { lcm } from '../../utils/lcm.js';
 export const generateDocument = (
   controllerDid: Did,
   controller: IdentifierAndKeys,
-  _delegatorDid?: Did,
-  _delegator?: IdentifierAndKeys
+  delegatorDid?: Did,
+  delegator?: IdentifierAndKeys
 ): object => {
+  // make sure both delegate paramers are provided or none
+  const hasDelegator = checkDelegator(delegatorDid, delegator);
+
   // pregenerate various helpful values and objects
   const thresholdIsFractional = Array.isArray(controller.kt);
 
@@ -34,6 +37,30 @@ export const generateDocument = (
     keyBlock(controllerDid, key)
   );
 
+  const capabilityDelegationBlock = hasDelegator
+    ? {
+        capabilityDelegation: [
+          // delagator key id
+          '#DLFsdZe9DkSc_irGnVvPwCTjiG0UHIMFXQk1By1lR5NC',
+          {
+            // delegator cesr encoded key (external)
+            id: 'DLFsdZe9DkSc_irGnVvPwCTjiG0UHIMFXQk1By1lR5NC',
+            type: 'JsonWebKey2020',
+            // delegator did (external) - delegator event stream available here
+            controller:
+              'didwebs:foo.com:EM0v8tEza5NnAxEC2Ohno2vjqoJmdoeTHLFz_j7FlAcY',
+            // decoded delegator key (external)
+            publicKeyJwk: {
+              kid: 'DLFsdZe9DkSc_irGnVvPwCTjiG0UHIMFXQk1By1lR5NC',
+              kty: 'OKP',
+              crv: 'Ed25519',
+              x: 'sWx1l70ORJz-KsadW8_AJOOIbRQcgwVdCTUHLWVHk0I',
+            },
+          },
+        ],
+      }
+    : {};
+
   // use pregenerated values to create the document
   return {
     id: controllerDid,
@@ -50,9 +77,23 @@ export const generateDocument = (
     assertionMethod: [
       threshold > 1 ? `#${controller.identifier}` : `#${controller.keys[0]}`,
     ],
+    ...capabilityDelegationBlock,
     service: [],
     alsoKnownAs: [didWeb(controllerDid), didKeri(controllerDid)],
   };
+};
+
+const checkDelegator = (
+  delegatorDid: Did | undefined,
+  delegator: IdentifierAndKeys | undefined
+): boolean => {
+  if (delegatorDid && !delegator) {
+    throw new Error('Delegator did provided without delegator keys');
+  }
+  if (delegator && !delegatorDid) {
+    throw new Error('Delegator keys provided without delegator did');
+  }
+  return delegatorDid && delegator;
 };
 
 const idTypeControllerBlock = (
@@ -130,16 +171,16 @@ const extractDenominator = (fraction: string): number => {
   return Number(parts[1]);
 };
 
-function expandFraction(
+const expandFraction = (
   lcd: number
-): (value: string, index: number, array: string[]) => number {
+): ((value: string, index: number, array: string[]) => number) => {
   return (fraction) => {
     const [numStr, denomStr] = fraction.split('/');
     const numerator = Number(numStr);
     const denominator = Number(denomStr);
     return numerator * (lcd / denominator);
   };
-}
+};
 
 const divideByTwo = (num: number): number => num / 2;
 
