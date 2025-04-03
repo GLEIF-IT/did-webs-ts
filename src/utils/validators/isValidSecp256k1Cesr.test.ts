@@ -21,8 +21,7 @@ describe('isValidSecp256k1Cesr', () => {
     const key = '1AAAfQ7-z_3N9aC2Dp6oJ5rUvK0wYxTB8Hm1sI4eXlSgEoR';
     expect(isValidSecp256k1Cesr(key)).toBe(false);
     // too long
-    const key2 =
-      '1AAAfQ7-z_3N9aC2Dp6oJ5rUvK0wYxTB8Hm1sI4eXlSgEoRzX';
+    const key2 = '1AAAfQ7-z_3N9aC2Dp6oJ5rUvK0wYxTB8Hm1sI4eXlSgEoRzX';
     expect(isValidSecp256k1Cesr(key2)).toBe(false);
   });
 

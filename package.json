@@ -55,6 +55,11 @@
     "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --verbose",
     "test:full": "npm run full-checker && npm run build && npm run compatibility-checker && npm run packageCheck"
   },
+  "dependencies": {
+    "@noble/secp256k1": "^2.2.3",
+    "json-stable-stringify": "^1.2.1",
+    "remeda": "^2.21.2"
+  },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@jest/globals": "^29.7.0",
@@ -83,10 +88,5 @@
   "access": "public",
   "overrides": {
     "glob": "^9.0.0"
-  },
-  "dependencies": {
-    "@noble/secp256k1": "^2.2.3",
-    "json-stable-stringify": "^1.2.1",
-    "remeda": "^2.21.2"
   }
 }

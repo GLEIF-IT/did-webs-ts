@@ -25,6 +25,5 @@ describe('isValidEd25519Cesr', () => {
   it('should return false for a value with the wrong prefix', () => {
     const key = 'X9_VhQj6a1p-K0zB2uY3wRs4xTe8gF5C7dNqLrZvSjDx';
     expect(isValidEd25519Cesr(key)).toBe(false);
-  }
-  );
+  });
 });
