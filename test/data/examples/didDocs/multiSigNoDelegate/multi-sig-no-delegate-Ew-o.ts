@@ -15,7 +15,7 @@ export default {
     },
     {
       id: '#1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-DPYk',
-      type: 'JsonWebKey',
+      type: 'JsonWebKey2020',
       controller:
         'did:webs:example.com%3A8080:path:to:dids:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M',
       publicKeyJwk: {
@@ -28,7 +28,7 @@ export default {
     },
     {
       id: '#DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE',
-      type: 'JsonWebKey',
+      type: 'JsonWebKey2020',
       controller:
         'did:webs:example.com%3A8080:path:to:dids:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M',
       publicKeyJwk: {
@@ -40,7 +40,7 @@ export default {
     },
     {
       id: '#DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
-      type: 'JsonWebKey',
+      type: 'JsonWebKey2020',
       controller:
         'did:webs:example.com%3A8080:path:to:dids:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M',
       publicKeyJwk: {

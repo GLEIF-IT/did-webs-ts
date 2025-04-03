@@ -10,7 +10,6 @@ export const computeXAndYForSecp256k1 = (compressedKey: string) => {
   const rawX = secp.etc.numberToBytesBE(point.x);
   const rawY = secp.etc.numberToBytesBE(point.y);
   return {
-    compressedKey,
     x: bytesToBase64Url(rawX),
     y: bytesToBase64Url(rawY),
   };

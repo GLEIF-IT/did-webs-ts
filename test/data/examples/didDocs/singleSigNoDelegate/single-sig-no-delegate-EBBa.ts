@@ -3,7 +3,7 @@ export default {
   verificationMethod: [
     {
       id: '#1AAAAnm-Zm76dy6xVaAmlezocLHAKb-zLLzcopyXygUbFvh5',
-      type: 'JsonWebKey',
+      type: 'JsonWebKey2020',
       controller:
         'did:webs:example.com%3A8080:path:to:dids:EBBalFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
       publicKeyJwk: {

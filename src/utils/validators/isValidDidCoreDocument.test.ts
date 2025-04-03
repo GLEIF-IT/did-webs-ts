@@ -7,7 +7,7 @@ describe('isValidDidCoreDocument', () => {
       verificationMethod: [
         {
           id: '#DBoX3vgrhzsPCKCGWamY85w1McAB6n0-_qZnRAD3w_Ai',
-          type: 'JsonWebKey',
+          type: 'JsonWebKey2020',
           controller:
             'did:webs:localhost%3A8080:identity:artist:EDAj_Cfqhc3vPZbTnn-3_JCN1xeWVYtiD_GKnC2FFys9',
           publicKeyJwk: {
