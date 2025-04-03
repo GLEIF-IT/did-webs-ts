@@ -10,6 +10,8 @@ import singleSigEd25519NoDelegateEabc from '../../../test/data/examples/didDocs/
 import singleSigSecp256k1NoDelegateEBBa from '../../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-EBBa.js';
 import multiSigNoDelegateEw_O from '../../../test/data/examples/didDocs/multiSigNoDelegate/multi-sig-no-delegate-Ew-o.js';
 import multiSigNoDelegateKt3Ew_O from '../../../test/data/examples/didDocs/multiSigNoDelegate/multi-sig-no-delegate-kt3-Ew-o.js';
+import multiSigNoDelegateKtFractionalx3EwO from '../../../test/data/examples/didDocs/multiSigNoDelegate/multi-sig-no-delegate-kt-fractionalx3-Ew-o.js';
+import multiSigNoDelegateKtFractionalx5EwO from '../../../test/data/examples/didDocs/multiSigNoDelegate/multi-sig-no-delegate-kt-fractionalx5-Ew-o.js';
 
 const hostname = 'example.com';
 const path = '/path/to/dids';
@@ -22,6 +24,7 @@ describe('generateDocument', () => {
     const controller = {
       identifier: aid,
       keys: ['DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6'],
+      kt: '1',
     } as IdentifierAndKeys;
     const generated = generateDocument(did, controller);
     const result = isValidDidCoreDocument(generated);
@@ -34,6 +37,7 @@ describe('generateDocument', () => {
     const controller = {
       identifier: aid,
       keys: ['DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6'],
+      kt: '1',
     } as IdentifierAndKeys;
     const generated = generateDocument(did, controller);
     const expected = singleSigEd25519NoDelegateECwJ;
@@ -48,6 +52,7 @@ describe('generateDocument', () => {
     const controller = {
       identifier: aid,
       keys: ['DabcbHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQb123'], // Different key
+      kt: '1',
     } as IdentifierAndKeys;
     const generated = generateDocument(did, controller);
     const expected = singleSigEd25519NoDelegateEabc;
@@ -62,6 +67,7 @@ describe('generateDocument', () => {
     const controller = {
       identifier: aid,
       keys: ['1AAAAnm-Zm76dy6xVaAmlezocLHAKb-zLLzcopyXygUbFvh5'],
+      kt: '1',
     } as IdentifierAndKeys;
     const generated = generateDocument(did, controller);
     const expected = singleSigSecp256k1NoDelegateEBBa;
@@ -80,7 +86,7 @@ describe('generateDocument', () => {
         'DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE',
         'DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
       ],
-      kt: '2', // key threshold
+      kt: '2',
     } as IdentifierAndKeys;
     const generated = generateDocument(did, controller);
     const expected = multiSigNoDelegateEw_O;
@@ -99,10 +105,50 @@ describe('generateDocument', () => {
         'DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE',
         'DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
       ],
-      kt: '3', // key threshold
+      kt: '3',
     } as IdentifierAndKeys;
     const generated = generateDocument(did, controller);
     const expected = multiSigNoDelegateKt3Ew_O;
+    const result = didDocsAreEqual(generated, expected);
+    // console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
+    // console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
+    expect(result).toBe(true);
+  });
+  it('should generate the correct DID document when the key threshold is an array of fractions', () => {
+    const aid = 'Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M';
+    const did = generateDid(hostname, aid, path, port);
+    const controller = {
+      identifier: aid,
+      keys: [
+        '1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-DPYk',
+        'DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE',
+        'DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
+      ],
+      kt: ['1/2', '1/3', '1/4'],
+    } as IdentifierAndKeys;
+    const generated = generateDocument(did, controller);
+    const expected = multiSigNoDelegateKtFractionalx3EwO;
+    const result = didDocsAreEqual(generated, expected);
+    // console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
+    // console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
+    expect(result).toBe(true);
+  });
+  it('should generate the correct DID document when the key threshold is a different array of fractions', () => {
+    const aid = 'Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M';
+    const did = generateDid(hostname, aid, path, port);
+    const controller = {
+      identifier: aid,
+      keys: [
+        '1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-DPYk',
+        'DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE',
+        'DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
+        'DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
+        'DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
+      ],
+      kt: ['1/3', '1/3', '1/8', '1/5', '1/4'],
+    } as IdentifierAndKeys;
+    const generated = generateDocument(did, controller);
+    const expected = multiSigNoDelegateKtFractionalx5EwO;
     const result = didDocsAreEqual(generated, expected);
     // console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
     // console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
