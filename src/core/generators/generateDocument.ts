@@ -7,13 +7,14 @@ export const generateDocument = (
   did: Did,
   controller: IdentifierAndKeys
 ): object => {
-  const isMultiSig = controller.keys.length > 1;
+  // const isMultiSig = controller.keys.length > 1;
+  const hasThreshold = controller.kt && controller.kt.length > 0;
 
   const conditionalProofVerificationMethod = {
     id: `#${controller.identifier}`,
     type: 'ConditionalProof2022',
     controller: did,
-    threshold: 2,
+    threshold: hasThreshold ? parseInt(controller.kt as string) : 1,
     conditionThreshold: controller.keys.map((key) => `#${key}`),
   };
 
@@ -47,7 +48,7 @@ export const generateDocument = (
         }
   );
 
-  const verificationMethods = isMultiSig
+  const verificationMethods = hasThreshold
     ? [conditionalProofVerificationMethod, ...keyVerificationMethods]
     : keyVerificationMethods;
 
@@ -58,11 +59,17 @@ export const generateDocument = (
   return {
     id: did,
     verificationMethod: verificationMethods,
+    // if no threhold is given, of if threshold is 1, then the controller authenticates and asserts with his key
+    // if threshold is 2 or more, then the controller authenticates and asserts with the conditional proof
     authentication: [
-      isMultiSig ? `#${controller.identifier}` : `#${controller.keys[0]}`,
+      hasThreshold && parseInt(controller.kt as string) > 1
+        ? `#${controller.identifier}`
+        : `#${controller.keys[0]}`,
     ],
     assertionMethod: [
-      isMultiSig ? `#${controller.identifier}` : `#${controller.keys[0]}`,
+      hasThreshold && parseInt(controller.kt as string) > 1
+        ? `#${controller.identifier}`
+        : `#${controller.keys[0]}`,
     ],
     service: [],
     alsoKnownAs: [didWeb, didKeri],

@@ -6,7 +6,7 @@ export default {
       type: 'ConditionalProof2022',
       controller:
         'did:webs:example.com%3A8080:path:to:dids:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M',
-      threshold: 2,
+      threshold: 3,
       conditionThreshold: [
         '#1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-DPYk',
         '#DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE',
