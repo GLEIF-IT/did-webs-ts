@@ -1,6 +1,6 @@
 import { isValidDidCoreDocument } from './isValidDidCoreDocument.js';
 
-describe('isValidDidDocument', () => {
+describe('isValidDidCoreDocument', () => {
   it('should validate a DID Document', () => {
     const didDocument = {
       id: 'did:webs:localhost%3A8080:identity:artist:EDAj_Cfqhc3vPZbTnn-3_JCN1xeWVYtiD_GKnC2FFys9',

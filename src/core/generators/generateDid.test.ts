@@ -1,7 +1,7 @@
 import { generateDid } from './generateDid.js';
 import { isValidDidWebs } from '../../utils/validators/isValidDidWebs.js';
 
-describe('composeDidWebs', () => {
+describe('generateDid', () => {
   const host = 'example.com';
   const aid = 'EGZiuJbg73lpE9WFD7bUBIJviAkdU4pSabMbX8DhlHW2';
   const path = '/path/to/resource';
