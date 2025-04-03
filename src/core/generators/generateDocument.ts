@@ -19,9 +19,8 @@ export const generateDocument = (
   const hasDelegator = checkDelegator(delegatorDid, delegator);
 
   // pregenerate various helpful values and objects
-  const thresholdIsFractional = Array.isArray(controller.kt);
-
-  const threshold = calcutaleThreshold(controller.kt);
+  const controllerThresholdIsFractional = Array.isArray(controller.kt);
+  const controllerThreshold = calcutaleThreshold(controller.kt);
 
   const conditionalProofVerificationMethod = {
     ...idTypeControllerBlock(
@@ -29,55 +28,41 @@ export const generateDocument = (
       'ConditionalProof2022',
       controllerDid
     ),
-    threshold,
-    ...conditionalProofBlock(controller, thresholdIsFractional),
+    threshold: controllerThreshold,
+    ...conditionalProofBlock(controller, controllerThresholdIsFractional),
   };
 
   const keyVerificationMethods = controller.keys.map((key) =>
     keyBlock(controllerDid, key)
   );
 
-  const capabilityDelegationBlock = hasDelegator
-    ? {
-        capabilityDelegation: [
-          // delagator key id
-          '#DLFsdZe9DkSc_irGnVvPwCTjiG0UHIMFXQk1By1lR5NC',
-          {
-            // delegator cesr encoded key (external)
-            id: 'DLFsdZe9DkSc_irGnVvPwCTjiG0UHIMFXQk1By1lR5NC',
-            type: 'JsonWebKey2020',
-            // delegator did (external) - delegator event stream available here
-            controller:
-              'didwebs:foo.com:EM0v8tEza5NnAxEC2Ohno2vjqoJmdoeTHLFz_j7FlAcY',
-            // decoded delegator key (external)
-            publicKeyJwk: {
-              kid: 'DLFsdZe9DkSc_irGnVvPwCTjiG0UHIMFXQk1By1lR5NC',
-              kty: 'OKP',
-              crv: 'Ed25519',
-              x: 'sWx1l70ORJz-KsadW8_AJOOIbRQcgwVdCTUHLWVHk0I',
-            },
-          },
-        ],
-      }
+  const capabilityDelegation = hasDelegator
+    ? capabilityDelegationBlock(
+        delegator as IdentifierAndKeys,
+        delegatorDid as Did
+      )
     : {};
-
   // use pregenerated values to create the document
   return {
     id: controllerDid,
     // if threshold is 2 or more, there must be a conditional proof verification method
     verificationMethod:
-      threshold > 1
+      controllerThreshold > 1
         ? [conditionalProofVerificationMethod, ...keyVerificationMethods]
         : keyVerificationMethods,
     // if threshold is 1, then the controller authenticates and asserts with their key
     // if threshold is 2 or more, or if it's an array of fractions, then the controller authenticates and asserts with the conditional proof
     authentication: [
-      threshold > 1 ? `#${controller.identifier}` : `#${controller.keys[0]}`,
+      controllerThreshold > 1
+        ? `#${controller.identifier}`
+        : `#${controller.keys[0]}`,
     ],
     assertionMethod: [
-      threshold > 1 ? `#${controller.identifier}` : `#${controller.keys[0]}`,
+      controllerThreshold > 1
+        ? `#${controller.identifier}`
+        : `#${controller.keys[0]}`,
     ],
-    ...capabilityDelegationBlock,
+    ...capabilityDelegation,
     service: [],
     alsoKnownAs: [didWeb(controllerDid), didKeri(controllerDid)],
   };
@@ -93,7 +78,7 @@ const checkDelegator = (
   if (delegator && !delegatorDid) {
     throw new Error('Delegator keys provided without delegator did');
   }
-  return delegatorDid && delegator;
+  return delegatorDid !== undefined && delegator !== undefined;
 };
 
 const idTypeControllerBlock = (
@@ -159,6 +144,10 @@ const calculateWeights = (fractions: string[]): number[] =>
     R.reduce(findLowestCommonMultiple, 1),
     (lcd) => fractions.map(expandFraction(lcd))
   );
+
+const capabilityDelegationBlock = (delegator: IdentifierAndKeys, did: Did) => ({
+  capabilityDelegation: delegator.keys.map((key) => keyBlock(did, key)),
+});
 
 const didWeb = (did: Did): string =>
   did.replace(/^did:webs:(.+)$/, 'did:web:$1');

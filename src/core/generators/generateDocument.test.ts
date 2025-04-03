@@ -12,7 +12,8 @@ import multiSigNoDelegateEw_O from '../../../test/data/examples/didDocs/multiSig
 import multiSigNoDelegateKt3Ew_O from '../../../test/data/examples/didDocs/multiSigNoDelegate/multi-sig-no-delegate-kt3-Ew-o.js';
 import multiSigNoDelegateKtFractionalx3EwO from '../../../test/data/examples/didDocs/multiSigNoDelegate/multi-sig-no-delegate-kt-fractionalx3-Ew-o.js';
 import multiSigNoDelegateKtFractionalx5EwO from '../../../test/data/examples/didDocs/multiSigNoDelegate/multi-sig-no-delegate-kt-fractionalx5-Ew-o.js';
-import singleSigDelegateSingleSig from '../../../test/data/examples/didDocs/singleSigDelegateSingleSig/singleSigDelegateSingleSig.js';
+import singleSigDelegateSingleSigEBBa from '../../../test/data/examples/didDocs/singleSigDelegateSingleSig/single-sig-delegate-single-sig-EBBa.js';
+import singleSigDelegateSingleSigEabc from '../../../test/data/examples/didDocs/singleSigDelegateSingleSig/single-sig-delegate-single-sig-Eabc.js';
 
 const hostname = 'example.com';
 const path = '/path/to/dids';
@@ -98,12 +99,40 @@ describe('generateDocument', () => {
       delegatorDid,
       delegator
     );
-    const expected = singleSigDelegateSingleSig;
+    const expected = singleSigDelegateSingleSigEBBa;
     const result = didDocsAreEqual(generated, expected);
     console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
     console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
     expect(result).toBe(true);
   });
+  it('should generate the correct DID document for a differnt identifier with delegated authority from a single signer', () => {
+    const controllerAid = 'EabclFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9123'; // Different identifier
+    const controllerDid = generateDid(hostname, controllerAid, path, port);
+    const controller = {
+      identifier: controllerAid,
+      keys: ['DabcbHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQb123'], // Different key
+      kt: '1',
+    } as IdentifierAndKeys;
+    const delegatorAid = 'EBBalFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc';
+    const delegatorDid = generateDid('foo.com', delegatorAid);
+    const delegator = {
+      identifier: delegatorAid,
+      keys: ['1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-DPYk'],
+      kt: '1',
+    } as IdentifierAndKeys;
+    const generated = generateDocument(
+      controllerDid,
+      controller,
+      delegatorDid,
+      delegator
+    );
+    const expected = singleSigDelegateSingleSigEabc;
+    const result = didDocsAreEqual(generated, expected);
+    console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
+    console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
+    expect(result).toBe(true);
+  });
+
   it('should generate the correct DID document for a given identifier with multiple keys', () => {
     const aid = 'Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M';
     const did = generateDid(hostname, aid, path, port);
