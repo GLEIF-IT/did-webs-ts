@@ -1,4 +1,4 @@
-// // THIS FILE IS USED BY npm start; DOES NOT SHIP WITH THE PACKAGE;
+// THIS FILE IS USED BY npm start; DOES NOT SHIP WITH THE PACKAGE;
 import { decodeKey } from './src/utils/decodeKey.js';
 import { createKey } from './src/core/Key.js';
 

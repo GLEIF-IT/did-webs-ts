@@ -85,6 +85,7 @@
     "glob": "^9.0.0"
   },
   "dependencies": {
-    "json-stable-stringify": "^1.2.1"
+    "json-stable-stringify": "^1.2.1",
+    "remeda": "^2.21.2"
   }
 }
