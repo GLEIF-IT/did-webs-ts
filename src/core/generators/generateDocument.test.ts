@@ -243,8 +243,8 @@ describe('generateDocument', () => {
     );
     const expected = multiSigDelegateMultiSig;
     const result = didDocsAreEqual(generated, expected);
-    console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
-    console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
+    // console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
+    // console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
     expect(result).toBe(true);
   });
 });

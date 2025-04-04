@@ -1,3 +1,31 @@
+import { z } from 'zod';
+
+import { BAR } from './events/BAR.js';
+import { DIP } from './events/DIP.js';
+import { DRT } from './events/DRT.js';
+import { EXN } from './events/EXN.js';
+import { ICP } from './events/ICP.js';
+import { IXN } from './events/IXN.js';
+import { PRO } from './events/PRO.js';
+import { QRY } from './events/QRY.js';
+import { RCT } from './events/RCT.js';
+import { ROC } from './events/ROC.js';
+import { RPY } from './events/RPY.js';
+import { XIP } from './events/XIP.js';
+
+import { BARSchema } from './events/BAR.js';
+import { DIPSchema } from './events/DIP.js';
+import { DRTSchema } from './events/DRT.js';
+import { EXNSchema } from './events/EXN.js';
+import { ICPSchema } from './events/ICP.js';
+import { IXNSchema } from './events/IXN.js';
+import { PROSchema } from './events/PRO.js';
+import { QRYSchema } from './events/QRY.js';
+import { RCTSchema } from './events/RCT.js';
+import { ROCSchema } from './events/ROC.js';
+import { RPYSchema } from './events/RPY.js';
+import { XIPSchema } from './events/XIP.js';
+
 export type Event =
   | BAR
   | DIP
@@ -12,190 +40,20 @@ export type Event =
   | RPY
   | XIP;
 
-interface BAR {
-  v: string;
-  t: 'bar';
-  d: string;
-  i: string;
-  dt: string;
-  r: string;
-  a: {
-    d: string;
-    i: string;
-    dt: string;
-    name: string;
-    role: string;
-  };
-}
-
-interface DIP {
-  v: string;
-  t: 'dip';
-  d: string;
-  i: string;
-  s: string;
-  kt: string;
-  k: string[];
-  nt: string;
-  n: string[];
-  bt: string;
-  b: string[];
-  c: string[];
-  a: string[];
-  di: string;
-}
-
-interface DRT {
-  v: string;
-  t: 'drt';
-  d: string;
-  i: string;
-  s: string;
-  p: string;
-  kt: string;
-  k: string[];
-  nt: string;
-  n: string[];
-  bt: string;
-  br: string[];
-  ba: string[];
-  c: string[];
-  a: string[];
-}
-
-interface EXN {
-  v: string;
-  t: 'exn';
-  d: string;
-  i: string;
-  ri: string;
-  x: string;
-  p: string;
-  dt: string;
-  r: string;
-  q: object;
-  a: {
-    msg: string;
-  };
-}
-
-interface ICP {
-  v: string;
-  t: 'icp';
-  d: string;
-  i: string;
-  s: string;
-  kt: string;
-  k: string[];
-  nt: string;
-  n: string[];
-  bt: string;
-  b: string[];
-  c: string[];
-  a: string[];
-}
-
-interface IXN {
-  v: string;
-  t: 'ixn';
-  d: string;
-  i: string;
-  s: string;
-  p: string;
-  a: {
-    d: string;
-    i: string;
-    s: string;
-  }[];
-}
-
-interface PRO {
-  v: string;
-  t: 'pro';
-  d: string;
-  i: string;
-  dt: string;
-  r: string;
-  rr: string;
-  q: {
-    d: string;
-    i: string;
-    s: string;
-    ri: string;
-    dd: string;
-  };
-}
-
-interface QRY {
-  v: string;
-  t: 'qry';
-  d: string;
-  i: string;
-  dt: string;
-  r: string;
-  rr: string;
-  q: {
-    d: string;
-    i: string;
-    s: string;
-    dt: string;
-  };
-}
-
-interface RCT {
-  v: string;
-  t: 'rct';
-  d: string;
-  i: string;
-  s: string;
-}
-
-interface ROC {
-  v: string;
-  t: 'rot';
-  d: string;
-  i: string;
-  s: string;
-  p: string;
-  kt: string;
-  k: string[];
-  nt: string;
-  n: string[];
-  bt: string;
-  br: string[];
-  ba: string[];
-  c: string[];
-  a: string[];
-}
-
-interface RPY {
-  v: string;
-  t: 'rpy';
-  d: string;
-  i: string;
-  dt: string;
-  r: string;
-  a: {
-    d: string;
-    i: string;
-    name: string;
-    role: string;
-  };
-}
-
-interface XIP {
-  v: string;
-  t: 'xip';
-  d: string;
-  i: string;
-  ri: string;
-  dt: string;
-  r: string;
-  q: object;
-  a: {
-    msg: string;
-  };
-}
+export const EventSchema = z.union([
+  BARSchema,
+  DIPSchema,
+  DRTSchema,
+  EXNSchema,
+  ICPSchema,
+  IXNSchema,
+  PROSchema,
+  QRYSchema,
+  RCTSchema,
+  ROCSchema,
+  RPYSchema,
+  XIPSchema,
+]);
 
 // this is just temporary to get the types working
 interface AllEventTypes {
