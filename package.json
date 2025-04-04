@@ -58,7 +58,8 @@
   "dependencies": {
     "@noble/secp256k1": "^2.2.3",
     "json-stable-stringify": "^1.2.1",
-    "remeda": "^2.21.2"
+    "remeda": "^2.21.2",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
