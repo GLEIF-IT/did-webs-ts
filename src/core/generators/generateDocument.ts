@@ -146,7 +146,24 @@ const calculateWeights = (fractions: string[]): number[] =>
   );
 
 const capabilityDelegationBlock = (delegator: IdentifierAndKeys, did: Did) => ({
-  capabilityDelegation: delegator.keys.map((key) => keyBlock(did, key)),
+  capabilityDelegation:
+    delegator.keys.length > 1
+      ? [
+          {
+            id: '#ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
+            type: 'ConditionalProof2022',
+            controller:
+              'did:webs:example.com%3A8080:path:to:dids:ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
+            threshold: 2,
+            conditionThreshold: [
+              '#DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6',
+              '#DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE',
+              '#DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
+            ],
+          },
+          ...delegator.keys.map((key) => keyBlock(did, key)),
+        ]
+      : delegator.keys.map((key) => keyBlock(did, key)),
 });
 
 const didWeb = (did: Did): string =>
