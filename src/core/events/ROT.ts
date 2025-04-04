@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export interface ROC {
+export interface ROT {
   v: string;
   t: 'rot';
   d: string;
@@ -18,9 +18,9 @@ export interface ROC {
   a: string[];
 }
 
-export const ROCSchema = z.object({
+export const ROTSchema = z.object({
   v: z.string(),
-  t: z.literal('roc'),
+  t: z.literal('rot'),
   d: z.string(),
   i: z.string(),
   s: z.string(),

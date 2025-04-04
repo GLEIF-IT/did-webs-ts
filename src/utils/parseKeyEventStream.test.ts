@@ -1,48 +1,7 @@
-import { Event } from '../core/Event.js';
-import { parseKeyEventStream } from './parseKeyEventStream.js';
-
-// custom print function for events in a list
-const _fancyPrintEvents = (events: object[], depth = 0): void => {
-  const indent = (level: number): string => ' '.repeat(level * 2);
-
-  const printObject = (obj: Event, currentDepth: number): string => {
-    if (obj === null || typeof obj !== 'object') {
-      return String(obj);
-    }
-    if (Array.isArray(obj)) {
-      return (
-        '[\n' +
-        obj
-          .map(
-            (item) =>
-              indent(currentDepth + 1) + printObject(item, currentDepth + 1)
-          )
-          .join(',\n') +
-        '\n' +
-        indent(currentDepth) +
-        ']'
-      );
-    }
-    const entries = Object.entries(obj);
-    return (
-      '{\n' +
-      entries
-        .map(
-          ([key, value]) =>
-            indent(currentDepth + 1) +
-            key +
-            ': ' +
-            printObject(value, currentDepth + 1)
-        )
-        .join(',\n') +
-      '\n' +
-      indent(currentDepth) +
-      '}'
-    );
-  };
-
-  console.log(printObject(events, depth));
-};
+import {
+  parseKeyEventStream,
+  _fancyPrintEvents,
+} from './parseKeyEventStream.js';
 
 describe('parseCesr', () => {
   it('should create a properly sorted array of objects from a raw CESR stream', () => {
@@ -124,7 +83,7 @@ describe('parseCesr', () => {
       },
     ];
     const result = parseKeyEventStream(cesr);
-    // console.log(_fancyPrintEvents(result, 1));
+    // _fancyPrintEvents(result, 1);
     expect(result.length).toEqual(parsedCesr.length);
     expect(result).toMatchObject(parsedCesr);
   });

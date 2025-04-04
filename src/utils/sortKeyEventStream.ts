@@ -11,6 +11,57 @@ const isSequencedEvent = (event: Event): event is Event & { s: string } => {
   return 's' in event;
 };
 
+// custom print function for sorted events
+export const _fancyPrintSortedEvents = (
+  sorted: SortedKeyEventStream,
+  depth = 0
+): void => {
+  const indent = (level: number): string => ' '.repeat(level * 2);
+
+  const printObject = (obj: Event | Event[], currentDepth: number): string => {
+    if (obj === null || typeof obj !== 'object') {
+      return String(obj);
+    }
+    if (Array.isArray(obj)) {
+      return (
+        '[\n' +
+        obj
+          .map(
+            (item) =>
+              indent(currentDepth + 1) + printObject(item, currentDepth + 1)
+          )
+          .join(',\n') +
+        '\n' +
+        indent(currentDepth) +
+        ']'
+      );
+    }
+    const entries = Object.entries(obj);
+    return (
+      '{\n' +
+      entries
+        .map(
+          ([key, value]) =>
+            indent(currentDepth + 1) +
+            key +
+            ': ' +
+            printObject(value, currentDepth + 1)
+        )
+        .join(',\n') +
+      '\n' +
+      indent(currentDepth) +
+      '}'
+    );
+  };
+  const output = Array.from(sorted.entries())
+    .map(
+      ([aid, events]) =>
+        indent(depth) + aid + ': ' + printObject(events, depth + 1)
+    )
+    .join('\n');
+  console.log(output);
+};
+
 export const sortKeyEventStream = (events: Event[]): SortedKeyEventStream => {
   const sorted: SortedKeyEventStream = new Map();
   events.forEach((event) => {

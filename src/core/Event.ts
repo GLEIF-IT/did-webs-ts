@@ -9,7 +9,7 @@ import { IXN } from './events/IXN.js';
 import { PRO } from './events/PRO.js';
 import { QRY } from './events/QRY.js';
 import { RCT } from './events/RCT.js';
-import { ROC } from './events/ROC.js';
+import { ROT } from './events/ROT.js';
 import { RPY } from './events/RPY.js';
 import { XIP } from './events/XIP.js';
 
@@ -22,7 +22,7 @@ import { IXNSchema } from './events/IXN.js';
 import { PROSchema } from './events/PRO.js';
 import { QRYSchema } from './events/QRY.js';
 import { RCTSchema } from './events/RCT.js';
-import { ROCSchema } from './events/ROC.js';
+import { ROTSchema } from './events/ROT.js';
 import { RPYSchema } from './events/RPY.js';
 import { XIPSchema } from './events/XIP.js';
 
@@ -36,7 +36,7 @@ export type Event =
   | PRO
   | QRY
   | RCT
-  | ROC
+  | ROT
   | RPY
   | XIP;
 
@@ -50,7 +50,7 @@ export const EventSchema = z.union([
   PROSchema,
   QRYSchema,
   RCTSchema,
-  ROCSchema,
+  ROTSchema,
   RPYSchema,
   XIPSchema,
 ]);
@@ -66,7 +66,7 @@ interface AllEventTypes {
   pro: PRO;
   qry: QRY;
   rct: RCT;
-  roc: ROC;
+  roc: ROT;
   rpy: RPY;
   xip: XIP;
 }
