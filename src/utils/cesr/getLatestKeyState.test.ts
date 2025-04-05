@@ -1,3 +1,4 @@
+import { IdentifierAndKeyState } from '../../core/IdentifierAndKeys.js';
 import { parseKeyEventStream } from './parseKeyEventStream.js';
 import {
   sortKeyEventStream,
@@ -22,40 +23,49 @@ describe('getLatestKeyState', () => {
     '-not-a-valid-signature-block' +
     '{"v":"KERI10JSON000111_","t":"rpy","d":"EDSqoaOsxYDJVqzeOjr77jNqkTpZ85us1Z9YICHTlyco","dt":"2025-03-15T19:59:13.262000+00:00","r":"/end/role/add","a":{"cid":"EKu2gkyoKhVsQBZEeYgp9SwGOl0PKnH4HvB10dkqC7lB","role":"agent","eid":"EBJ3FrFBhGxgfGNteaGONEPWCe5gt4V2d5qqsPGh3SsB"}}' +
     '-not-a-valid-signature-block';
-  it('should correctly retrieve the keystate for all three AIDs in the stream', () => {
+  it('should correctly retrieve the IdentityKeyState for all three AIDs in the stream', () => {
     const events = parseKeyEventStream(rotCesr) as Event[];
     const sorted = sortKeyEventStream(events);
     // _fancyPrintSortedEvents(sorted, 1);
 
-    const state1 = getLatestKeyState(
+    const identity1 = getLatestKeyState(
       'EKu2gkyoKhVsQBZEeYgp9SwGOl0PKnH4HvB10dkqC7lB',
       sorted
     );
-    expect(state1).toEqual({
-      kt: '2',
-      k: [
-        'DnmwyZ-i0H3ULvad8JZAoTNZaU6JR2YAfSVPzh5CMzS6b',
-        'DZaU6JR2nmwyZ-VPzhzSslkie8c8TNZaU6J6bVPzhzS6b',
-        'Dd8JZAoTNnmwyZ-i0H3U3ZaU6JR2LvYAfSVPzhzS6b5CM',
-      ],
-    });
+    expect(identity1).toEqual({
+      identifier: 'EKu2gkyoKhVsQBZEeYgp9SwGOl0PKnH4HvB10dkqC7lB',
+      keyState: {
+        kt: '2',
+        k: [
+          'DnmwyZ-i0H3ULvad8JZAoTNZaU6JR2YAfSVPzh5CMzS6b',
+          'DZaU6JR2nmwyZ-VPzhzSslkie8c8TNZaU6J6bVPzhzS6b',
+          'Dd8JZAoTNnmwyZ-i0H3U3ZaU6JR2LvYAfSVPzhzS6b5CM',
+        ],
+      },
+    } as IdentifierAndKeyState);
 
-    const state2 = getLatestKeyState(
+    const identity2 = getLatestKeyState(
       'EFCwLHkNR2UAZrDHBd09iNzbzqdLy2hozJVL3swdd1dB',
       sorted
     );
-    expect(state2).toEqual({
-      kt: '1',
-      k: ['DJJOg4Zh7e_UZ8k_yga9Jc064-NsT-48ihRukQI8fepu'],
-    });
+    expect(identity2).toEqual({
+      identifier: 'EFCwLHkNR2UAZrDHBd09iNzbzqdLy2hozJVL3swdd1dB',
+      keyState: {
+        kt: '1',
+        k: ['DJJOg4Zh7e_UZ8k_yga9Jc064-NsT-48ihRukQI8fepu'],
+      },
+    } as IdentifierAndKeyState);
 
-    const state3 = getLatestKeyState(
+    const identity3 = getLatestKeyState(
       'EBJ3FrFBhGxgfGNteaGONEPWCe5gt4V2d5qqsPGh3SsB',
       sorted
     );
-    expect(state3).toEqual({
-      kt: '1',
-      k: ['DAk0e0uHzz6Jm5LbShlr0fius72HTwsR-DdZE4CDqtu-'],
-    });
+    expect(identity3).toEqual({
+      identifier: 'EBJ3FrFBhGxgfGNteaGONEPWCe5gt4V2d5qqsPGh3SsB',
+      keyState: {
+        kt: '1',
+        k: ['DAk0e0uHzz6Jm5LbShlr0fius72HTwsR-DdZE4CDqtu-'],
+      },
+    } as IdentifierAndKeyState);
   });
 });

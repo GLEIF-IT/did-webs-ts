@@ -1,11 +1,11 @@
 import { Aid } from '../../core/Aid.js';
 import { SortedKeyEventStream } from './sortKeyEventStream.js';
-import { KeyState } from '../../core/KeyState.js';
+import { IdentifierAndKeyState } from '../../core/IdentifierAndKeys.js';
 
 export const getLatestKeyState = (
   identifier: Aid,
   events: SortedKeyEventStream
-): KeyState => {
+): IdentifierAndKeyState => {
   const sortedEvents = events.get(identifier);
   if (!sortedEvents || sortedEvents.length === 0) {
     throw new Error(`No events found for identifier: ${identifier}`);
@@ -21,5 +21,8 @@ export const getLatestKeyState = (
   }
   // Since sortedEvents are in descending order, the first valid event is the current key state
   const latestEvent = validEvents[0];
-  return { kt: latestEvent.kt, k: latestEvent.k } as KeyState;
+  return {
+    identifier,
+    keyState: { kt: latestEvent.kt, k: latestEvent.k },
+  } as IdentifierAndKeyState;
 };
