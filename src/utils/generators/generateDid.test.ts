@@ -1,5 +1,5 @@
 import { generateDid } from './generateDid.js';
-import { isValidDidWebs } from '../../utils/validators/isValidDidWebs.js';
+import { isValidDidWebs } from '../validators/isValidDidWebs.js';
 
 describe('generateDid', () => {
   const host = 'example.com';

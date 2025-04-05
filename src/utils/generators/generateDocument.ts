@@ -1,9 +1,9 @@
 import * as R from 'remeda';
 
-import { IdentifierAndKeys } from '../IdentifierAndKeys.js';
-import { Did } from '../Did.js';
-import { Key } from '../Key.js';
-import { Aid } from '../Aid.js';
+import { IdentifierAndKeys } from '../../core/IdentifierAndKeys.js';
+import { Did } from '../../core/Did.js';
+import { Key } from '../../core/Key.js';
+import { Aid } from '../../core/Aid.js';
 
 import { decodeKey } from '../../utils/decodeKey.js';
 import { computeXAndYForSecp256k1 } from '../../utils/computeXAndYForSecp256k1.js';

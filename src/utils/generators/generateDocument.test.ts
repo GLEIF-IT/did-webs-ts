@@ -1,9 +1,9 @@
-import { IdentifierAndKeys } from '../IdentifierAndKeys.js';
+import { IdentifierAndKeys } from '../../core/IdentifierAndKeys.js';
 
 import { generateDid } from './generateDid.js';
 import { generateDocument } from './generateDocument.js';
-import { isValidDidCoreDocument } from '../../utils/validators/isValidDidCoreDocument.js';
-import { didDocsAreEqual } from '../../utils/didDocsAreEqual.js';
+import { isValidDidCoreDocument } from '../validators/isValidDidCoreDocument.js';
+import { didDocsAreEqual } from '../didDocsAreEqual.js';
 
 import singleSigEd25519NoDelegateECwJ from '../../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-ECwJ.js';
 import singleSigEd25519NoDelegateEabc from '../../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-Eabc.js';

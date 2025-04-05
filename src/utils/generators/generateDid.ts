@@ -1,4 +1,4 @@
-import { Did, createDid } from '../Did.js';
+import { Did, createDid } from '../../core/Did.js';
 
 export const generateDid = (
   host: string,
