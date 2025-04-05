@@ -1,10 +1,10 @@
 import * as R from 'remeda';
 
-import { Key } from '../core/Key.js';
-import { isValidEd25519Cesr } from './validators/isValidEd25519Cesr.js';
-import { isValidSecp256k1Cesr } from './validators/isValidSecp256k1Cesr.js';
-import { base64UrlToBytes } from './base64UrlToBytes.js';
-import { bytesToBase64Url } from './bytesToBase64Url.js';
+import { Key } from '../../core/Key.js';
+import { isValidEd25519Cesr } from '../validators/isValidEd25519Cesr.js';
+import { isValidSecp256k1Cesr } from '../validators/isValidSecp256k1Cesr.js';
+import { base64UrlToBytes } from '../conversions/base64UrlToBytes.js';
+import { bytesToBase64Url } from '../conversions/bytesToBase64Url.js';
 
 const decodeWith = (code: string) => (rawBytes: Uint8Array) =>
   rawBytes.slice(code.length === 4 ? 0 : code.length);

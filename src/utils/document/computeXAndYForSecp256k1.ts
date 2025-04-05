@@ -1,7 +1,7 @@
 import * as secp from '@noble/secp256k1';
 
-import { base64UrlToBytes } from './base64UrlToBytes.js';
-import { bytesToBase64Url } from './bytesToBase64Url.js';
+import { base64UrlToBytes } from '../conversions/base64UrlToBytes.js';
+import { bytesToBase64Url } from '../conversions/bytesToBase64Url.js';
 
 export const computeXAndYForSecp256k1 = (compressedKey: string) => {
   const bytes = base64UrlToBytes(compressedKey);

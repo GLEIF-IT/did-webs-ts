@@ -1,4 +1,4 @@
-import { Event } from '../core/Event.js';
+import { Event } from '../../core/Event.js';
 
 // only handling event types with sequence numbers for now
 export type SortedKeyEventStream = Map<string, Event[]>;

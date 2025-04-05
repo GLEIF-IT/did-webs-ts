@@ -6,7 +6,7 @@ import {
 import { generateDid } from './generateDid.js';
 import { generateDocument } from './generateDocument.js';
 import { isValidDidCoreDocument } from '../validators/isValidDidCoreDocument.js';
-import { didDocsAreEqual } from '../didDocsAreEqual.js';
+import { didDocsAreEqual } from '../document/didDocsAreEqual.js';
 
 import singleSigEd25519NoDelegateECwJ from '../../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-ECwJ.js';
 import singleSigEd25519NoDelegateEabc from '../../../test/data/examples/didDocs/singleSigNoDelegate/single-sig-no-delegate-Eabc.js';

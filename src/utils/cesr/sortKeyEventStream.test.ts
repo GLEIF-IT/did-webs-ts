@@ -6,7 +6,7 @@ import {
   parseKeyEventStream,
   _fancyPrintEvents,
 } from './parseKeyEventStream.js';
-import { Event } from '../core/Event.js';
+import { Event } from '../../core/Event.js';
 
 describe('sortEventStream', () => {
   const cesr =
@@ -44,8 +44,3 @@ describe('sortEventStream', () => {
     }
   });
 });
-
-export interface KeyState {
-  kt: string; // key threshold
-  k: string[]; // key(s)
-}

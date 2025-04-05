@@ -1,6 +1,6 @@
-import { Aid } from '../core/Aid.js';
+import { Aid } from '../../core/Aid.js';
 import { SortedKeyEventStream } from './sortKeyEventStream.js';
-import { KeyState } from './sortKeyEventStream.test.js';
+import { KeyState } from '../../core/KeyState.js';
 
 export const getLatestKeyState = (
   identifier: Aid,
@@ -21,5 +21,5 @@ export const getLatestKeyState = (
   }
   // Since sortedEvents are in descending order, the first valid event is the current key state
   const latestEvent = validEvents[0];
-  return { kt: latestEvent.kt, k: latestEvent.k };
+  return { kt: latestEvent.kt, k: latestEvent.k } as KeyState;
 };

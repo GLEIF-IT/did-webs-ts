@@ -1,4 +1,4 @@
-import { createKey, Key } from '../core/Key.js';
+import { createKey, Key } from '../../core/Key.js';
 import { decodeKey } from './decodeKey.js';
 import { encodeKey } from './encodeKey.js';
 

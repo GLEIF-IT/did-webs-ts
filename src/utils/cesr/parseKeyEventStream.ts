@@ -1,4 +1,4 @@
-import { EventSchema, Event } from '../core/Event.js';
+import { EventSchema, Event } from '../../core/Event.js';
 
 const isValidEvent = (obj: unknown): boolean =>
   EventSchema.safeParse(obj).success;
