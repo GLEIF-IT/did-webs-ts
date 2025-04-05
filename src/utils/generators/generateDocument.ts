@@ -21,7 +21,8 @@ export const generateDocument = (
   const hasDelegator = checkDelegator(delegatorDid, delegator);
 
   // pregenerate various helpful values and objects
-  const controllerKeyState = controller.keyState;
+  const controllerIdentifier = controller.identifier as Aid;
+  const controllerKeyState = controller.keyState as KeyState;
   const controllerThresholdIsFractional = isFractionalThreshold(
     controllerKeyState.kt
   );
@@ -33,19 +34,6 @@ export const generateDocument = (
   // const delegatorThreshold = hasDelegator
   //   ? calcutaleThreshold(delagatorKeyState?.kt)
   //   : undefined;
-
-  const conditionalProofVerificationMethod = {
-    ...idTypeControllerBlock(
-      controller.identifier as Aid,
-      'ConditionalProof2022',
-      controllerDid
-    ),
-    threshold: controllerThreshold,
-    ...conditionalProofBlock(
-      controllerKeyState,
-      controllerThresholdIsFractional
-    ),
-  };
 
   const keyVerificationMethods = controllerKeyState.k.map((key) =>
     keyBlock(controllerDid, key as Key)
@@ -63,18 +51,27 @@ export const generateDocument = (
     // if threshold is 2 or more, there must be a conditional proof verification method
     verificationMethod:
       controllerThreshold > 1
-        ? [conditionalProofVerificationMethod, ...keyVerificationMethods]
+        ? [
+            conditionalProofVerificationMethod(
+              controllerIdentifier,
+              controllerKeyState,
+              controllerDid,
+              controllerThreshold,
+              controllerThresholdIsFractional
+            ),
+            ...keyVerificationMethods,
+          ]
         : keyVerificationMethods,
     // if threshold is 1, then the controller authenticates and asserts with their key
     // if threshold is 2 or more, or if it's an array of fractions, then the controller authenticates and asserts with the conditional proof
     authentication: [
       controllerThreshold > 1
-        ? `#${controller.identifier}`
+        ? `#${controllerIdentifier}`
         : `#${controllerKeyState.k[0]}`,
     ],
     assertionMethod: [
       controllerThreshold > 1
-        ? `#${controller.identifier}`
+        ? `#${controllerIdentifier}`
         : `#${controllerKeyState.k[0]}`,
     ],
     ...capabilityDelegation,
@@ -104,6 +101,22 @@ const idTypeControllerBlock = (
   id: `#${identifier}` as Aid,
   type,
   controller,
+});
+
+const conditionalProofVerificationMethod = (
+  controllerIdentifier,
+  controllerKeyState,
+  controllerDid,
+  controllerThreshold,
+  controllerThresholdIsFractional
+) => ({
+  ...idTypeControllerBlock(
+    controllerIdentifier,
+    'ConditionalProof2022',
+    controllerDid
+  ),
+  threshold: controllerThreshold,
+  ...conditionalProofBlock(controllerKeyState, controllerThresholdIsFractional),
 });
 
 const conditionalProofBlock = (

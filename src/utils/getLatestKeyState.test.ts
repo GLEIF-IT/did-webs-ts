@@ -25,7 +25,7 @@ describe('getLatestKeyState', () => {
   it('should correctly retrieve the keystate for all three AIDs in the stream', () => {
     const events = parseKeyEventStream(rotCesr) as Event[];
     const sorted = sortKeyEventStream(events);
-    _fancyPrintSortedEvents(sorted, 1);
+    // _fancyPrintSortedEvents(sorted, 1);
 
     const state1 = getLatestKeyState(
       'EKu2gkyoKhVsQBZEeYgp9SwGOl0PKnH4HvB10dkqC7lB',
