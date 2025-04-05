@@ -143,8 +143,8 @@ describe('generateDocument', () => {
     const generated = generateDocument(did, controller);
     const expected = multiSigNoDelegateEw_O;
     const result = didDocsAreEqual(generated, expected);
-    console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
-    console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
+    // console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
+    // console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
     expect(result).toBe(true);
   });
   it('should generate the correct DID document for a given identifier with multiple keys when the key threshold is an integer', () => {
@@ -232,8 +232,8 @@ describe('generateDocument', () => {
     );
     const expected = multiSigDelegateMultiSig;
     const result = didDocsAreEqual(generated, expected);
-    console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
-    console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
+    // console.log('Generated DID Document:', JSON.stringify(generated, null, 2));
+    // console.log('Expected DID Document:', JSON.stringify(expected, null, 2));
     expect(result).toBe(true);
   });
 });
