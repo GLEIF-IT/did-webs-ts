@@ -2,7 +2,8 @@ import { Aid } from '../../core/Aid.js';
 import { SortedKeyEventStream } from './sortKeyEventStream.js';
 import { IdentifierAndKeyState } from '../../core/IdentifierAndKeys.js';
 
-export const getLatestKeyState = (
+// Returns the latest key state for a given identifier from the sorted key event stream
+export const getKeyState = (
   identifier: Aid,
   events: SortedKeyEventStream
 ): IdentifierAndKeyState => {

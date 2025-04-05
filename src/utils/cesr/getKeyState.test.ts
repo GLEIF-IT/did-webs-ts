@@ -4,9 +4,9 @@ import {
   sortKeyEventStream,
   _fancyPrintSortedEvents,
 } from './sortKeyEventStream.js';
-import { getLatestKeyState } from './getLatestKeyState.js';
+import { getKeyState } from './getKeyState.js';
 
-describe('getLatestKeyState', () => {
+describe('getKeyState', () => {
   // Obviously, just a simulation of a real CESR stream
   const rotCesr =
     '{"v":"KERI10JSON00012b_","t":"icp","d":"EKu2gkyoKhVsQBZEeYgp9SwGOl0PKnH4HvB10dkqC7lB","i":"EKu2gkyoKhVsQBZEeYgp9SwGOl0PKnH4HvB10dkqC7lB","s":"0","kt":"1","k":["DEx0lnNR0WmphGiX-4FYv1-2iKxKph74lqi0V3KDdLKP"],"nt":"1","n":["EA1aDFBBlSc3lZe_IQqBYr6XV8-YDYWwyLIVmtm5Lng5"],"bt":"0","b":[],"c":[],"a":[]}' +
@@ -28,7 +28,7 @@ describe('getLatestKeyState', () => {
     const sorted = sortKeyEventStream(events);
     // _fancyPrintSortedEvents(sorted, 1);
 
-    const identity1 = getLatestKeyState(
+    const identity1 = getKeyState(
       'EKu2gkyoKhVsQBZEeYgp9SwGOl0PKnH4HvB10dkqC7lB',
       sorted
     );
@@ -44,7 +44,7 @@ describe('getLatestKeyState', () => {
       },
     } as IdentifierAndKeyState);
 
-    const identity2 = getLatestKeyState(
+    const identity2 = getKeyState(
       'EFCwLHkNR2UAZrDHBd09iNzbzqdLy2hozJVL3swdd1dB',
       sorted
     );
@@ -56,7 +56,7 @@ describe('getLatestKeyState', () => {
       },
     } as IdentifierAndKeyState);
 
-    const identity3 = getLatestKeyState(
+    const identity3 = getKeyState(
       'EBJ3FrFBhGxgfGNteaGONEPWCe5gt4V2d5qqsPGh3SsB',
       sorted
     );

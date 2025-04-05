@@ -3,7 +3,7 @@ import { EventSchema, Event } from '../../core/Event.js';
 const isValidEvent = (obj: unknown): boolean =>
   EventSchema.safeParse(obj).success;
 
-const extractNextJsonBlock = (
+const extractNextEventBlock = (
   str: string,
   startIndex: number
 ): { block: string; nextIndex: number } | null => {
@@ -42,11 +42,11 @@ const extractNextJsonBlock = (
   return { block, nextIndex: endIndex + 1 };
 };
 
-const getJsonBlocks = (str: string, startIndex = 0): string[] => {
-  const blockInfo = extractNextJsonBlock(str, startIndex);
+const getEventBlocks = (str: string, startIndex = 0): string[] => {
+  const blockInfo = extractNextEventBlock(str, startIndex);
   return !blockInfo
     ? []
-    : [blockInfo.block, ...getJsonBlocks(str, blockInfo.nextIndex)];
+    : [blockInfo.block, ...getEventBlocks(str, blockInfo.nextIndex)];
 };
 
 // custom print function for events in a list
@@ -92,8 +92,8 @@ export const _fancyPrintEvents = (events: Event[], depth = 0): void => {
   console.log(printObject(events, depth));
 };
 
-export const parseKeyEventStream = (cesr: string): object[] =>
-  getJsonBlocks(cesr)
+export const parseKeyEventStream = (cesr: string): Event[] =>
+  getEventBlocks(cesr)
     .map((block) => {
       try {
         return JSON.parse(block);
@@ -102,4 +102,4 @@ export const parseKeyEventStream = (cesr: string): object[] =>
         return null;
       }
     })
-    .filter((obj): obj is object => obj !== null && isValidEvent(obj));
+    .filter((event): event is Event => event !== null && isValidEvent(event));
