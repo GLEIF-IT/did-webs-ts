@@ -1,8 +1,16 @@
-import { Aid } from './Aid.js';
-import { Key } from './Key.js';
+import { Aid, createAid } from './Aid.js';
+import { KeyState, createKeyState } from './KeyState.js';
 
-export interface IdentifierAndKeys {
+export interface IdentifierAndKeyState {
   identifier: Aid;
-  keys: Key[];
-  kt: string | string[]; // the key threshold, could be an integer or an array of fractions
+  keyState: KeyState;
 }
+
+export const createIdentifierAndKeys = (
+  identifier: string,
+  keyState: { kt: string | string[]; k: string[] }
+): IdentifierAndKeyState =>
+  ({
+    identifier: createAid(identifier) as Aid,
+    keyState: createKeyState(keyState.kt, keyState.k),
+  }) as IdentifierAndKeyState;

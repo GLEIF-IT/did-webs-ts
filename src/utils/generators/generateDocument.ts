@@ -1,26 +1,38 @@
 import * as R from 'remeda';
 
-import { IdentifierAndKeys } from '../../core/IdentifierAndKeys.js';
+import { IdentifierAndKeyState } from '../../core/IdentifierAndKeys.js';
 import { Did } from '../../core/Did.js';
 import { Key } from '../../core/Key.js';
 import { Aid } from '../../core/Aid.js';
+import { isFractionalThreshold } from '../../core/Threshold.js';
 
 import { decodeKey } from '../../utils/decodeKey.js';
 import { computeXAndYForSecp256k1 } from '../../utils/computeXAndYForSecp256k1.js';
 import { lcm } from '../../utils/lcm.js';
+import { KeyState } from '../../core/KeyState.js';
 
 export const generateDocument = (
   controllerDid: Did,
-  controller: IdentifierAndKeys,
+  controller: IdentifierAndKeyState,
   delegatorDid?: Did,
-  delegator?: IdentifierAndKeys
+  delegator?: IdentifierAndKeyState
 ): object => {
   // make sure both delegate paramers are provided or none
   const hasDelegator = checkDelegator(delegatorDid, delegator);
 
   // pregenerate various helpful values and objects
-  const controllerThresholdIsFractional = Array.isArray(controller.kt);
-  const controllerThreshold = calcutaleThreshold(controller.kt);
+  const controllerKeyState = controller.keyState;
+  const controllerThresholdIsFractional = isFractionalThreshold(
+    controllerKeyState.kt
+  );
+  const controllerThreshold = calcutaleThreshold(controllerKeyState.kt);
+  // const delagatorKeyState = hasDelegator ? delegator?.keyState : undefined;
+  // const delegatorThresholdIsFractional = hasDelegator
+  // ? isFractionalThreshold(delagatorKeyState?.kt)
+  // : undefined;
+  // const delegatorThreshold = hasDelegator
+  //   ? calcutaleThreshold(delagatorKeyState?.kt)
+  //   : undefined;
 
   const conditionalProofVerificationMethod = {
     ...idTypeControllerBlock(
@@ -29,16 +41,19 @@ export const generateDocument = (
       controllerDid
     ),
     threshold: controllerThreshold,
-    ...conditionalProofBlock(controller, controllerThresholdIsFractional),
+    ...conditionalProofBlock(
+      controllerKeyState,
+      controllerThresholdIsFractional
+    ),
   };
 
-  const keyVerificationMethods = controller.keys.map((key) =>
-    keyBlock(controllerDid, key)
+  const keyVerificationMethods = controllerKeyState.k.map((key) =>
+    keyBlock(controllerDid, key as Key)
   );
 
   const capabilityDelegation = hasDelegator
     ? capabilityDelegationBlock(
-        delegator as IdentifierAndKeys,
+        delegator as IdentifierAndKeyState,
         delegatorDid as Did
       )
     : {};
@@ -55,12 +70,12 @@ export const generateDocument = (
     authentication: [
       controllerThreshold > 1
         ? `#${controller.identifier}`
-        : `#${controller.keys[0]}`,
+        : `#${controllerKeyState.k[0]}`,
     ],
     assertionMethod: [
       controllerThreshold > 1
         ? `#${controller.identifier}`
-        : `#${controller.keys[0]}`,
+        : `#${controllerKeyState.k[0]}`,
     ],
     ...capabilityDelegation,
     service: [],
@@ -70,7 +85,7 @@ export const generateDocument = (
 
 const checkDelegator = (
   delegatorDid: Did | undefined,
-  delegator: IdentifierAndKeys | undefined
+  delegator: IdentifierAndKeyState | undefined
 ): boolean => {
   if (delegatorDid && !delegator) {
     throw new Error('Delegator did provided without delegator keys');
@@ -92,14 +107,14 @@ const idTypeControllerBlock = (
 });
 
 const conditionalProofBlock = (
-  controller: IdentifierAndKeys,
+  controllerKeyState: KeyState,
   isFracional: boolean
 ) => {
   if (isFracional) {
-    const weights = calculateWeights(controller.kt as string[]);
+    const weights = calculateWeights(controllerKeyState.kt as string[]);
     return {
       // for each key, there should be a corresponding weight, print them as specified
-      conditionWeightedThreshold: controller.keys.map((key, index) => {
+      conditionWeightedThreshold: controllerKeyState.k.map((key, index) => {
         return {
           condition: `#${key}`,
           weight: weights[index],
@@ -108,7 +123,7 @@ const conditionalProofBlock = (
     };
   } else {
     return {
-      conditionThreshold: controller.keys.map((key) => `#${key}`),
+      conditionThreshold: controllerKeyState.k.map((key) => `#${key as Key}`),
     };
   }
 };
@@ -145,9 +160,12 @@ const calculateWeights = (fractions: string[]): number[] =>
     (lcd) => fractions.map(expandFraction(lcd))
   );
 
-const capabilityDelegationBlock = (delegator: IdentifierAndKeys, did: Did) => ({
+const capabilityDelegationBlock = (
+  delegator: IdentifierAndKeyState,
+  did: Did
+) => ({
   capabilityDelegation:
-    delegator.keys.length > 1
+    delegator.keyState.k.length > 1
       ? [
           {
             id: '#ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
@@ -161,9 +179,9 @@ const capabilityDelegationBlock = (delegator: IdentifierAndKeys, did: Did) => ({
               '#DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
             ],
           },
-          ...delegator.keys.map((key) => keyBlock(did, key)),
+          ...delegator.keyState.k.map((key) => keyBlock(did, key)),
         ]
-      : delegator.keys.map((key) => keyBlock(did, key)),
+      : delegator.keyState.k.map((key) => keyBlock(did, key)),
 });
 
 const didWeb = (did: Did): string =>

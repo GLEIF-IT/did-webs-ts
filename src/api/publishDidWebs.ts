@@ -1,6 +1,6 @@
-import { IdentifierAndKeys } from '../core/IdentifierAndKeys.js';
+import { IdentifierAndKeyState } from '../core/IdentifierAndKeys.js';
 
 export const publishDidWebs = (
-  controller: IdentifierAndKeys,
-  delagator?: IdentifierAndKeys
+  controller: IdentifierAndKeyState,
+  delagator?: IdentifierAndKeyState
 ): boolean => typeof controller === 'object' && delagator === undefined;
