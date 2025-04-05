@@ -63,7 +63,7 @@ export default {
       conditionThreshold: [
         '#DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6',
         '#DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE',
-        '#DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
+        '#1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-D123',
       ],
     },
     {
@@ -91,15 +91,16 @@ export default {
       },
     },
     {
-      id: '#DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
+      id: '#1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-D123',
       type: 'JsonWebKey2020',
       controller:
         'did:webs:example.com%3A8080:path:to:dids:ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc',
       publicKeyJwk: {
-        kid: 'DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu',
-        kty: 'OKP',
-        crv: 'Ed25519',
-        x: 'tYmuwogeuufVDWPLagSLwGa_poRzC7IiqCeBV_ac3C4',
+        kid: '1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-D123',
+        kty: 'EC',
+        crv: 'secp256k1',
+        x: 'Db32nkgy-7DvUdb9OVvMarlxU5DttFt4O6GF4X4PXbc',
+        y: 'RmvzTEmgInp-Jo0Usf4HyAgioqUPn1s_BFjbfD-m3ow',
       },
     },
   ],
