@@ -1,6 +1,10 @@
 {
   "name": "@gleif-it/did-webs-ts",
+<<<<<<< HEAD
   "version": "0.0.5",
+=======
+  "version": "0.0.2",
+>>>>>>> ce69570 (0.0.2)
   "description": "did-webs typescript library",
   "keywords": [
     "GLEIF",
