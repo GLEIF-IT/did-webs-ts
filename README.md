@@ -20,6 +20,12 @@ or
 import * as didWebs from '@gleif-it/did-webs-ts';
 ```
 
+or
+
+```javascript
+import { composeDid, publishDid } from '@gleif-it/did-webs-ts';
+```
+
 ## API
 
 The API has two functions, `composeDid()` and `publishDid()`
@@ -63,7 +69,7 @@ const config = {
 
 const [didJson, keriCesr, did] = didWebs.publishDid(cesr, config);
 
-console.log(didJson); // the DID document as stringified JSON
+console.log(didJson); // the DID document as an JSON object
 console.log(keriCesr); // cesr
 console.log(did); // did:webs:example.com%3A8080:identity:did:[THE CONTROLLER AID DISCOVERED FROM THE KEL]
 ```

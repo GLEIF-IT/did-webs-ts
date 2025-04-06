@@ -1,5 +1,5 @@
-import { base64UrlToBytes } from './base64UrlToBytes';
-import { bytesToBase64Url } from './bytesToBase64Url';
+import { base64UrlToBytes } from './base64UrlToBytes.js';
+import { bytesToBase64Url } from './bytesToBase64Url.js';
 
 describe('base64UrlToBytes', () => {
   it('should do a round trip', () => {

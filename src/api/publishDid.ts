@@ -5,12 +5,7 @@ import { getDelegatorForDelegate } from '../utils/cesr/getDelegatorForDelegate.j
 
 import { generateDid } from '../utils/generators/generateDid.js';
 import { generateDocument } from '../utils/generators/generateDocument.js';
-
-interface Config {
-  host: string;
-  port?: number;
-  path?: string;
-}
+import { Config } from './Config.js';
 
 export const publishDid = (
   cesr: string,
@@ -19,10 +14,8 @@ export const publishDid = (
   const { host, port, path } = config;
   const parsed = parseKeyEventStream(cesr);
   const controller = getController(parsed);
-  console.log('controller', controller);
   const controllerDid = generateDid(host, controller.identifier, path, port);
   const delegator = getDelegatorForDelegate(controller.identifier, parsed);
-  console.log('delegator', delegator);
   const document =
     delegator !== undefined
       ? generateDocument(
