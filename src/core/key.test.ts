@@ -1,4 +1,4 @@
-import { Key, createKey } from './key.js';
+import { Key, createKey } from './Key.js';
 
 describe('createKey', () => {
   it('should validate a string as an Ed25519 Key', () => {

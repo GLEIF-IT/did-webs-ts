@@ -31,7 +31,7 @@
     // keys: two of three required to sign
     {
       "id": "#1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-DPYk",
-      "type": "JsonWebKey",
+      "type": "JsonWebKey2020",
       "controller": "did:webs:example.com:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M",
       "publicKeyJwk": {
         "kid": "1AAAAg299p5IMvuw71HW_TlbzGq5cVOQ7bRbeDuhheF-DPYk", // first key
@@ -43,7 +43,7 @@
     },
     {
       "id": "#DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE",
-      "type": "JsonWebKey",
+      "type": "JsonWebKey2020",
       "controller": "did:webs:example.com:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M",
       "publicKeyJwk": {
         "kid": "DA-vW9ynSkvOWv5e7idtikLANdS6pGO2IHJy7v0rypvE", // second key
@@ -54,7 +54,7 @@
     },
     {
       "id": "#DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu",
-      "type": "JsonWebKey",
+      "type": "JsonWebKey2020",
       "controller": "did:webs:example.com:Ew-o5dU5WjDrxDBK4b4HrF82_rYb6MX6xsegjq4n0Y7M",
       "publicKeyJwk": {
         "kid": "DLWJrsKIHrrn1Q1jy2oEi8Bmv6aEcwuyIqgngVf2nNwu", // third key

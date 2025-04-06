@@ -34,5 +34,7 @@ typings/
 dist
 bundle.*
 
-# image diagram files
+# image diagrams and other reference files
 *.webp
+generated.json
+expected.json

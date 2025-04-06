@@ -4,7 +4,7 @@
   "verificationMethod": [
     {
       "id": "#DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6",
-      "type": "JsonWebKey",
+      "type": "JsonWebKey2020",
       "controller": "did:webs:localhost%3A8080:identity:artist:ECwJlFWWcXQRwMDP80dmDgEO949AqKOSR2sTGFli9aSc",
       "publicKeyJwk": {
         "kid": "DMg3bHLEt86yNqb9YsQJwoJusIxhF_QUJQP6PQiQboP6",

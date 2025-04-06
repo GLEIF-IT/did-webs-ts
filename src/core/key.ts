@@ -7,7 +7,7 @@ export type Secp256k1Key = string & { readonly __brand: unique symbol };
 export type Key = Ed25519Key | Secp256k1Key;
 
 // Runtime validator
-export const createKey = (key: string): string => {
+export const createKey = (key: string): Key => {
   if (isValidEd25519Cesr(key)) return key as Ed25519Key;
   else if (isValidSecp256k1Cesr(key)) return key as Secp256k1Key;
   else throw new Error('Invalid key format');
