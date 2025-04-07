@@ -32,8 +32,21 @@
       }
     }
   },
+  "module": "./dist/esm/index.js",
   "main": "./dist/cjs/index.js",
-  "types": "./dist/cjs/types/index.d.ts",
+  "types": "./dist/esm/types/index.d.ts",
+  "typesVersions": {
+    "<=4.9": {
+      "*": [
+        "dist/cjs/types/*"
+      ]
+    },
+    ">=5.0": {
+      "*": [
+        "dist/esm/types/*"
+      ]
+    }
+  },
   "files": [
     "dist/**/*"
   ],
@@ -51,7 +64,7 @@
     "packageCheck": "npm pack --dry-run",
     "prepublishOnly": "npm run full-checker && npm test && npm run build && npm run compatibility-checker",
     "publish:dev": "npm version prerelease --preid=dev && npm publish --access public --tag dev && npm dist-tag add $(node -p \"require('./package.json').name + '@' + require('./package.json').version\") latest",
-    "publish:prod:patch": "npm version patch && npm publish --access public && npm dist-tag add $(node -p \"require('./package.json').name + '@' + require('./package.json').version\") latest",
+    "publish:prod:patch": "npm version patch && npm publish --access public",
     "start": "NODE_OPTIONS='--loader ts-node/esm --no-warnings' ts-node ./main.ts",
     "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --verbose",
     "test:full": "npm run full-checker && npm run build && npm run compatibility-checker && npm run packageCheck"
