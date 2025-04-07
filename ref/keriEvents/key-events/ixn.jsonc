@@ -1,0 +1,16 @@
+{
+  "v": "KERICAAJSONAACd.", // Version string
+  "t": "ixn", // Message type: Interaction
+  "d": "E0d8JJR2nmwyYAfZAoTNZH3ULvaU6Z-iSVPzhzS6b5CM", // SAID of the event
+  "i": "EZAoTNZH3ULvaU6Z-i0d8JJR2nmwyYAfSVPzhzS6b5CM", // Identifier prefix (AID)
+  "s": "2", // Sequence number
+  "p": "EULvaU6JR2nmwyZ-i0d8JZAoTNZH3YAfSVPzhzS6b5CM", // Prior event SAID
+  "a": [
+    // List of anchors (seals)
+    {
+      "d": "ELvaU6Z-i0d8JJR2nmwyYAZAoTNZH3UfSVPzhzS6b5CM", // SAID of the external event
+      "i": "EJJR2nmwyYAfSVPzhzS6b5CMZAoTNZH3ULvaU6Z-i0d8", // AID of external event log
+      "s": "1", // Sequence number of the event in the external log
+    },
+  ],
+}
